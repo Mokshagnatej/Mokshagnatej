@@ -28,7 +28,7 @@ Outside the codebase, I moonlight as a **page and editorial designer** for my de
 
 <table>
 <tr>
-<td align="center">🎓<br/><b>2nd-Year CSE</b></td>
+<td align="center">🎓<br/><b>3nd-Year CSE</b></td>
 <td align="center">🏫<br/><b>Vel Tech University</b></td>
 <td align="center">🆔<br/><b>VTU29491</b></td>
 <td align="center">🏆<br/><b>Imagine Cup '26</b></td>
