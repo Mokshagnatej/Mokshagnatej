@@ -1,11 +1,11 @@
 <div align="center">
 
 <!-- ============================================================================== -->
-<!-- 🌌 00. COSMIC AURORA LUXE HERO BANNER (3D ISOMETRIC MONOLITH) -->
+<!-- 🌌 00. 3D ISOMETRIC DEVELOPER WORKSTATION HERO -->
 <!-- ============================================================================== -->
 
 <a href="https://github.com/Mokshagnatej">
-  <img src="./assets/cyber_header.svg" width="100%" alt="Mokshagna Tej Cosmic Aurora Luxe Header"/>
+  <img src="./assets/hero_3d_station.svg" width="100%" alt="Mokshagna Tej 3D Workstation Hero"/>
 </a>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 <!-- ⚡ DYNAMIC AURORA TERMINAL TYPING HUD -->
 <a href="https://github.com/Mokshagnatej">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&background=03071200&center=true&vCenter=true&width=700&lines=%3E+Welcome+to+my+universe...+Mokshagna+Tej+Kalepalli;%3E+Architecting+Modern+Full-Stack+Systems+[MERN];%3E+Engineering+Real-Time+AI+%26+Anomaly+Detection;%3E+Solving+Complex+DSA+in+Java+%26+C%2B%2B;%3E+Building+Next-Gen+AI+for+Microsoft+Imagine+Cup+%2726;%3E+Fusing+Pixel-Perfect+Design+with+Resilient+Code" alt="Aurora Terminal Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&background=03071200&center=true&vCenter=true&width=720&lines=%3E+Hello+World!+I%27m+Mokshagna+Tej+Kalepalli;%3E+3rd-Year+Computer+Science+Undergraduate+%40+Vel+Tech;%3E+Full-Stack+Architect+Building+Modern+Web+Apps+[MERN];%3E+Competing+at+Microsoft+Imagine+Cup+2026;%3E+Sharpening+Algorithmic+DSA+in+Java%2C+C%2C+and+C%2B%2B;%3E+Bridging+Resilient+Code+with+World-Class+Design" alt="Aurora Terminal Typing SVG" />
 </a>
 
 </div>
@@ -29,47 +29,47 @@
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🛰️ 01. NEURAL DIAGNOSTICS & BENTO PROFILE DECK -->
+<!-- 🎓 01. STUDENT ODYSSEY & 3D BENTO IDENTITY DECK -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
-## 🛰️ 01. Neural Diagnostics & Bento Profile Deck
+## 🎓 01. Student Odyssey & Bento Identity Deck
+
+<p align="center">
+  <img src="./assets/bento_student_hub.svg" width="100%" alt="Student Bento Hub"/>
+</p>
 
 ```yaml
-system_identity:
+student_identity:
   operator: "Mokshagna Tej Kalepalli"
-  orbit: "3rd-Year Computer Science & Engineering @ Vel Tech University"
-  matriculation_id: "VTU29491"
-  mission_objective: "Building at the intersection of resilient systems engineering and modern luxe design."
-  current_flagship: "Cloudwatch Server Anomaly (Full-Stack AI) & Microsoft Imagine Cup 2026"
+  academic_base: "Vel Tech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology"
+  degree: "B.Tech in Computer Science & Engineering (2023 - 2027)"
+  student_id: "VTU29491"
+  engineering_focus: "Full-Stack Web Systems (MERN), Cloud AI Architecture, Algorithmic Problem Solving"
+  current_flagship: "Microsoft Imagine Cup '26 & Cloudwatch Server Anomaly Detection"
 ```
 
-I am a **Full-Stack Developer** & **Systems Craftsman** dedicated to turning complex computing challenges into seamless, beautiful digital experiences. My daily workflow balances architecting resilient web applications in the **MERN & Cloud ecosystem** with deep algorithmic problem-solving across **Java, C, and C++**.
+I am a **3rd-Year Computer Science undergraduate** and **Full-Stack Developer** passionate about engineering high-performance software systems with unforgettable user experiences. My daily journey alternates between building scalable **MERN & Cloud** applications and conquering complex **Data Structures & Algorithms in Java, C, and C++**.
 
-Previously shipped production-level features as a **Software Development Intern at Innolift Ventures (Track-3)**. Beyond source code, I lead editorial and digital layout design for the departmental **VTU Chronicle**, merging technical discipline with visual mastery.
+Previously shipped live production features as a **Software Development Intern at Innolift Ventures (Track-3)**, and I lead editorial & visual layout design for the departmental **VTU Chronicle**, fusing rigorous technical precision with world-class aesthetics.
 
 <br/>
 
 <div align="center">
 
-| 🎓 Academic Orbit | 🏫 Base Station | 🆔 Cyber ID | 🏆 Prime Directive |
-| :---: | :---: | :---: | :---: |
-| **3rd-Year CSE** | **Vel Tech University** | `VTU29491` | **Imagine Cup '26 Finalist Quest** |
-
-<br/>
-
 <details>
-<summary><b>⚡ [ CLICK TO EXPAND ADVANCED TELEMETRY &amp; SYSTEM LOGS ]</b></summary>
+<summary><b>⚡ [ CLICK TO EXPAND RUNTIME TELEMETRY &amp; ENVIRONMENT SPECS ]</b></summary>
 <br/>
 
 ```zsh
-[+] OPERATOR_NAME : Mokshagna Tej Kalepalli
-[+] SPECIALIZATION: Full-Stack Engineering (MERN) · Cloud Architecture · Algorithmic Optimization
-[+] METHODOLOGY   : Modular Component Systems · REST APIs · High-Throughput Data Pipelines
-[+] CORE_TOOLS    : React · Node.js · Express · Flask · Azure Cloud · OpenAI API · MongoDB · MySQL
-[+] DESIGN_SUITE  : Figma Prototyping · Editorial Layouts · Notion Relational Databases
-[+] TELEMETRY_PING: 100% NOMINAL // READY FOR GLOBAL COLLABORATION
+[+] OPERATOR      : Mokshagna Tej Kalepalli [VTU29491]
+[+] DISCIPLINE    : Full-Stack Engineering (MERN) · Cloud AI · Algorithmic Optimization
+[+] CORE_RUNTIMES : Node.js (v20+) · Python 3.11+ · Java OpenJDK 21 · C++20
+[+] FRAMEWORKS    : React 18 · Next.js · Express · Flask · TailwindCSS
+[+] CLOUD & DATA  : Microsoft Azure · OpenAI API · MongoDB Atlas · MySQL · Docker
+[+] DESIGN_SUITE  : Figma · Notion Relational Databases · Editorial Publishing
+[+] TELEMETRY_PING: 100% NOMINAL // READY FOR VISIONARY OPPORTUNITIES
 ```
 
 </details>
@@ -85,12 +85,12 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- ⚡ 02. 3D & ISOMETRIC CYBER ARSENAL (TECH STACK) -->
+<!-- ⚡ 02. 3D FULL-STACK ARSENAL (TECH STACK) -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
-## ⚡ 02. Cyber Weapons & Tech Arsenal
+## ⚡ 02. 3D Full-Stack Arsenal & Core Weapons
 
 <div align="center">
 
@@ -198,55 +198,12 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🛰️ 04. CAREER FLIGHT LOG & CREATIVE WORK -->
+<!-- 📊 04. QUANTUM TELEMETRY & 3D GITHUB METRICS -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
-## 🛰️ 04. Career Flight Log & Creative Deployments
-
-<div align="center">
-
-<table width="100%">
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <p>💼</p>
-      <h4><b>Innolift Ventures</b></h4>
-      <i>Software Development Intern [Track-3]</i>
-      <br/><br/>
-      <p align="left">Shipped real-world code into live deployment pipelines, optimized system routines, and collaborated with senior engineering leads.</p>
-      <img src="https://img.shields.io/badge/ROLE-ENGINEERING-38BDF8?style=flat-square" alt="Engineering"/>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <p>🎨</p>
-      <h4><b>VTU Chronicle 2026</b></h4>
-      <i>Editorial & Page Layout Designer</i>
-      <br/><br/>
-      <p align="left">Spearheaded visual identity, bespoke typography, and high-impact editorial spreads for the Computer Science flagship magazine.</p>
-      <img src="https://img.shields.io/badge/ROLE-DESIGN%20DIRECTOR-C084FC?style=flat-square" alt="Design Director"/>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <p>🗂️</p>
-      <h4><b>Notion System Architecture</b></h4>
-      <i>Advanced Notion Systems Engineer</i>
-      <br/><br/>
-      <p align="left">Engineered interconnected relational databases, sprint trackers, and automated academic roadmaps managing hundreds of workflows.</p>
-      <img src="https://img.shields.io/badge/ROLE-SYSTEMS%20ARCHITECT-818CF8?style=flat-square" alt="Systems Architect"/>
-    </td>
-  </tr>
-</table>
-
-</div>
-
-<br/>
-
-<!-- ============================================================================== -->
-<!-- 📊 05. QUANTUM TELEMETRY & 3D GITHUB METRICS -->
-<!-- ============================================================================== -->
-
-<img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
-
-## 📊 05. Quantum GitHub Telemetry & Live Metrics
+## 📊 04. Quantum GitHub Telemetry & Live Metrics
 
 <div align="center">
 
@@ -283,14 +240,14 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📡 06. SUBSPACE FREQUENCY & NEURAL CONNECTION -->
+<!-- 📡 05. SUBSPACE FREQUENCY & NEURAL CONNECTION -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
 <div align="center">
 
-## 📡 06. Establish Neural Connection
+## 📡 05. Establish Neural Connection
 
 Code reveals what I engineer — **[LinkedIn](https://www.linkedin.com/in/mokshagna-tej-kalepalli-45220a359)** reveals my vision, insights, and journey.
 
