@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="100%" height="40">
+  <defs>
+    <linearGradient id="div-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00F2FE" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#E100FF" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#7F00FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7F00FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="div-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Glowing Laser Line -->
+  <line x1="100" y1="20" x2="1100" y2="20" stroke="url(#div-grad)" stroke-width="2" filter="url(#div-glow)"/>
+
+  <!-- Center Diamond Reticle -->
+  <g transform="translate(600, 20)">
+    <polygon points="0,-10 10,0 0,10 -10,0" fill="#05070E" stroke="#00F2FE" stroke-width="2" filter="url(#div-glow)"/>
+    <circle cx="0" cy="0" r="3.5" fill="#E100FF"/>
+  </g>
+
+  <!-- Flanking Tech Dots -->
+  <circle cx="560" cy="20" r="2.5" fill="#00F2FE" opacity="0.8"/>
+  <circle cx="530" cy="20" r="1.5" fill="#00F2FE" opacity="0.5"/>
+  <circle cx="640" cy="20" r="2.5" fill="#7F00FF" opacity="0.8"/>
+  <circle cx="670" cy="20" r="1.5" fill="#7F00FF" opacity="0.5"/>
+</svg>

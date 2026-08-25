@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070E"/>
+      <stop offset="50%" stop-color="#090E1A"/>
+      <stop offset="100%" stop-color="#0D091F"/>
+    </linearGradient>
+
+    <!-- Neon Text Gradients -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE">
+        <animate attributeName="stop-color" values="#00F2FE;#7F00FF;#E100FF;#00F2FE" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#4FACFE">
+        <animate attributeName="stop-color" values="#4FACFE;#E100FF;#00F2FE;#4FACFE" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#E100FF">
+        <animate attributeName="stop-color" values="#E100FF;#00F2FE;#7F00FF;#E100FF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#7F00FF"/>
+      <stop offset="100%" stop-color="#E100FF"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-heavy" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-subtle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Embedded CSS Animation -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(6deg); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(-8deg); }
+      }
+      @keyframes pulseGrid {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.35; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-320px); }
+        100% { transform: translateY(320px); }
+      }
+      @keyframes pulseBadge {
+        0%, 100% { opacity: 0.85; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.02); }
+      }
+      .floating-poly-1 { animation: floatSlow 7s ease-in-out infinite; transform-origin: center; }
+      .floating-poly-2 { animation: floatFast 5s ease-in-out infinite; transform-origin: center; }
+      .grid-lines { animation: pulseGrid 4s ease-in-out infinite; }
+      .hud-badge { animation: pulseBadge 3s ease-in-out infinite; transform-origin: center; }
+      .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; font-weight: 900; letter-spacing: 5px; }
+      .mono-text { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Cyber Grid Background -->
+  <g class="grid-lines" stroke="#00F2FE" stroke-width="0.8" opacity="0.2">
+    <!-- Vertical Perspective Lines -->
+    <line x1="100" y1="0" x2="0" y2="320" />
+    <line x1="250" y1="0" x2="180" y2="320" />
+    <line x1="400" y1="0" x2="380" y2="320" />
+    <line x1="550" y1="0" x2="560" y2="320" />
+    <line x1="650" y1="0" x2="640" y2="320" />
+    <line x1="800" y1="0" x2="820" y2="320" />
+    <line x1="950" y1="0" x2="1020" y2="320" />
+    <line x1="1100" y1="0" x2="1200" y2="320" />
+    
+    <!-- Horizontal Perspective Lines -->
+    <line x1="0" y1="200" x2="1200" y2="200" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke-width="0.8"/>
+    <line x1="0" y1="275" x2="1200" y2="275" stroke-width="1.2"/>
+    <line x1="0" y1="305" x2="1200" y2="305" stroke-width="1.6"/>
+  </g>
+
+  <!-- Cyber Neon Glow Orbs -->
+  <circle cx="180" cy="80" r="140" fill="#00F2FE" opacity="0.1" filter="url(#glow-heavy)"/>
+  <circle cx="1020" cy="180" r="160" fill="#7F00FF" opacity="0.12" filter="url(#glow-heavy)"/>
+  <circle cx="600" cy="160" r="180" fill="#E100FF" opacity="0.06" filter="url(#glow-heavy)"/>
+
+  <!-- 3D Isometric Floating Cubes Left -->
+  <g class="floating-poly-1" transform="translate(120, 140)">
+    <!-- 3D Isometric Cube -->
+    <!-- Top Face -->
+    <polygon points="0,-35 30,-50 60,-35 30,-20" fill="#00F2FE" opacity="0.85" filter="url(#glow-subtle)"/>
+    <!-- Left Face -->
+    <polygon points="0,-35 30,-20 30,15 0,0" fill="#007799" opacity="0.75"/>
+    <!-- Right Face -->
+    <polygon points="30,-20 60,-35 60,0 30,15" fill="#4FACFE" opacity="0.9"/>
+    <!-- Inner Cyber Core Point -->
+    <circle cx="30" cy="-18" r="3" fill="#FFFFFF" filter="url(#glow-heavy)"/>
+  </g>
+
+  <!-- 3D Isometric Floating Cubes Right -->
+  <g class="floating-poly-2" transform="translate(1020, 110)">
+    <!-- Top Face -->
+    <polygon points="0,-30 25,-45 50,-30 25,-15" fill="#E100FF" opacity="0.85" filter="url(#glow-subtle)"/>
+    <!-- Left Face -->
+    <polygon points="0,-30 25,-15 25,15 0,0" fill="#7F00FF" opacity="0.75"/>
+    <!-- Right Face -->
+    <polygon points="25,-15 50,-30 50,0 25,15" fill="#BD00FF" opacity="0.9"/>
+    <!-- Inner Cyber Core Point -->
+    <circle cx="25" cy="-15" r="3" fill="#FFFFFF" filter="url(#glow-heavy)"/>
+  </g>
+
+  <!-- Outer HUD Frame & Corner Reticles -->
+  <rect x="20" y="20" width="1160" height="280" rx="12" fill="none" stroke="url(#border-grad)" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Corner Tech Brackets -->
+  <path d="M 20,50 L 20,20 L 50,20" fill="none" stroke="#00F2FE" stroke-width="3.5"/>
+  <path d="M 1180,50 L 1180,20 L 1150,20" fill="none" stroke="#00F2FE" stroke-width="3.5"/>
+  <path d="M 20,270 L 20,300 L 50,300" fill="none" stroke="#E100FF" stroke-width="3.5"/>
+  <path d="M 1180,270 L 1180,300 L 1150,300" fill="none" stroke="#E100FF" stroke-width="3.5"/>
+
+  <!-- Top System Telemetry Label -->
+  <g class="mono-text" font-size="11" fill="#00F2FE" opacity="0.85">
+    <text x="45" y="44">● SYS.INIT // 2026.QUANTUM_BUILD</text>
+    <text x="960" y="44">CORE_STATUS: 100% OPTIMAL</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <!-- Subtle Back Glow -->
+  <text x="600" y="145" text-anchor="middle" class="title-text" font-size="52" fill="url(#title-grad)" filter="url(#glow-heavy)" opacity="0.6">
+    MOKSHAGNA TEJ
+  </text>
+  <!-- Sharp Foreground Text -->
+  <text x="600" y="145" text-anchor="middle" class="title-text" font-size="52" fill="url(#title-grad)">
+    MOKSHAGNA TEJ
+  </text>
+
+  <!-- High-Tech Pill Badge / Subtitle -->
+  <g class="hud-badge" transform="translate(600, 205)">
+    <rect x="-360" y="-20" width="720" height="40" rx="20" fill="#05070E" stroke="url(#border-grad)" stroke-width="1.8" filter="url(#glow-subtle)"/>
+    <text x="0" y="6" text-anchor="middle" class="mono-text" font-size="14" font-weight="bold" fill="#FFFFFF" letter-spacing="1.5">
+      FULL-STACK ARCHITECT <tspan fill="#00F2FE">✦</tspan> AI &amp; CLOUD INNOVATOR <tspan fill="#E100FF">✦</tspan> IMAGINE CUP '26
+    </text>
+  </g>
+
+  <!-- Bottom Coordinates Indicator -->
+  <g class="mono-text" font-size="10" fill="#7F00FF" opacity="0.8">
+    <text x="45" y="285">LOCATION: VEL TECH UNIVERSITY [VTU29491]</text>
+    <text x="975" y="285">ORBIT: FULL-STACK &amp; DSA [JAVA/C++]</text>
+  </g>
+
+  <!-- Glowing Accent Laser Line -->
+  <line x1="200" y1="318" x2="1000" y2="318" stroke="url(#border-grad)" stroke-width="2.5" filter="url(#glow-heavy)"/>
+</svg>

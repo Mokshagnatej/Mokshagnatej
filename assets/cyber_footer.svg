@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="140">
+  <defs>
+    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070E"/>
+      <stop offset="100%" stop-color="#0D091F"/>
+    </linearGradient>
+
+    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE">
+        <animate attributeName="stop-color" values="#00F2FE;#E100FF;#7F00FF;#00F2FE" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7F00FF">
+        <animate attributeName="stop-color" values="#7F00FF;#00F2FE;#E100FF;#7F00FF" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#E100FF">
+        <animate attributeName="stop-color" values="#E100FF;#7F00FF;#00F2FE;#E100FF" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="foot-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .foot-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif; font-weight: 600; letter-spacing: 2px; }
+      .foot-mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="140" rx="12" fill="url(#footer-grad)"/>
+
+  <!-- Top Laser Stroke -->
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#wave-grad)" stroke-width="3" filter="url(#foot-glow)"/>
+
+  <!-- Grid Accents -->
+  <g stroke="#00F2FE" stroke-width="0.5" opacity="0.15">
+    <line x1="200" y1="0" x2="200" y2="140"/>
+    <line x1="400" y1="0" x2="400" y2="140"/>
+    <line x1="600" y1="0" x2="600" y2="140"/>
+    <line x1="800" y1="0" x2="800" y2="140"/>
+    <line x1="1000" y1="0" x2="1000" y2="140"/>
+  </g>
+
+  <!-- Centered Transmission Message -->
+  <text x="600" y="62" text-anchor="middle" class="foot-text" font-size="16" fill="#FFFFFF">
+    INITIALIZED &amp; BROADCASTED FROM EARTH ORBIT ✦ 2026
+  </text>
+  
+  <text x="600" y="94" text-anchor="middle" class="foot-mono" font-size="12" fill="#00F2FE" opacity="0.85">
+    [ SYSTEM STATUS: 100% NOMINAL // ALWAYS OPEN FOR COLLABORATION ]
+  </text>
+
+  <circle cx="280" cy="60" r="3" fill="#00F2FE" filter="url(#foot-glow)"/>
+  <circle cx="920" cy="60" r="3" fill="#E100FF" filter="url(#foot-glow)"/>
+</svg>
