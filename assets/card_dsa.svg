@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-dsa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050914"/>
+      <stop offset="100%" stop-color="#0C152B"/>
+    </linearGradient>
+    <linearGradient id="glow-dsa" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#00D9FF"/>
+    </linearGradient>
+    <filter id="glow-dsa-f" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 20px; fill: #FFFFFF; }
+      .card-desc { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 11px; fill: #94A3B8; }
+      .card-chip { font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 10px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <rect width="580" height="240" rx="14" fill="url(#bg-dsa)" stroke="url(#glow-dsa)" stroke-width="1.6"/>
+  
+  <path d="M 12,30 L 12,12 L 30,12" fill="none" stroke="#FFD700" stroke-width="3"/>
+  <path d="M 568,30 L 568,12 L 550,12" fill="none" stroke="#00D9FF" stroke-width="3"/>
+
+  <!-- Status Badge -->
+  <g transform="translate(420, 20)">
+    <rect x="0" y="0" width="135" height="22" rx="6" fill="#000000" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="12" cy="11" r="3.5" fill="#FFD700"/>
+    <text x="22" y="15" class="card-chip" fill="#FFD700">● VERIFIED ALGO</text>
+  </g>
+
+  <!-- 3D Binary Tree / Graph Nodes Icon Left -->
+  <g transform="translate(30, 45)">
+    <!-- Root Node -->
+    <circle cx="30" cy="5" r="7" fill="#FFD700" filter="url(#glow-dsa-f)"/>
+    <!-- Left Child -->
+    <line x1="30" y1="5" x2="10" y2="30" stroke="#00D9FF" stroke-width="2"/>
+    <circle cx="10" cy="30" r="6" fill="#00D9FF"/>
+    <!-- Right Child -->
+    <line x1="30" y1="5" x2="50" y2="30" stroke="#00D9FF" stroke-width="2"/>
+    <circle cx="50" cy="30" r="6" fill="#00D9FF"/>
+    <!-- Bottom Child Leaf -->
+    <line x1="10" y1="30" x2="2" y2="52" stroke="#7F00FF" stroke-width="1.5"/>
+    <circle cx="2" cy="52" r="4.5" fill="#7F00FF"/>
+  </g>
+
+  <text x="95" y="60" class="card-title">Quantum DSA &amp; Testing Suite</text>
+  <text x="30" y="105" class="card-desc">
+    <tspan x="30" dy="0">&gt; Algorithmic problem-solving in Java, C, and C++.</tspan>
+    <tspan x="30" dy="16">&gt; LeetCode, HackerRank solutions &amp; rigorous unit tests.</tspan>
+    <tspan x="30" dy="16">&gt; Graph Theory · Dynamic Programming · Trees</tspan>
+  </text>
+
+  <!-- Tech Tags -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="55" height="22" rx="5" fill="#1E293B"/>
+    <text x="27" y="15" text-anchor="middle" class="card-chip" fill="#ED8B00">JAVA</text>
+
+    <rect x="65" y="0" width="115" height="22" rx="5" fill="#1E293B"/>
+    <text x="122" y="15" text-anchor="middle" class="card-chip" fill="#00D9FF">DATA STRUCTURES</text>
+
+    <rect x="190" y="0" width="80" height="22" rx="5" fill="#1E293B"/>
+    <text x="230" y="15" text-anchor="middle" class="card-chip" fill="#FFA116">LEETCODE</text>
+  </g>
+
+  <!-- Launch Button -->
+  <g transform="translate(390, 185)">
+    <rect x="0" y="0" width="165" height="36" rx="8" fill="#FFD700" filter="url(#glow-dsa-f)"/>
+    <text x="82" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="900" fill="#04060C">VIEW REPOSITORY ➔</text>
+  </g>
+</svg>

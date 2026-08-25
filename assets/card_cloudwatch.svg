@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-cw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914"/>
+      <stop offset="100%" stop-color="#0C1326"/>
+    </linearGradient>
+    <linearGradient id="glow-cw" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#7F00FF"/>
+    </linearGradient>
+    <filter id="glow-cw-f" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 20px; fill: #FFFFFF; }
+      .card-desc { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 11px; fill: #94A3B8; }
+      .card-chip { font-family: 'SFMono-Regular', Consolas, Menlo, monospace; font-size: 10px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="580" height="240" rx="14" fill="url(#bg-cw)" stroke="url(#glow-cw)" stroke-width="1.6"/>
+  
+  <!-- Corner Tech Accent -->
+  <path d="M 12,30 L 12,12 L 30,12" fill="none" stroke="#00F2FE" stroke-width="3"/>
+  <path d="M 568,30 L 568,12 L 550,12" fill="none" stroke="#7F00FF" stroke-width="3"/>
+  
+  <!-- Status Badge Top Right -->
+  <g transform="translate(420, 20)">
+    <rect x="0" y="0" width="135" height="22" rx="6" fill="#000000" stroke="#00FF87" stroke-width="1"/>
+    <circle cx="12" cy="11" r="3.5" fill="#00FF87"/>
+    <text x="22" y="15" class="card-chip" fill="#00FF87">● AI MONITORING</text>
+  </g>
+
+  <!-- 3D Isometric Server / Anomaly Wave Icon Left -->
+  <g transform="translate(30, 45)">
+    <!-- 3D Server Block Top -->
+    <polygon points="25,5 50,20 25,35 0,20" fill="#00F2FE" opacity="0.9"/>
+    <!-- Server Sides -->
+    <polygon points="0,20 25,35 25,55 0,40" fill="#007799"/>
+    <polygon points="25,35 50,20 50,40 25,55" fill="#00A3C4"/>
+    
+    <!-- Anomaly Pulse Ring -->
+    <ellipse cx="25" cy="65" rx="30" ry="10" fill="none" stroke="#7F00FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="25" cy="20" r="3" fill="#FFFFFF" filter="url(#glow-cw-f)"/>
+  </g>
+
+  <!-- Title & Description -->
+  <text x="95" y="60" class="card-title">Cloudwatch Server Anomaly</text>
+  <text x="30" y="105" class="card-desc">
+    <tspan x="30" dy="0">&gt; Full-stack real-time anomaly prediction engine.</tspan>
+    <tspan x="30" dy="16">&gt; Analyzes server metrics &amp; flags outliers instantly.</tspan>
+    <tspan x="30" dy="16">&gt; Flask Backend · React UI · ML Anomaly Core</tspan>
+  </text>
+
+  <!-- Tech Tags -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="60" height="22" rx="5" fill="#1E293B"/>
+    <text x="30" y="15" text-anchor="middle" class="card-chip" fill="#00F2FE">FLASK</text>
+
+    <rect x="70" y="0" width="60" height="22" rx="5" fill="#1E293B"/>
+    <text x="100" y="15" text-anchor="middle" class="card-chip" fill="#61DAFB">REACT</text>
+
+    <rect x="140" y="0" width="85" height="22" rx="5" fill="#1E293B"/>
+    <text x="182" y="15" text-anchor="middle" class="card-chip" fill="#E100FF">ML ENGINE</text>
+  </g>
+
+  <!-- Launch Button Bottom Right -->
+  <g transform="translate(390, 185)">
+    <rect x="0" y="0" width="165" height="36" rx="8" fill="#00F2FE" filter="url(#glow-cw-f)"/>
+    <text x="82" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="900" fill="#04060C">VIEW REPOSITORY ➔</text>
+  </g>
+</svg>

@@ -1,10 +1,12 @@
 <div align="center">
 
 <!-- ============================================================================== -->
-<!-- 🌌 FUTURISTIC CYBERPUNK 3D HEADER & HOLOGRAPHIC BANNER (REPO-NATIVE SVG) -->
+<!-- 🌌 3D ISOMETRIC CYBERPUNK HUD BANNER (REPO-NATIVE SVG) -->
 <!-- ============================================================================== -->
 
-<img src="./assets/cyber_header.svg" width="100%" alt="Mokshagna Tej Futuristic 3D Cyber Header"/>
+<a href="https://github.com/Mokshagnatej">
+  <img src="./assets/cyber_header.svg" width="100%" alt="Mokshagna Tej Futuristic 3D Cyber Header"/>
+</a>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/mokshagna-tej-kalepalli-45220a359">
@@ -27,12 +29,12 @@
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🪐 NEURAL DIAGNOSTICS & SYSTEM SPECS (ABOUT ME) -->
+<!-- 🛰️ 01. NEURAL DIAGNOSTICS & BENTO PROFILE DECK -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
 
-## 🛰️ 01. Neural Diagnostics & Telemetry
+## 🛰️ 01. Neural Diagnostics & Bento Profile Deck
 
 ```yaml
 system_identity:
@@ -57,6 +59,23 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <br/>
 
+<details>
+<summary><b>⚡ [ CLICK TO EXPAND ADVANCED TELEMETRY &amp; SYSTEM LOGS ]</b></summary>
+<br/>
+
+```zsh
+[+] OPERATOR_NAME : Mokshagna Tej Kalepalli
+[+] SPECIALIZATION: Full-Stack Engineering (MERN) · Cloud Architecture · Algorithmic Optimization
+[+] METHODOLOGY   : Modular Component Systems · REST APIs · High-Throughput Data Pipelines
+[+] CORE_TOOLS    : React · Node.js · Express · Flask · Azure Cloud · OpenAI API · MongoDB · MySQL
+[+] DESIGN_SUITE  : Figma Prototyping · Editorial Layouts · Notion Relational Databases
+[+] TELEMETRY_PING: 100% NOMINAL // READY FOR GLOBAL COLLABORATION
+```
+
+</details>
+
+<br/>
+
 <a href="https://www.linkedin.com/in/mokshagna-tej-kalepalli-45220a359">
   <img src="https://img.shields.io/badge/ACCESS_FULL_DOSSIER-EXPLORE_LINKEDIN-00F2FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080B10" alt="LinkedIn Dossier"/>
 </a>
@@ -66,7 +85,7 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- ⚡ 3D & ISOMETRIC CYBER ARSENAL (TECH STACK) -->
+<!-- ⚡ 02. 3D & ISOMETRIC CYBER ARSENAL (TECH STACK) -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
@@ -75,7 +94,7 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <div align="center">
 
-<!-- 3D Interactive Icon Matrix -->
+<!-- 3D Interactive Skill Matrix -->
 <p>
   <img src="https://skillicons.dev/icons?i=py,java,c,cpp,js,ts,mysql,mongodb,express,react,nodejs,nextjs,flask,azure,git,docker,figma,notion&perline=9&theme=dark" alt="Tech Stack Icons" />
 </p>
@@ -130,89 +149,46 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🪐 HOLOGRAPHIC PROJECT SHOWCASES (FEATURED DEPLOYMENTS) -->
+<!-- 🪐 03. 3D BENTO PROJECT DEPLOYMENTS (FEATURED WORKS) -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
 
-## 🪐 03. Flagship Deployments & Quantum Projects
+## 🪐 03. Flagship Deployments & 3D Project Bento
 
 <div align="center">
 
+<!-- Microsoft Imagine Cup 2026 3D Banner -->
+<a href="https://github.com/Mokshagnatej">
+  <img src="./assets/card_imagine_cup.svg" width="100%" alt="Microsoft Imagine Cup 2026"/>
+</a>
+
+<br/><br/>
+
+<!-- 2x2 3D Bento Project Cards -->
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <p align="right"><img src="https://img.shields.io/badge/STATUS-ACTIVE%20AI-00FF87?style=flat-square" alt="Active AI"/></p>
-      <h3>📊 Cloudwatch Server Anomaly</h3>
-      <p>Real-time full-stack anomaly detection engine designed to stream and flag irregular server metric patterns with sub-second latency.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
-        <img src="https://img.shields.io/badge/ML%20Engine-7F00FF?style=flat-square" alt="ML"/>
-      </p>
-      <br/>
       <a href="https://github.com/Mokshagnatej/Cloudwatch-server-anomaly">
-        <img src="https://img.shields.io/badge/LAUNCH_REPO-00F2FE?style=for-the-badge&logo=github&logoColor=black" alt="View Repo"/>
+        <img src="./assets/card_cloudwatch.svg" width="100%" alt="Cloudwatch Server Anomaly"/>
       </a>
     </td>
     <td width="50%" valign="top">
-      <p align="right"><img src="https://img.shields.io/badge/STATUS-INNOVATION-00D9FF?style=flat-square" alt="Innovation"/></p>
-      <h3>🌾 FarmIO Autonomous Agro-Deck</h3>
-      <p>Precision organic agriculture platform empowering farmers with telemetry-driven soil analytics, resource optimization, and yield prediction.</p>
-      <p>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JS"/>
-        <img src="https://img.shields.io/badge/Full--Stack-0052CC?style=flat-square" alt="Full Stack"/>
-        <img src="https://img.shields.io/badge/AgroTech-00FF87?style=flat-square" alt="AgroTech"/>
-      </p>
-      <br/>
       <a href="https://github.com/Mokshagnatej/FarmIO-Precision-Organic-Farming-Platform-Enhancing-Farmer-Livelihood-through-Innovation">
-        <img src="https://img.shields.io/badge/LAUNCH_REPO-7F00FF?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"/>
+        <img src="./assets/card_farmio.svg" width="100%" alt="FarmIO Platform"/>
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p align="right"><img src="https://img.shields.io/badge/STATUS-UX%20REMASTERED-E100FF?style=flat-square" alt="Remastered"/></p>
-      <h3>🚆 RailYatra Next-Gen Transit HUD</h3>
-      <p>A ground-up reimagination of Indian Railways ticketing and trip discovery, solving transit UX friction with instantaneous booking flows.</p>
-      <p>
-        <img src="https://img.shields.io/badge/React%20UI-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React UI"/>
-        <img src="https://img.shields.io/badge/UI/UX-FF61F6?style=flat-square" alt="UI/UX"/>
-        <img src="https://img.shields.io/badge/Design%20System-000000?style=flat-square" alt="Design"/>
-      </p>
-      <br/>
       <a href="https://github.com/Mokshagnatej/RailYatra-Next-Gen-IRCTC-Indian-Railways-Redesign">
-        <img src="https://img.shields.io/badge/LAUNCH_REPO-E100FF?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"/>
+        <img src="./assets/card_railyatra.svg" width="100%" alt="RailYatra"/>
       </a>
     </td>
     <td width="50%" valign="top">
-      <p align="right"><img src="https://img.shields.io/badge/STATUS-VERIFIED%20ALGO-FFD700?style=flat-square" alt="Algo"/></p>
-      <h3>🧩 Quantum DSA & Algorithm Solver</h3>
-      <p>Production-tested algorithmic solutions tackling complex dynamic programming, graph theory, trees, and rigorous automated testing suites.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
-        <img src="https://img.shields.io/badge/Data%20Structures-00599C?style=flat-square" alt="DSA"/>
-        <img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode"/>
-      </p>
-      <br/>
       <a href="https://github.com/Mokshagnatej/Problem-solving-and-testing-S2-2">
-        <img src="https://img.shields.io/badge/LAUNCH_REPO-00D9FF?style=for-the-badge&logo=github&logoColor=black" alt="View Repo"/>
+        <img src="./assets/card_dsa.svg" width="100%" alt="DSA Problem Solving"/>
       </a>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- Special Feature Banner -->
-<table width="100%">
-  <tr>
-    <td align="center">
-      <h3>🏆 Microsoft Imagine Cup 2026 — Global AI Initiative</h3>
-      <p>Engineering a groundbreaking AI-driven solution end-to-end leveraging <b>Microsoft Azure Cloud Architecture</b> and <b>OpenAI Enterprise APIs</b> to tackle real-world global challenges.</p>
-      <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white&labelColor=080B10" alt="Azure"/>
-      <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=080B10" alt="OpenAI"/>
-      <img src="https://img.shields.io/badge/Imagine%20Cup%20%2726-00FF87?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=080B10" alt="Imagine Cup"/>
     </td>
   </tr>
 </table>
@@ -222,7 +198,7 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🛰️ CAREER FLIGHT LOG & CREATIVE WORK -->
+<!-- 🛰️ 04. CAREER FLIGHT LOG & CREATIVE WORK -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
@@ -265,7 +241,7 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📊 REAL-TIME QUANTUM TELEMETRY (GITHUB ANALYTICS & 3D PROFILE METRICS) -->
+<!-- 📊 05. QUANTUM TELEMETRY & 3D GITHUB METRICS -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
@@ -307,7 +283,7 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📡 SUBSPACE TRANSMISSION & FOOTER -->
+<!-- 📡 06. SUBSPACE FREQUENCY & NEURAL CONNECTION -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Cyber Divider"/>
