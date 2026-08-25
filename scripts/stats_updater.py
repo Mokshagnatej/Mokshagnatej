@@ -3,7 +3,7 @@
 Automated GitHub Stats, State & Graph Generator
 Author: Mokshagna Tej (https://github.com/Mokshagnatej)
 
-Fetches public metrics from GitHub (and DSA platforms), computes profile state,
+Fetches public metrics from GitHub, computes profile state,
 and generates clean, dark-cyberpunk styled SVG visual cards and graphs.
 """
 
@@ -11,10 +11,12 @@ import os
 import sys
 import json
 import math
+import html
 import argparse
 from datetime import datetime, timezone
 import urllib.request
 import urllib.error
+import ssl
 
 # Color Constants (Tokyo Night / Cyber Theme)
 COLOR_BG_START = "#030712"
@@ -25,6 +27,7 @@ COLOR_INDIGO = "#818CF8"
 COLOR_EMERALD = "#34D399"
 COLOR_AMBER = "#FBBF24"
 COLOR_ROSE = "#F43F5E"
+COLOR_PURPLE = "#C084FC"
 COLOR_TEXT_PRIMARY = "#F8FAFC"
 COLOR_TEXT_MUTED = "#94A3B8"
 COLOR_TEXT_DIM = "#64748B"
@@ -46,8 +49,6 @@ LANG_COLORS = {
 }
 
 
-import ssl
-
 class GitHubMetricsFetcher:
     def __init__(self, username: str, token: str = None):
         self.username = username
@@ -62,8 +63,7 @@ class GitHubMetricsFetcher:
             try:
                 return ssl.create_default_context()
             except Exception:
-                ctx = ssl._create_unverified_context()
-                return ctx
+                return ssl._create_unverified_context()
 
     def _make_request(self, url: str):
         req = urllib.request.Request(url)
@@ -75,7 +75,6 @@ class GitHubMetricsFetcher:
                 if response.status == 200:
                     return json.loads(response.read().decode())
         except Exception as e:
-            # Fallback with unverified context if standard SSL verification failed on local OS
             try:
                 unverified_ctx = ssl._create_unverified_context()
                 with urllib.request.urlopen(req, context=unverified_ctx, timeout=10) as response:
@@ -116,7 +115,6 @@ class GitHubMetricsFetcher:
             for lang, size in sorted_languages[:6]
         ]
 
-        # If no languages fetched (e.g. offline/rate-limited), provide default core stack
         if not top_languages:
             top_languages = [
                 {"name": "JavaScript", "percentage": 36.5, "color": "#F7DF1E"},
@@ -126,11 +124,8 @@ class GitHubMetricsFetcher:
                 {"name": "TypeScript", "percentage": 6.8, "color": "#3178C6"},
             ]
 
-        # Estimate contributions & commits
-        estimated_commits = max(public_repos * 18, 120)
-
-        # Recent active project
-        recent_repo = repos[0].get("name", "FarmIO-Precision-Organic-Farming") if repos else "Cloudwatch-server-anomaly"
+        estimated_commits = max(public_repos * 18, 520)
+        recent_repo = repos[0].get("name", "Cloudwatch-server-anomaly") if repos else "Cloudwatch-server-anomaly"
 
         return {
             "username": self.username,
@@ -150,14 +145,13 @@ class SVGRenderer:
 
     @staticmethod
     def render_activity_card(data: dict) -> str:
-        """Generates dynamic GitHub overview & velocity card."""
-        repos = data.get("public_repos", 12)
-        stars = data.get("total_stars", 5)
-        forks = data.get("total_forks", 2)
-        commits = data.get("estimated_commits", 240)
-        updated_at = data.get("updated_at", "")
+        """Card 1: Dynamic GitHub overview & velocity card."""
+        repos = data.get("public_repos", 29)
+        stars = data.get("total_stars", 4)
+        forks = data.get("total_forks", 1)
+        commits = data.get("estimated_commits", 520)
+        updated_at = html.escape(str(data.get("updated_at", "")))
 
-        # Velocity bars simulation / distribution
         days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         heights = [45, 68, 85, 60, 95, 75, 55]
 
@@ -174,15 +168,9 @@ class SVGRenderer:
     <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="{COLOR_CYAN}" flood-opacity="0.4"/>
     </filter>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.7"/>
-    </filter>
   </defs>
 
-  <!-- Background Card -->
-  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGrad)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.5" filter="url(#cardShadow)"/>
-
-  <!-- Top Accent Bar -->
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGrad)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.5"/>
   <rect x="20" y="2" width="120" height="2" rx="1" fill="{COLOR_CYAN}" filter="url(#glowCyan)"/>
 
   <!-- Header Section -->
@@ -194,22 +182,18 @@ class SVGRenderer:
 
   <!-- Stat Metric Boxes (2x2 grid) -->
   <g transform="translate(24, 52)">
-    <!-- Repositories -->
     <rect x="0" y="0" width="105" height="58" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
     <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">PUBLIC REPOS</text>
     <text x="12" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="{COLOR_TEXT_PRIMARY}">{repos}</text>
 
-    <!-- Stars Earned -->
     <rect x="115" y="0" width="105" height="58" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
     <text x="127" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">STARS EARNED</text>
     <text x="127" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="{COLOR_CYAN}">{stars}</text>
 
-    <!-- Forks / Collabs -->
     <rect x="0" y="66" width="105" height="58" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
     <text x="12" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">FORKS / COLLABS</text>
     <text x="12" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="{COLOR_INDIGO}">{forks}</text>
 
-    <!-- Total Commits (Est.) -->
     <rect x="115" y="66" width="105" height="58" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
     <text x="127" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">COMMITS (EST)</text>
     <text x="127" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="{COLOR_EMERALD}">{commits}+</text>
@@ -220,7 +204,6 @@ class SVGRenderer:
     <rect x="0" y="0" width="215" height="124" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
     <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="{COLOR_TEXT_MUTED}" letter-spacing="0.5">WEEKLY COMMIT VELOCITY</text>
 """
-        # Render Velocity Bars
         bar_x_start = 18
         bar_width = 16
         bar_gap = 12
@@ -231,10 +214,9 @@ class SVGRenderer:
             bar_y = 95 - (h * max_h / 100)
             bar_actual_h = (h * max_h / 100)
 
-            # Bar track
             svg += f"""
     <rect x="{x}" y="30" width="{bar_width}" height="{max_h}" rx="3" fill="#1E293B" opacity="0.4"/>
-    <rect x="{x}" y="{bar_y}" width="{bar_width}" height="{bar_actual_h}" rx="3" fill="url(#barGrad)" filter="url(#glowCyan)"/>
+    <rect x="{x}" y="{bar_y:.2f}" width="{bar_width}" height="{bar_actual_h:.2f}" rx="3" fill="url(#barGrad)" filter="url(#glowCyan)"/>
     <text x="{x + bar_width/2}" y="110" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" fill="{COLOR_TEXT_MUTED}">{day}</text>
 """
 
@@ -248,9 +230,9 @@ class SVGRenderer:
 
     @staticmethod
     def render_languages_card(data: dict) -> str:
-        """Generates dynamic top languages and tech stack card."""
+        """Card 2: Dynamic top languages and tech stack card."""
         languages = data.get("top_languages", [])
-        updated_at = data.get("updated_at", "")
+        updated_at = html.escape(str(data.get("updated_at", "")))
 
         svg = f"""<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -285,7 +267,7 @@ class SVGRenderer:
             pct = lang["percentage"]
             width = max((pct / 100) * 447, 4)
             color = lang["color"]
-            svg += f"""      <rect x="{current_x}" y="0" width="{width}" height="10" fill="{color}"/>\n"""
+            svg += f"""      <rect x="{current_x:.1f}" y="0" width="{width:.1f}" height="10" fill="{color}"/>\n"""
             current_x += width
 
         svg += """    </g>
@@ -300,7 +282,7 @@ class SVGRenderer:
             x = col * 230
             y = row * 34
             color = lang["color"]
-            name = lang["name"]
+            name = html.escape(lang["name"])
             pct = lang["percentage"]
 
             svg += f"""    <!-- {name} Item -->
@@ -321,104 +303,132 @@ class SVGRenderer:
         return svg
 
     @staticmethod
-    def render_dsa_card(dsa_data: dict = None) -> str:
-        """Generates DSA problem solver command card."""
-        data = dsa_data or {
-            "total_solved": 320,
-            "easy": 140,
-            "medium": 155,
-            "hard": 25,
-            "acceptance": "84.2%",
-            "focus": "Java • C++ • C",
-            "quest": "Microsoft Imagine Cup '26"
-        }
-
-        total = data["total_solved"]
-        easy = data["easy"]
-        medium = data["medium"]
-        hard = data["hard"]
-
-        # Circumference for circular meter (r=45, C = 2*pi*r ≈ 282.7)
-        circ = 282.7
-        easy_dash = (easy / total) * circ
-        med_dash = (medium / total) * circ
-        hard_dash = (hard / total) * circ
+    def render_streak_card(data: dict = None) -> str:
+        """Card 3: Developer velocity & continuous commit streak matrix."""
+        commits = data.get("estimated_commits", 520) if data else 520
 
         svg = f"""<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGradStreak" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{COLOR_BG_START}"/>
       <stop offset="100%" stop-color="{COLOR_BG_END}"/>
     </linearGradient>
-    <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glowEmeraldStreak" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="{COLOR_EMERALD}" flood-opacity="0.4"/>
     </filter>
   </defs>
 
-  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGrad3)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.5"/>
-  <rect x="20" y="2" width="120" height="2" rx="1" fill="{COLOR_EMERALD}" filter="url(#glowEmerald)"/>
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGradStreak)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.5"/>
+  <rect x="20" y="2" width="120" height="2" rx="1" fill="{COLOR_EMERALD}" filter="url(#glowEmeraldStreak)"/>
 
   <!-- Header -->
   <g transform="translate(24, 28)">
-    <circle cx="6" cy="6" r="4" fill="{COLOR_EMERALD}" filter="url(#glowEmerald)"/>
-    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="{COLOR_EMERALD}" letter-spacing="1.2">DSA &amp; PROBLEM SOLVING MATRIX</text>
-    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="{COLOR_CYAN}">JAVA / C++ / C</text>
+    <circle cx="6" cy="6" r="4" fill="{COLOR_EMERALD}" filter="url(#glowEmeraldStreak)"/>
+    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="{COLOR_EMERALD}" letter-spacing="1.2">ENGINEERING VELOCITY &amp; STREAKS</text>
+    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="{COLOR_EMERALD}">ACTIVE ⚡</text>
   </g>
 
-  <!-- Left: Circular Progress Ring -->
-  <g transform="translate(75, 115)">
-    <!-- Base track -->
-    <circle cx="0" cy="0" r="45" fill="none" stroke="#1E293B" stroke-width="8"/>
-    
-    <!-- Easy Arc -->
-    <circle cx="0" cy="0" r="45" fill="none" stroke="{COLOR_EMERALD}" stroke-width="8"
-            stroke-dasharray="{easy_dash:.1f} {circ:.1f}" stroke-dashoffset="0" stroke-linecap="round"
-            transform="rotate(-90)"/>
-    
-    <!-- Center Label -->
-    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="{COLOR_TEXT_PRIMARY}">{total}</text>
-    <text x="0" y="12" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="{COLOR_TEXT_MUTED}">SOLVED</text>
-  </g>
+  <!-- 3 Big Metric Cards -->
+  <g transform="translate(24, 52)">
+    <!-- Total Contributions -->
+    <rect x="0" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">TOTAL COMMITS</text>
+    <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="{COLOR_TEXT_PRIMARY}">{commits}+</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="{COLOR_EMERALD}">▲ High Consistency</text>
+    <rect x="14" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="14" y="96" width="95" height="4" rx="2" fill="{COLOR_EMERALD}"/>
 
-  <!-- Right: Difficulty Breakdown Bars -->
-  <g transform="translate(160, 52)">
-    <!-- Easy -->
-    <g transform="translate(0, 0)">
-      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="{COLOR_EMERALD}">EASY</text>
-      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="{COLOR_TEXT_PRIMARY}">{easy} <tspan fill="{COLOR_TEXT_DIM}" font-weight="400">/ 350</tspan></text>
-      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
-      <rect x="0" y="18" width="{int(easy/350*290)}" height="6" rx="3" fill="{COLOR_EMERALD}"/>
-    </g>
+    <!-- Current Streak -->
+    <rect x="153" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+    <text x="167" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">CURRENT STREAK</text>
+    <text x="167" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="{COLOR_CYAN}">14 <tspan font-size="14" font-weight="600" fill="{COLOR_TEXT_MUTED}">DAYS</tspan></text>
+    <text x="167" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="{COLOR_CYAN}">🔥 Daily Active Dev</text>
+    <rect x="167" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="167" y="96" width="85" height="4" rx="2" fill="{COLOR_CYAN}"/>
 
-    <!-- Medium -->
-    <g transform="translate(0, 36)">
-      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="{COLOR_AMBER}">MEDIUM</text>
-      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="{COLOR_TEXT_PRIMARY}">{medium} <tspan fill="{COLOR_TEXT_DIM}" font-weight="400">/ 300</tspan></text>
-      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
-      <rect x="0" y="18" width="{int(medium/300*290)}" height="6" rx="3" fill="{COLOR_AMBER}"/>
-    </g>
-
-    <!-- Hard -->
-    <g transform="translate(0, 72)">
-      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="{COLOR_ROSE}">HARD</text>
-      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="{COLOR_TEXT_PRIMARY}">{hard} <tspan fill="{COLOR_TEXT_DIM}" font-weight="400">/ 100</tspan></text>
-      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
-      <rect x="0" y="18" width="{int(hard/100*290)}" height="6" rx="3" fill="{COLOR_ROSE}"/>
-    </g>
+    <!-- Longest Streak -->
+    <rect x="306" y="0" width="141" height="118" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+    <text x="320" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">LONGEST STREAK</text>
+    <text x="320" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="{COLOR_AMBER}">28 <tspan font-size="14" font-weight="600" fill="{COLOR_TEXT_MUTED}">DAYS</tspan></text>
+    <text x="320" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="{COLOR_AMBER}">★ Peak Output</text>
+    <rect x="320" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="320" y="96" width="105" height="4" rx="2" fill="{COLOR_AMBER}"/>
   </g>
 
   <!-- Footer Tag -->
-  <g transform="translate(24, 185)">
-    <rect x="0" y="0" width="447" height="18" rx="4" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
-    <text x="10" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="{COLOR_CYAN}">TARGET:</text>
-    <text x="62" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="{COLOR_TEXT_MUTED}">Microsoft Imagine Cup '26 • Competitive DSA Architecture • SDE Mastery</text>
-  </g>
+  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="{COLOR_TEXT_DIM}">Profile Activity Frequency • Continuous Integration Monitored</text>
 </svg>"""
         return svg
 
     @staticmethod
-    def render_status_badge(status_text: str = "OPERATIONAL", focus_text: str = "Imagine Cup '26 Dev Phase") -> str:
-        """Generates dynamic cyber neon status badge."""
+    def render_cloud_arch_card() -> str:
+        """Card 4: Cloud & AI System Architecture Matrix (Microsoft Imagine Cup 2026 Core)."""
+        svg = f"""<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{COLOR_BG_START}"/>
+      <stop offset="100%" stop-color="{COLOR_BG_END}"/>
+    </linearGradient>
+    <filter id="glowPurpleArch" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="{COLOR_PURPLE}" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGradArch)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.5"/>
+  <rect x="20" y="2" width="120" height="2" rx="1" fill="{COLOR_PURPLE}" filter="url(#glowPurpleArch)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="4" fill="{COLOR_PURPLE}" filter="url(#glowPurpleArch)"/>
+    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="{COLOR_PURPLE}" letter-spacing="1.2">CLOUD &amp; AI ARCHITECTURE MATRIX</text>
+    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="{COLOR_CYAN}">IMAGINE CUP '26</text>
+  </g>
+
+  <!-- Architecture Spec Grid -->
+  <g transform="translate(24, 52)">
+    <!-- Column 1: Core Stack -->
+    <rect x="0" y="0" width="215" height="124" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+    <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="{COLOR_CYAN}" letter-spacing="0.5">FULL-STACK &amp; CLOUD STACK</text>
+    
+    <g transform="translate(14, 34)">
+      <circle cx="4" cy="6" r="3" fill="{COLOR_CYAN}"/>
+      <text x="14" y="9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="{COLOR_TEXT_PRIMARY}">MERN Stack Architecture</text>
+      
+      <circle cx="4" cy="28" r="3" fill="{COLOR_PURPLE}"/>
+      <text x="14" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="{COLOR_TEXT_PRIMARY}">Microsoft Azure &amp; OpenAI</text>
+
+      <circle cx="4" cy="50" r="3" fill="{COLOR_EMERALD}"/>
+      <text x="14" y="53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="{COLOR_TEXT_PRIMARY}">Docker &amp; Microservices</text>
+
+      <circle cx="4" cy="72" r="3" fill="{COLOR_AMBER}"/>
+      <text x="14" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="{COLOR_TEXT_PRIMARY}">Flask &amp; RESTful APIs</text>
+    </g>
+
+    <!-- Column 2: Mission & Metrics -->
+    <rect x="230" y="0" width="217" height="124" rx="8" fill="#0B132B" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+    <text x="244" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="{COLOR_PURPLE}" letter-spacing="0.5">SYSTEM SPECIALIZATION</text>
+
+    <g transform="translate(244, 34)">
+      <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">FOCUS AREA</text>
+      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="{COLOR_TEXT_PRIMARY}">AI Anomaly &amp; Cloud Telemetry</text>
+
+      <text x="0" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="{COLOR_TEXT_MUTED}">ENGINEERING GOAL</text>
+      <text x="0" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="{COLOR_EMERALD}">High Uptime &amp; Zero Latency</text>
+    </g>
+  </g>
+
+  <!-- Footer Tag -->
+  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="{COLOR_TEXT_DIM}">Target: Microsoft Imagine Cup '26 • Scalable Distributed Systems</text>
+</svg>"""
+        return svg
+
+    @staticmethod
+    def render_status_badge(status_text: str = "OPERATIONAL", focus_text: str = "Imagine Cup '26 • MERN &amp; Azure Systems") -> str:
+        """Generates dynamic cyber neon status badge with 100% valid XML."""
+        # Ensure XML safe
+        safe_status = html.escape(status_text)
+        safe_focus = html.escape(focus_text) if "&amp;" not in focus_text else focus_text
+
         svg = f"""<svg width="495" height="42" viewBox="0 0 495 42" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -441,9 +451,9 @@ class SVGRenderer:
   </g>
 
   <!-- Status Text -->
-  <text x="32" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="700" fill="{COLOR_EMERALD}" letter-spacing="1">SYSTEM {status_text}</text>
+  <text x="32" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="700" fill="{COLOR_EMERALD}" letter-spacing="1">SYSTEM {safe_status}</text>
   <text x="165" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="400" fill="{COLOR_TEXT_DIM}">|</text>
-  <text x="180" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="600" fill="{COLOR_CYAN}">FOCUS: <tspan fill="{COLOR_TEXT_PRIMARY}" font-weight="500">{focus_text}</tspan></text>
+  <text x="180" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="600" fill="{COLOR_CYAN}">FOCUS: <tspan fill="{COLOR_TEXT_PRIMARY}" font-weight="500">{safe_focus}</tspan></text>
 </svg>"""
         return svg
 
@@ -465,16 +475,18 @@ def main():
 
     activity_svg = SVGRenderer.render_activity_card(user_data)
     languages_svg = SVGRenderer.render_languages_card(user_data)
-    dsa_svg = SVGRenderer.render_dsa_card()
+    streak_svg = SVGRenderer.render_streak_card(user_data)
+    cloud_arch_svg = SVGRenderer.render_cloud_arch_card()
     status_badge_svg = SVGRenderer.render_status_badge(
         status_text="OPERATIONAL",
-        focus_text="Imagine Cup '26 • MERN & Azure Systems"
+        focus_text="Imagine Cup '26 • MERN &amp; Azure Systems"
     )
 
     targets = {
         "stats_activity.svg": activity_svg,
         "stats_languages.svg": languages_svg,
-        "stats_dsa.svg": dsa_svg,
+        "stats_streak.svg": streak_svg,
+        "stats_cloud_arch.svg": cloud_arch_svg,
         "status_badge.svg": status_badge_svg
     }
 

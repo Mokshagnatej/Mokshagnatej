@@ -1,0 +1,51 @@
+<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradStreak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <filter id="glowEmeraldStreak" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34D399" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGradStreak)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="20" y="2" width="120" height="2" rx="1" fill="#34D399" filter="url(#glowEmeraldStreak)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="4" fill="#34D399" filter="url(#glowEmeraldStreak)"/>
+    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="#34D399" letter-spacing="1.2">ENGINEERING VELOCITY &amp; STREAKS</text>
+    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="#34D399">ACTIVE ⚡</text>
+  </g>
+
+  <!-- 3 Big Metric Cards -->
+  <g transform="translate(24, 52)">
+    <!-- Total Contributions -->
+    <rect x="0" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">TOTAL COMMITS</text>
+    <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">522+</text>
+    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#34D399">▲ High Consistency</text>
+    <rect x="14" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="14" y="96" width="95" height="4" rx="2" fill="#34D399"/>
+
+    <!-- Current Streak -->
+    <rect x="153" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="167" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">CURRENT STREAK</text>
+    <text x="167" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#38BDF8">14 <tspan font-size="14" font-weight="600" fill="#94A3B8">DAYS</tspan></text>
+    <text x="167" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#38BDF8">🔥 Daily Active Dev</text>
+    <rect x="167" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="167" y="96" width="85" height="4" rx="2" fill="#38BDF8"/>
+
+    <!-- Longest Streak -->
+    <rect x="306" y="0" width="141" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="320" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">LONGEST STREAK</text>
+    <text x="320" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#FBBF24">28 <tspan font-size="14" font-weight="600" fill="#94A3B8">DAYS</tspan></text>
+    <text x="320" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#FBBF24">★ Peak Output</text>
+    <rect x="320" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
+    <rect x="320" y="96" width="105" height="4" rx="2" fill="#FBBF24"/>
+  </g>
+
+  <!-- Footer Tag -->
+  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Profile Activity Frequency • Continuous Integration Monitored</text>
+</svg>

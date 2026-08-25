@@ -25,12 +25,12 @@
       <clipPath id="langBarClip">
         <rect x="0" y="0" width="447" height="10" rx="5"/>
       </clipPath>
-      <rect x="0" y="0" width="232.44" height="10" fill="#DA5B0B"/>
-      <rect x="232.44" y="0" width="114.879" height="10" fill="#F7DF1E"/>
-      <rect x="347.319" y="0" width="98.34" height="10" fill="#3178C6"/>
-      <rect x="445.659" y="0" width="4" height="10" fill="#ED8B00"/>
-      <rect x="449.659" y="0" width="4" height="10" fill="#38BDF8"/>
-      <rect x="453.659" y="0" width="4" height="10" fill="#F34B7D"/>
+      <rect x="0.0" y="0" width="232.4" height="10" fill="#DA5B0B"/>
+      <rect x="232.4" y="0" width="114.9" height="10" fill="#F7DF1E"/>
+      <rect x="347.3" y="0" width="98.3" height="10" fill="#3178C6"/>
+      <rect x="445.7" y="0" width="4.0" height="10" fill="#ED8B00"/>
+      <rect x="449.7" y="0" width="4.0" height="10" fill="#38BDF8"/>
+      <rect x="453.7" y="0" width="4.0" height="10" fill="#F34B7D"/>
     </g>
   </g>
 
@@ -87,5 +87,5 @@
   </g>
 
   <!-- Footer -->
-  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Real-Time Byte Analysis • Aug 25, 2026 - 18:26 UTC</text>
+  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Real-Time Byte Analysis • Aug 25, 2026 - 18:31 UTC</text>
 </svg>

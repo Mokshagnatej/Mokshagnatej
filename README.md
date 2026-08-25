@@ -112,8 +112,8 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
       </a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Mokshagnatej/Problem-solving-and-testing-S2-2">
-        <img src="./assets/card_dsa.svg" width="100%" alt="DSA Problem Solving"/>
+      <a href="https://github.com/Mokshagnatej/Internship-Innolift-Ventures">
+        <img src="./assets/card_innolift.svg" width="100%" alt="Innolift Ventures SDE &amp; ML Track"/>
       </a>
     </td>
   </tr>
@@ -138,19 +138,22 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <br/><br/>
 
-<!-- Automated 2x2 Bento Stats & Graphs Cards -->
+<!-- Automated 2x2 Bento Analytics & Architecture Grid -->
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <img src="./assets/stats_activity.svg" width="100%" alt="GitHub Analytics & Velocity"/>
+      <img src="./assets/stats_activity.svg" width="100%" alt="GitHub Analytics &amp; Velocity"/>
     </td>
     <td width="50%" valign="top">
-      <img src="./assets/stats_languages.svg" width="100%" alt="Tech Ecosystem & Languages"/>
+      <img src="./assets/stats_languages.svg" width="100%" alt="Tech Ecosystem &amp; Languages"/>
     </td>
   </tr>
   <tr>
-    <td width="100%" colspan="2" valign="top">
-      <img src="./assets/stats_dsa.svg" width="100%" alt="DSA & Problem Solving Matrix"/>
+    <td width="50%" valign="top">
+      <img src="./assets/stats_streak.svg" width="100%" alt="Engineering Velocity &amp; Streaks"/>
+    </td>
+    <td width="50%" valign="top">
+      <img src="./assets/stats_cloud_arch.svg" width="100%" alt="Cloud &amp; AI Architecture Matrix"/>
     </td>
   </tr>
 </table>
