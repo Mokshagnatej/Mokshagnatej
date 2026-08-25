@@ -129,18 +129,36 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
-## 📊 GitHub Analytics
+## 📊 GitHub Analytics & System State
 
 <div align="center">
 
-<!-- GitHub Stats & Top Languages Side-by-Side -->
-<p align="center">
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mokshagnatej&show_icons=true&theme=tokyonight&hide_border=true&bg_color=030712&title_color=38BDF8&icon_color=818CF8&text_color=94A3B8" alt="GitHub Stats" />
-  <img height="170" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mokshagnatej&layout=compact&theme=tokyonight&hide_border=true&bg_color=030712&title_color=38BDF8&text_color=94A3B8" alt="Top Languages" />
-</p>
+<!-- Live Dynamic Status State -->
+<img src="./assets/status_badge.svg" width="100%" alt="System Status" />
+
+<br/><br/>
+
+<!-- Automated 2x2 Bento Stats & Graphs Cards -->
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <img src="./assets/stats_activity.svg" width="100%" alt="GitHub Analytics & Velocity"/>
+    </td>
+    <td width="50%" valign="top">
+      <img src="./assets/stats_languages.svg" width="100%" alt="Tech Ecosystem & Languages"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2" valign="top">
+      <img src="./assets/stats_dsa.svg" width="100%" alt="DSA & Problem Solving Matrix"/>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 <!-- Animated Contribution Snake -->
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
+<img src="./assets/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
 
 </div>
 

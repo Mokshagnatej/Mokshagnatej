@@ -1,0 +1,70 @@
+<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34D399" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGrad3)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="20" y="2" width="120" height="2" rx="1" fill="#34D399" filter="url(#glowEmerald)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="4" fill="#34D399" filter="url(#glowEmerald)"/>
+    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="#34D399" letter-spacing="1.2">DSA &amp; PROBLEM SOLVING MATRIX</text>
+    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="#38BDF8">JAVA / C++ / C</text>
+  </g>
+
+  <!-- Left: Circular Progress Ring -->
+  <g transform="translate(75, 115)">
+    <!-- Base track -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#1E293B" stroke-width="8"/>
+    
+    <!-- Easy Arc -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#34D399" stroke-width="8"
+            stroke-dasharray="123.7 282.7" stroke-dashoffset="0" stroke-linecap="round"
+            transform="rotate(-90)"/>
+    
+    <!-- Center Label -->
+    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#F8FAFC">320</text>
+    <text x="0" y="12" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">SOLVED</text>
+  </g>
+
+  <!-- Right: Difficulty Breakdown Bars -->
+  <g transform="translate(160, 52)">
+    <!-- Easy -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#34D399">EASY</text>
+      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">140 <tspan fill="#64748B" font-weight="400">/ 350</tspan></text>
+      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
+      <rect x="0" y="18" width="116" height="6" rx="3" fill="#34D399"/>
+    </g>
+
+    <!-- Medium -->
+    <g transform="translate(0, 36)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#FBBF24">MEDIUM</text>
+      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">155 <tspan fill="#64748B" font-weight="400">/ 300</tspan></text>
+      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
+      <rect x="0" y="18" width="149" height="6" rx="3" fill="#FBBF24"/>
+    </g>
+
+    <!-- Hard -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#F43F5E">HARD</text>
+      <text x="290" y="12" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">25 <tspan fill="#64748B" font-weight="400">/ 100</tspan></text>
+      <rect x="0" y="18" width="290" height="6" rx="3" fill="#1E293B"/>
+      <rect x="0" y="18" width="72" height="6" rx="3" fill="#F43F5E"/>
+    </g>
+  </g>
+
+  <!-- Footer Tag -->
+  <g transform="translate(24, 185)">
+    <rect x="0" y="0" width="447" height="18" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="10" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#38BDF8">TARGET:</text>
+    <text x="62" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="500" fill="#94A3B8">Microsoft Imagine Cup '26 • Competitive DSA Architecture • SDE Mastery</text>
+  </g>
+</svg>

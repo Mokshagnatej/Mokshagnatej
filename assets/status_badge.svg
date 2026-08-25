@@ -1,0 +1,26 @@
+<svg width="495" height="42" viewBox="0 0 495 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <filter id="pulseGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#34D399" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="493" height="40" rx="8" fill="url(#badgeBg)" stroke="#1E293B" stroke-width="1.2"/>
+
+  <!-- Pulsing Radar Dot -->
+  <g transform="translate(18, 21)">
+    <circle cx="0" cy="0" r="4.5" fill="#34D399" filter="url(#pulseGlow)">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Status Text -->
+  <text x="32" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">SYSTEM OPERATIONAL</text>
+  <text x="165" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="400" fill="#64748B">|</text>
+  <text x="180" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="11" font-weight="600" fill="#38BDF8">FOCUS: <tspan fill="#F8FAFC" font-weight="500">Imagine Cup '26 • MERN & Azure Systems</tspan></text>
+</svg>

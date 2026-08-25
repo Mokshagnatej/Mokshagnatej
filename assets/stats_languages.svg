@@ -1,0 +1,91 @@
+<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <filter id="glowIndigo" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#818CF8" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGrad2)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="20" y="2" width="120" height="2" rx="1" fill="#818CF8" filter="url(#glowIndigo)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="4" fill="#818CF8" filter="url(#glowIndigo)"/>
+    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="#818CF8" letter-spacing="1.2">TECH ECOSYSTEM &amp; LANGUAGES</text>
+  </g>
+
+  <!-- Progress Bar (Stacked) -->
+  <g transform="translate(24, 52)">
+    <rect x="0" y="0" width="447" height="10" rx="5" fill="#1E293B"/>
+    <g clip-path="url(#langBarClip)">
+      <clipPath id="langBarClip">
+        <rect x="0" y="0" width="447" height="10" rx="5"/>
+      </clipPath>
+      <rect x="0" y="0" width="232.44" height="10" fill="#DA5B0B"/>
+      <rect x="232.44" y="0" width="114.879" height="10" fill="#F7DF1E"/>
+      <rect x="347.319" y="0" width="98.34" height="10" fill="#3178C6"/>
+      <rect x="445.659" y="0" width="4" height="10" fill="#ED8B00"/>
+      <rect x="449.659" y="0" width="4" height="10" fill="#38BDF8"/>
+      <rect x="453.659" y="0" width="4" height="10" fill="#F34B7D"/>
+    </g>
+  </g>
+
+  <!-- Language List (2 Columns) -->
+  <g transform="translate(24, 80)">
+    <!-- Jupyter Notebook Item -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="5" fill="#DA5B0B"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Jupyter Notebook</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">52.0%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="91" height="4" rx="2" fill="#DA5B0B"/>
+    </g>
+    <!-- JavaScript Item -->
+    <g transform="translate(230, 0)">
+      <circle cx="6" cy="6" r="5" fill="#F7DF1E"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">JavaScript</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">25.7%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="44" height="4" rx="2" fill="#F7DF1E"/>
+    </g>
+    <!-- TypeScript Item -->
+    <g transform="translate(0, 34)">
+      <circle cx="6" cy="6" r="5" fill="#3178C6"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">TypeScript</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">22.0%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="38" height="4" rx="2" fill="#3178C6"/>
+    </g>
+    <!-- Java Item -->
+    <g transform="translate(230, 34)">
+      <circle cx="6" cy="6" r="5" fill="#ED8B00"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Java</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">0.1%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="4" height="4" rx="2" fill="#ED8B00"/>
+    </g>
+    <!-- Python Item -->
+    <g transform="translate(0, 68)">
+      <circle cx="6" cy="6" r="5" fill="#38BDF8"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">Python</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">0.1%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="4" height="4" rx="2" fill="#38BDF8"/>
+    </g>
+    <!-- C++ Item -->
+    <g transform="translate(230, 68)">
+      <circle cx="6" cy="6" r="5" fill="#F34B7D"/>
+      <text x="20" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">C++</text>
+      <text x="195" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8">0.0%</text>
+      <rect x="20" y="18" width="175" height="4" rx="2" fill="#1E293B"/>
+      <rect x="20" y="18" width="4" height="4" rx="2" fill="#F34B7D"/>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Real-Time Byte Analysis • Aug 25, 2026 - 18:25 UTC</text>
+</svg>
