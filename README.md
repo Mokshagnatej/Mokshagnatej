@@ -4,7 +4,7 @@
 <!-- 🌌 FUTURISTIC CYBERPUNK 3D HEADER & HOLOGRAPHIC BANNER -->
 <!-- ============================================================================== -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F2FE,30:4FACFE,70:7F00FF,100:E100FF&height=260&section=header&text=MOKSHAGNA%20TEJ&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Architect%20%7C%20AI%20%26%20Cloud%20Innovator%20%7C%20Imagine%20Cup%20'26&descAlignY=55&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F2FE,30:4FACFE,70:7F00FF,100:E100FF&height=260&section=header&text=MOKSHAGNA%20TEJ&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Architect%20%7C%20AI%20%26%20Cloud%20Innovator%20%7C%20Imagine%20Cup%20%2726&descAlignY=55&descSize=16" width="100%"/>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/mokshagna-tej-kalepalli-45220a359">
@@ -19,7 +19,7 @@
 
 <!-- ⚡ DYNAMIC HUD TERMINAL TYPING ANIMATION -->
 <a href="https://github.com/Mokshagnatej">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&background=080B1000&center=true&vCenter=true&width=680&lines=%3E+Initializing+neural+link...+Welcome+to+my+universe;%3E+Architecting+Scalable+Full-Stack+Systems+[MERN];%3E+Engineering+Real-Time+AI+%26+Anomaly+Detection;%3E+Grinding+Algorithmic+DSA+in+Java+%26+C%2B%2B;%3E+Building+Next-Gen+AI+for+Microsoft+Imagine+Cup+'26;%3E+Fusing+High-Precision+Code+with+3D+Design" alt="Futuristic Terminal Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&background=080B1000&center=true&vCenter=true&width=680&lines=%3E+Initializing+neural+link...+Welcome+to+my+universe;%3E+Architecting+Scalable+Full-Stack+Systems+[MERN];%3E+Engineering+Real-Time+AI+%26+Anomaly+Detection;%3E+Grinding+Algorithmic+DSA+in+Java+%26+C%2B%2B;%3E+Building+Next-Gen+AI+for+Microsoft+Imagine+Cup+%2726;%3E+Fusing+High-Precision+Code+with+3D+Design" alt="Futuristic Terminal Typing SVG" />
 </a>
 
 </div>
@@ -82,13 +82,13 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <br/>
 
-<table>
+<table width="100%">
   <tr>
     <td align="center" width="25%"><b>💻 Core Languages</b></td>
     <td>
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=080B10"/>
       <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=080B10"/>
-      <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=080B10"/>
+      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=080B10"/>
       <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black&labelColor=080B10"/>
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=080B10"/>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=080B10"/>
@@ -141,7 +141,7 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top" style="padding: 15px;">
+    <td width="50%" valign="top">
       <p align="right"><img src="https://img.shields.io/badge/STATUS-ACTIVE%20AI-00FF87?style=flat-square"/></p>
       <h3>📊 Cloudwatch Server Anomaly</h3>
       <p>Real-time full-stack anomaly detection engine designed to stream and flag irregular server metric patterns with sub-second latency.</p>
@@ -155,7 +155,7 @@ Previously shipped production-level features as a **Software Development Intern 
         <img src="https://img.shields.io/badge/LAUNCH_REPO-00F2FE?style=for-the-badge&logo=github&logoColor=black" alt="View Repo"/>
       </a>
     </td>
-    <td width="50%" valign="top" style="padding: 15px;">
+    <td width="50%" valign="top">
       <p align="right"><img src="https://img.shields.io/badge/STATUS-INNOVATION-00D9FF?style=flat-square"/></p>
       <h3>🌾 FarmIO Autonomous Agro-Deck</h3>
       <p>Precision organic agriculture platform empowering farmers with telemetry-driven soil analytics, resource optimization, and yield prediction.</p>
@@ -171,7 +171,7 @@ Previously shipped production-level features as a **Software Development Intern 
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" style="padding: 15px;">
+    <td width="50%" valign="top">
       <p align="right"><img src="https://img.shields.io/badge/STATUS-UX%20REMASTERED-E100FF?style=flat-square"/></p>
       <h3>🚆 RailYatra Next-Gen Transit HUD</h3>
       <p>A ground-up reimagination of Indian Railways ticketing and trip discovery, solving transit UX friction with instantaneous booking flows.</p>
@@ -185,7 +185,7 @@ Previously shipped production-level features as a **Software Development Intern 
         <img src="https://img.shields.io/badge/LAUNCH_REPO-E100FF?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"/>
       </a>
     </td>
-    <td width="50%" valign="top" style="padding: 15px;">
+    <td width="50%" valign="top">
       <p align="right"><img src="https://img.shields.io/badge/STATUS-VERIFIED%20ALGO-FFD700?style=flat-square"/></p>
       <h3>🧩 Quantum DSA & Algorithm Solver</h3>
       <p>Production-tested algorithmic solutions tackling complex dynamic programming, graph theory, trees, and rigorous automated testing suites.</p>
@@ -205,14 +205,14 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- Special Feature Banner -->
-<table>
+<table width="100%">
   <tr>
-    <td align="center" style="background: linear-gradient(90deg, rgba(0,242,254,0.1) 0%, rgba(127,0,255,0.1) 100%); padding: 20px; border-radius: 12px;">
+    <td align="center">
       <h3>🏆 Microsoft Imagine Cup 2026 — Global AI Initiative</h3>
       <p>Engineering a groundbreaking AI-driven solution end-to-end leveraging <b>Microsoft Azure Cloud Architecture</b> and <b>OpenAI Enterprise APIs</b> to tackle real-world global challenges.</p>
       <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white&labelColor=080B10"/>
       <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=080B10"/>
-      <img src="https://img.shields.io/badge/Imagine%20Cup%20'26-00FF87?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=080B10"/>
+      <img src="https://img.shields.io/badge/Imagine%20Cup%20%2726-00FF87?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=080B10"/>
     </td>
   </tr>
 </table>
@@ -233,7 +233,7 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <table width="100%">
   <tr>
-    <td width="33%" align="center" valign="top" style="padding: 15px;">
+    <td width="33%" align="center" valign="top">
       <p>💼</p>
       <h4><b>Innolift Ventures</b></h4>
       <i>Software Development Intern [Track-3]</i>
@@ -241,7 +241,7 @@ Previously shipped production-level features as a **Software Development Intern 
       <p align="left">Shipped real-world code into live deployment pipelines, optimized system routines, and collaborated with senior engineering leads.</p>
       <img src="https://img.shields.io/badge/ROLE-ENGINEERING-00F2FE?style=flat-square"/>
     </td>
-    <td width="33%" align="center" valign="top" style="padding: 15px;">
+    <td width="33%" align="center" valign="top">
       <p>🎨</p>
       <h4><b>VTU Chronicle 2026</b></h4>
       <i>Editorial & Page Layout Designer</i>
@@ -249,7 +249,7 @@ Previously shipped production-level features as a **Software Development Intern 
       <p align="left">Spearheaded visual identity, bespoke typography, and high-impact editorial spreads for the Computer Science flagship magazine.</p>
       <img src="https://img.shields.io/badge/ROLE-DESIGN%20DIRECTOR-7F00FF?style=flat-square"/>
     </td>
-    <td width="33%" align="center" valign="top" style="padding: 15px;">
+    <td width="33%" align="center" valign="top">
       <p>🗂️</p>
       <h4><b>Notion System Architecture</b></h4>
       <i>Advanced Notion Systems Engineer</i>
@@ -265,7 +265,7 @@ Previously shipped production-level features as a **Software Development Intern 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📊 REAL-TIME QUANTUM TELEMETRY (GITHUB ANALYTICS & 3D TROPHIES) -->
+<!-- 📊 REAL-TIME QUANTUM TELEMETRY (GITHUB ANALYTICS & 3D PROFILE METRICS) -->
 <!-- ============================================================================== -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F2FE,50:7F00FF,100:E100FF&height=3&section=header" width="100%"/>
@@ -274,33 +274,33 @@ Previously shipped production-level features as a **Software Development Intern 
 
 <div align="center">
 
-<!-- 3D Holographic Trophies -->
-<a href="https://github.com/Mokshagnatej">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mokshagnatej&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=8" alt="Trophies" />
-</a>
-
-<br/><br/>
-
-<!-- GitHub Stats & Top Languages -->
+<!-- 3D Profile Summary Cards -->
 <p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=Mokshagnatej&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=080B10&title_color=00F2FE&icon_color=7F00FF&text_color=c9d1d9" alt="Stats" />
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mokshagnatej&layout=compact&theme=tokyonight&hide_border=true&bg_color=080B10&title_color=00F2FE&text_color=c9d1d9" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mokshagnatej&theme=tokyonight" alt="Profile Details Card"/>
 </p>
 
-<!-- Streak Stats -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mokshagnatej&theme=tokyonight&hide_border=true&background=080B10&ring=00F2FE&fire=7F00FF&currStreakNum=00F2FE" alt="Streak Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Mokshagnatej&theme=tokyonight" alt="Stats Card"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mokshagnatej&theme=tokyonight" alt="Most Commit Language Card"/>
 </p>
 
-<!-- Activity Graph -->
+<br/>
+
+<!-- GitHub Stats & Top Languages High-Uptime Mirror -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mokshagnatej&theme=tokyo-night&hide_border=true&bg_color=080B10&color=00F2FE&line=7F00FF&point=00FF87&area=true" width="100%" alt="Activity Graph" />
+  <img height="175" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mokshagnatej&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080B10&title_color=00F2FE&icon_color=7F00FF&text_color=c9d1d9" alt="Stats" />
+  <img height="175" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mokshagnatej&layout=compact&theme=tokyonight&hide_border=true&bg_color=080B10&title_color=00F2FE&text_color=c9d1d9" alt="Top Languages" />
 </p>
 
 <br/>
 
 <!-- Animated Contribution Snake -->
 <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution Snake" />
+
+<br/><br/>
+
+<!-- Cyber Dynamic Quote Card -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Developer Quote" />
 
 </div>
 
