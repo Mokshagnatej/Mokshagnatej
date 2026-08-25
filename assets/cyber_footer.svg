@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="100%" height="130">
   <defs>
-    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070E"/>
-      <stop offset="100%" stop-color="#0D091F"/>
+    <linearGradient id="footer-luxe-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0C0A20"/>
     </linearGradient>
 
-    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F2FE">
-        <animate attributeName="stop-color" values="#00F2FE;#E100FF;#7F00FF;#00F2FE" dur="6s" repeatCount="indefinite"/>
+    <linearGradient id="footer-wave-luxe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#C084FC;#34D399;#38BDF8" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#7F00FF">
-        <animate attributeName="stop-color" values="#7F00FF;#00F2FE;#E100FF;#7F00FF" dur="6s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#38BDF8;#C084FC;#818CF8" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#E100FF">
-        <animate attributeName="stop-color" values="#E100FF;#7F00FF;#00F2FE;#E100FF" dur="6s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#34D399">
+        <animate attributeName="stop-color" values="#34D399;#818CF8;#38BDF8;#34D399" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <filter id="foot-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="foot-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -26,35 +26,34 @@
     </filter>
 
     <style>
-      .foot-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif; font-weight: 600; letter-spacing: 2px; }
-      .foot-mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+      .foot-head { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 700; letter-spacing: 2px; }
+      .foot-sub { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; }
     </style>
   </defs>
 
-  <!-- Background Base -->
-  <rect width="1200" height="140" rx="12" fill="url(#footer-grad)"/>
+  <rect width="1200" height="130" rx="14" fill="url(#footer-luxe-bg)"/>
 
   <!-- Top Laser Stroke -->
-  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#wave-grad)" stroke-width="3" filter="url(#foot-glow)"/>
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#footer-wave-luxe)" stroke-width="3" filter="url(#foot-bloom)"/>
 
-  <!-- Grid Accents -->
-  <g stroke="#00F2FE" stroke-width="0.5" opacity="0.15">
-    <line x1="200" y1="0" x2="200" y2="140"/>
-    <line x1="400" y1="0" x2="400" y2="140"/>
-    <line x1="600" y1="0" x2="600" y2="140"/>
-    <line x1="800" y1="0" x2="800" y2="140"/>
-    <line x1="1000" y1="0" x2="1000" y2="140"/>
+  <!-- Subtle Matrix Columns -->
+  <g stroke="#38BDF8" stroke-width="0.5" opacity="0.12">
+    <line x1="200" y1="0" x2="200" y2="130"/>
+    <line x1="400" y1="0" x2="400" y2="130"/>
+    <line x1="600" y1="0" x2="600" y2="130"/>
+    <line x1="800" y1="0" x2="800" y2="130"/>
+    <line x1="1000" y1="0" x2="1000" y2="130"/>
   </g>
 
-  <!-- Centered Transmission Message -->
-  <text x="600" y="62" text-anchor="middle" class="foot-text" font-size="16" fill="#FFFFFF">
-    INITIALIZED &amp; BROADCASTED FROM EARTH ORBIT ✦ 2026
+  <!-- Message -->
+  <text x="600" y="58" text-anchor="middle" class="foot-head" font-size="15" fill="#F8FAFC">
+    DESIGNED &amp; BROADCASTED WITH COSMIC PRECISION ✦ 2026
   </text>
   
-  <text x="600" y="94" text-anchor="middle" class="foot-mono" font-size="12" fill="#00F2FE" opacity="0.85">
-    [ SYSTEM STATUS: 100% NOMINAL // ALWAYS OPEN FOR COLLABORATION ]
+  <text x="600" y="88" text-anchor="middle" class="foot-sub" font-size="12" fill="#38BDF8" opacity="0.9">
+    [ SYSTEM NOMINAL // ALWAYS OPEN FOR HIGH-IMPACT COLLABORATIONS ]
   </text>
 
-  <circle cx="280" cy="60" r="3" fill="#00F2FE" filter="url(#foot-glow)"/>
-  <circle cx="920" cy="60" r="3" fill="#E100FF" filter="url(#foot-glow)"/>
+  <circle cx="260" cy="55" r="3" fill="#38BDF8" filter="url(#foot-bloom)"/>
+  <circle cx="940" cy="55" r="3" fill="#C084FC" filter="url(#foot-bloom)"/>
 </svg>

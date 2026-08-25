@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg-banner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050811"/>
-      <stop offset="50%" stop-color="#0B0F24"/>
-      <stop offset="100%" stop-color="#140A28"/>
+    <linearGradient id="bg-banner-luxe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040714"/>
+      <stop offset="50%" stop-color="#0B1124"/>
+      <stop offset="100%" stop-color="#120A24"/>
     </linearGradient>
 
-    <linearGradient id="glow-gold-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFD700"/>
-      <stop offset="50%" stop-color="#00F2FE"/>
-      <stop offset="100%" stop-color="#E100FF"/>
+    <linearGradient id="aurora-gold-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
     </linearGradient>
 
-    <linearGradient id="azure-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0078D4"/>
-      <stop offset="100%" stop-color="#002050"/>
+    <linearGradient id="azure-pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
     </linearGradient>
 
-    <linearGradient id="openai-teal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10A37F"/>
-      <stop offset="100%" stop-color="#003D2E"/>
+    <linearGradient id="openai-pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
     </linearGradient>
 
-    <filter id="card-bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="luxe-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -31,78 +31,67 @@
     </filter>
 
     <style>
-      @keyframes pulseTrophy {
-        0%, 100% { transform: translateY(0) scale(1); }
-        50% { transform: translateY(-6px) scale(1.05); }
+      @keyframes floatTrophy {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-7px) scale(1.05); }
       }
-      .trophy-3d { animation: pulseTrophy 4s ease-in-out infinite; transform-origin: 100px 100px; }
-      .header-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; letter-spacing: 2px; }
-      .mono-desc { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .trophy-group { animation: floatTrophy 4.5s ease-in-out infinite; transform-origin: 100px 100px; }
+      .luxe-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 800; }
+      .luxe-mono { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, Menlo, monospace; }
     </style>
   </defs>
 
-  <!-- Background Frame -->
-  <rect width="1200" height="200" rx="16" fill="url(#bg-banner)" stroke="url(#glow-gold-cyan)" stroke-width="1.8"/>
+  <!-- Card Background -->
+  <rect width="1200" height="200" rx="16" fill="url(#bg-banner-luxe)" stroke="url(#aurora-gold-cyan)" stroke-width="1.8"/>
 
-  <!-- Corner Brackets -->
-  <path d="M 15,40 L 15,15 L 40,15" fill="none" stroke="#FFD700" stroke-width="3"/>
-  <path d="M 1185,40 L 1185,15 L 1160,15" fill="none" stroke="#00F2FE" stroke-width="3"/>
-  <path d="M 15,160 L 15,185 L 40,185" fill="none" stroke="#FFD700" stroke-width="3"/>
-  <path d="M 1185,160 L 1185,185 L 1160,185" fill="none" stroke="#E100FF" stroke-width="3"/>
+  <!-- Subtle Corner Brackets -->
+  <path d="M 16,42 L 16,16 L 42,16" fill="none" stroke="#F59E0B" stroke-width="3.5"/>
+  <path d="M 1184,42 L 1184,16 L 1158,16" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+  <path d="M 16,158 L 16,184 L 42,184" fill="none" stroke="#F59E0B" stroke-width="3.5"/>
+  <path d="M 1184,158 L 1184,184 L 1158,184" fill="none" stroke="#C084FC" stroke-width="3.5"/>
 
-  <!-- 3D Holographic Trophy & Cloud Prism Left -->
-  <g class="trophy-3d" transform="translate(45, 30)">
-    <!-- 3D Glow Base -->
-    <ellipse cx="60" cy="125" rx="45" ry="12" fill="#FFD700" opacity="0.2" filter="url(#card-bloom)"/>
-    
-    <!-- 3D Cup Base -->
-    <polygon points="40,115 80,115 70,125 50,125" fill="#B38600"/>
-    <polygon points="55,95 65,95 65,115 55,115" fill="#FFD700"/>
-    
-    <!-- 3D Cup Bowl -->
-    <path d="M 35,45 Q 60,95 85,45 Z" fill="#FFD700" filter="url(#card-bloom)"/>
-    <ellipse cx="60" cy="45" rx="25" ry="8" fill="#FFF275"/>
-    
-    <!-- Handles -->
-    <path d="M 35,48 Q 20,60 38,72" fill="none" stroke="#FFD700" stroke-width="3.5"/>
-    <path d="M 85,48 Q 100,60 82,72" fill="none" stroke="#FFD700" stroke-width="3.5"/>
-    
-    <!-- Central Star Sparkle -->
-    <polygon points="60,52 63,60 71,60 65,65 67,73 60,68 53,73 55,65 49,60 57,60" fill="#FFFFFF"/>
+  <!-- 3D Holographic Imagine Cup Trophy Left -->
+  <g class="trophy-group" transform="translate(48, 28)">
+    <ellipse cx="55" cy="130" rx="45" ry="12" fill="#F59E0B" opacity="0.25" filter="url(#luxe-bloom)"/>
+    <polygon points="35,120 75,120 65,130 45,130" fill="#B45309"/>
+    <polygon points="50,98 60,98 60,120 50,120" fill="#F59E0B"/>
+    <path d="M 30,45 Q 55,95 80,45 Z" fill="#FBBF24" filter="url(#luxe-bloom)"/>
+    <ellipse cx="55" cy="45" rx="25" ry="8" fill="#FEF08A"/>
+    <path d="M 30,48 Q 14,62 33,74" fill="none" stroke="#F59E0B" stroke-width="3.5"/>
+    <path d="M 80,48 Q 96,62 77,74" fill="none" stroke="#F59E0B" stroke-width="3.5"/>
+    <circle cx="55" cy="62" r="4" fill="#FFFFFF" filter="url(#luxe-bloom)"/>
   </g>
 
   <!-- Title & Mission Text -->
-  <g transform="translate(190, 45)">
+  <g transform="translate(185, 42)">
     <!-- Status Tag -->
-    <rect x="0" y="0" width="220" height="24" rx="6" fill="#000000" stroke="#FFD700" stroke-width="1.2"/>
-    <circle cx="12" cy="12" r="4" fill="#00FF87"/>
-    <text x="24" y="16" class="mono-desc" font-size="11" font-weight="bold" fill="#FFD700">GLOBAL HACKATHON '26</text>
+    <rect x="0" y="0" width="225" height="24" rx="6" fill="#030712" stroke="#F59E0B" stroke-width="1.2"/>
+    <circle cx="12" cy="12" r="4" fill="#10B981" filter="url(#luxe-bloom)"/>
+    <text x="24" y="16" class="luxe-mono" font-size="11" font-weight="bold" fill="#FBBF24" letter-spacing="1">GLOBAL HACKATHON '26</text>
 
     <!-- Main Title -->
-    <text x="0" y="55" class="header-title" font-size="28" fill="#FFFFFF">
+    <text x="0" y="58" class="luxe-title" font-size="28" fill="#F8FAFC" letter-spacing="1">
       MICROSOFT IMAGINE CUP 2026
     </text>
     
     <!-- Subtitle / Architecture Statement -->
-    <text x="0" y="85" class="mono-desc" font-size="13" fill="#00F2FE">
-      &gt; Architecting an autonomous AI-driven solution end-to-end leveraging Azure Cloud &amp; OpenAI.
+    <text x="0" y="88" class="luxe-mono" font-size="13" fill="#38BDF8">
+      &gt; Architecting an end-to-end intelligent AI system powered by Azure Cloud &amp; OpenAI API.
     </text>
-    <text x="0" y="105" class="mono-desc" font-size="12" fill="#A0AEC0">
-      &gt; Focus: High-throughput telemetry, real-time inference, and social-impact computing.
+    <text x="0" y="108" class="luxe-mono" font-size="12" fill="#94A3B8">
+      &gt; Focus: Real-time telemetry, automated diagnostic inference, and zero-latency pipelines.
     </text>
   </g>
 
   <!-- Right Pill Badges -->
-  <g transform="translate(980, 50)">
-    <!-- Azure Pill -->
+  <g transform="translate(975, 48)">
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="160" height="38" rx="8" fill="url(#azure-blue)" stroke="#0078D4" stroke-width="1.5" filter="url(#card-bloom)"/>
-      <text x="80" y="24" text-anchor="middle" class="header-title" font-size="13" fill="#FFFFFF">✦ AZURE CLOUD</text>
+      <rect x="0" y="0" width="165" height="40" rx="10" fill="url(#azure-pill-grad)" stroke="#38BDF8" stroke-width="1.5" filter="url(#luxe-bloom)"/>
+      <text x="82" y="25" text-anchor="middle" class="luxe-title" font-size="13" fill="#FFFFFF">✦ AZURE CLOUD</text>
     </g>
-    <!-- OpenAI Pill -->
-    <g transform="translate(0, 48)">
-      <rect x="0" y="0" width="160" height="38" rx="8" fill="url(#openai-teal)" stroke="#10A37F" stroke-width="1.5" filter="url(#card-bloom)"/>
-      <text x="80" y="24" text-anchor="middle" class="header-title" font-size="13" fill="#FFFFFF">✦ OPENAI API</text>
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="165" height="40" rx="10" fill="url(#openai-pill-grad)" stroke="#34D399" stroke-width="1.5" filter="url(#luxe-bloom)"/>
+      <text x="82" y="25" text-anchor="middle" class="luxe-title" font-size="13" fill="#FFFFFF">✦ OPENAI API</text>
     </g>
   </g>
 </svg>

@@ -1,239 +1,193 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="cyber-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#04060C"/>
-      <stop offset="45%" stop-color="#080C18"/>
-      <stop offset="85%" stop-color="#0D0A22"/>
-      <stop offset="100%" stop-color="#050811"/>
+    <!-- Cosmic Obsidian Background -->
+    <linearGradient id="cosmic-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#080D1A"/>
+      <stop offset="100%" stop-color="#0B091E"/>
     </linearGradient>
 
-    <!-- Animated Neon Title Gradient -->
-    <linearGradient id="neon-glow-text" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F2FE">
-        <animate attributeName="stop-color" values="#00F2FE;#7F00FF;#E100FF;#00FF87;#00F2FE" dur="10s" repeatCount="indefinite"/>
+    <!-- Aurora Text Gradient -->
+    <linearGradient id="aurora-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8">
+        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#C084FC;#34D399;#38BDF8" dur="12s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#4FACFE">
-        <animate attributeName="stop-color" values="#4FACFE;#E100FF;#00F2FE;#7F00FF;#4FACFE" dur="10s" repeatCount="indefinite"/>
+      <stop offset="35%" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#C084FC;#38BDF8;#818CF8;#818CF8" dur="12s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#E100FF">
-        <animate attributeName="stop-color" values="#E100FF;#00FF87;#7F00FF;#00F2FE;#E100FF" dur="10s" repeatCount="indefinite"/>
+      <stop offset="70%" stop-color="#C084FC">
+        <animate attributeName="stop-color" values="#C084FC;#34D399;#818CF8;#C084FC;#C084FC" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#34D399">
+        <animate attributeName="stop-color" values="#34D399;#38BDF8;#C084FC;#34D399;#34D399" dur="12s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <!-- Border Gradients -->
-    <linearGradient id="border-laser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F2FE"/>
-      <stop offset="35%" stop-color="#4FACFE"/>
-      <stop offset="70%" stop-color="#7F00FF"/>
-      <stop offset="100%" stop-color="#E100FF"/>
+    <!-- Linear Luxe Glass Border -->
+    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#C084FC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- 3D Cube Gradients -->
-    <linearGradient id="cube-top-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F2FE"/>
-      <stop offset="100%" stop-color="#00A3C4"/>
+    <!-- 3D Monolith Facet Gradients -->
+    <linearGradient id="prism-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
-    <linearGradient id="cube-left-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#007799"/>
-      <stop offset="100%" stop-color="#004466"/>
+    <linearGradient id="prism-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-    <linearGradient id="cube-right-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00D2FE"/>
-      <stop offset="100%" stop-color="#0077AA"/>
-    </linearGradient>
-
-    <linearGradient id="cube-top-magenta" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E100FF"/>
-      <stop offset="100%" stop-color="#9C00B5"/>
-    </linearGradient>
-    <linearGradient id="cube-left-magenta" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7F00FF"/>
-      <stop offset="100%" stop-color="#4C0099"/>
-    </linearGradient>
-    <linearGradient id="cube-right-magenta" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF33FF"/>
-      <stop offset="100%" stop-color="#B300B3"/>
+    <linearGradient id="prism-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4338CA"/>
     </linearGradient>
 
-    <!-- Glow Filters -->
-    <filter id="bloom-strong" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur1"/>
-      <feGaussianBlur stdDeviation="16" result="blur2"/>
-      <feMerge>
-        <feMergeNode in="blur2"/>
-        <feMergeNode in="blur1"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="prism-top-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="prism-left-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E1065"/>
+      <stop offset="100%" stop-color="#581C87"/>
+    </linearGradient>
+    <linearGradient id="prism-right-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7E22CE"/>
+    </linearGradient>
 
-    <filter id="bloom-soft" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+    <!-- Aurora Diffusion Filters -->
+    <filter id="aurora-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <!-- Embedded CSS Animations -->
+    <filter id="subtle-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <style>
-      @keyframes floatPrimary {
+      @keyframes floatSlow1 {
         0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-16px) rotate(8deg); }
+        50% { transform: translateY(-14px) rotate(6deg); }
       }
-      @keyframes floatSecondary {
+      @keyframes floatSlow2 {
         0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-20px) rotate(-10deg); }
+        50% { transform: translateY(-18px) rotate(-8deg); }
       }
-      @keyframes floatMini {
-        0%, 100% { transform: translateY(0px) scale(1); }
-        50% { transform: translateY(-8px) scale(1.08); }
+      @keyframes auroraPulse {
+        0%, 100% { opacity: 0.15; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(1.1); }
       }
-      @keyframes orbitSpin {
+      @keyframes orbitRotate {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-      @keyframes gridPulse {
-        0%, 100% { opacity: 0.12; }
-        50% { opacity: 0.35; }
-      }
-      @keyframes laserScan {
-        0% { transform: translateX(-1200px); }
-        100% { transform: translateX(1200px); }
-      }
-      @keyframes badgePulse {
-        0%, 100% { filter: drop-shadow(0 0 8px rgba(0,242,254,0.4)); }
-        50% { filter: drop-shadow(0 0 18px rgba(225,0,255,0.7)); }
-      }
-      .cube-1 { animation: floatPrimary 6s ease-in-out infinite; transform-origin: center; }
-      .cube-2 { animation: floatSecondary 7.5s ease-in-out infinite; transform-origin: center; }
-      .cube-mini { animation: floatMini 4s ease-in-out infinite; transform-origin: center; }
-      .orbit-ring { animation: orbitSpin 16s linear infinite; transform-origin: 600px 175px; }
-      .orbit-ring-rev { animation: orbitSpin 22s linear infinite reverse; transform-origin: 600px 175px; }
-      .grid-layer { animation: gridPulse 4.5s ease-in-out infinite; }
-      .badge-glow { animation: badgePulse 3.5s ease-in-out infinite; }
-      .main-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 900; letter-spacing: 6px; }
-      .mono-label { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+      .prism-left-box { animation: floatSlow1 7s ease-in-out infinite; transform-origin: center; }
+      .prism-right-box { animation: floatSlow2 8.5s ease-in-out infinite; transform-origin: center; }
+      .aurora-orb-1 { animation: auroraPulse 6s ease-in-out infinite; transform-origin: 300px 180px; }
+      .aurora-orb-2 { animation: auroraPulse 7s ease-in-out infinite alternate; transform-origin: 900px 180px; }
+      .orbit-geom { animation: orbitRotate 24s linear infinite; transform-origin: 600px 170px; }
+      .hero-font { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 900; letter-spacing: 5px; }
+      .sub-font { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
     </style>
   </defs>
 
-  <!-- Base Dark Canvas -->
-  <rect width="1200" height="380" rx="20" fill="url(#cyber-bg)"/>
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="360" rx="18" fill="url(#cosmic-bg)"/>
 
-  <!-- 3D Cyber Perspective Grid Horizon -->
-  <g class="grid-layer" stroke="#00F2FE" opacity="0.2">
-    <!-- Perspective Rays -->
-    <line x1="600" y1="220" x2="-200" y2="380" stroke-width="0.8"/>
-    <line x1="600" y1="220" x2="0" y2="380" stroke-width="1"/>
-    <line x1="600" y1="220" x2="200" y2="380" stroke-width="1.2"/>
-    <line x1="600" y1="220" x2="400" y2="380" stroke-width="1.4"/>
-    <line x1="600" y1="220" x2="520" y2="380" stroke-width="1.5"/>
-    <line x1="600" y1="220" x2="680" y2="380" stroke-width="1.5"/>
-    <line x1="600" y1="220" x2="800" y2="380" stroke-width="1.4"/>
-    <line x1="600" y1="220" x2="1000" y2="380" stroke-width="1.2"/>
-    <line x1="600" y1="220" x2="1200" y2="380" stroke-width="1"/>
-    <line x1="600" y1="220" x2="1400" y2="380" stroke-width="0.8"/>
+  <!-- Soft Aurora Diffusions -->
+  <circle cx="280" cy="140" r="180" fill="#38BDF8" opacity="0.12" filter="url(#aurora-glow)" class="aurora-orb-1"/>
+  <circle cx="920" cy="180" r="200" fill="#818CF8" opacity="0.14" filter="url(#aurora-glow)" class="aurora-orb-2"/>
+  <circle cx="600" cy="170" r="240" fill="#C084FC" opacity="0.08" filter="url(#aurora-glow)"/>
 
-    <!-- Horizontal Distance Grids -->
-    <line x1="0" y1="250" x2="1200" y2="250" stroke-width="0.6"/>
-    <line x1="0" y1="285" x2="1200" y2="285" stroke-width="0.9"/>
-    <line x1="0" y1="320" x2="1200" y2="320" stroke-width="1.3"/>
-    <line x1="0" y1="355" x2="1200" y2="355" stroke-width="1.8"/>
+  <!-- Subtle Horizon Mesh Grid -->
+  <g stroke="#38BDF8" opacity="0.12">
+    <line x1="0" y1="240" x2="1200" y2="240" stroke-width="0.6"/>
+    <line x1="0" y1="275" x2="1200" y2="275" stroke-width="0.8"/>
+    <line x1="0" y1="310" x2="1200" y2="310" stroke-width="1.2"/>
+    <line x1="0" y1="342" x2="1200" y2="342" stroke-width="1.6"/>
+    
+    <line x1="600" y1="210" x2="100" y2="360" stroke-width="0.8"/>
+    <line x1="600" y1="210" x2="350" y2="360" stroke-width="1"/>
+    <line x1="600" y1="210" x2="600" y2="360" stroke-width="1.2"/>
+    <line x1="600" y1="210" x2="850" y2="360" stroke-width="1"/>
+    <line x1="600" y1="210" x2="1100" y2="360" stroke-width="0.8"/>
   </g>
 
-  <!-- Ambient Holographic Light Cones -->
-  <circle cx="200" cy="100" r="160" fill="#00F2FE" opacity="0.08" filter="url(#bloom-strong)"/>
-  <circle cx="1000" cy="200" r="180" fill="#7F00FF" opacity="0.1" filter="url(#bloom-strong)"/>
-  <circle cx="600" cy="180" r="220" fill="#E100FF" opacity="0.07" filter="url(#bloom-strong)"/>
-
-  <!-- Rotating Holographic Orbit Rings Behind Title -->
-  <g class="orbit-ring" opacity="0.25">
-    <ellipse cx="600" cy="175" rx="340" ry="110" fill="none" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="10 15"/>
-    <circle cx="940" cy="175" r="4" fill="#00F2FE" filter="url(#bloom-soft)"/>
-    <circle cx="260" cy="175" r="4" fill="#00F2FE" filter="url(#bloom-soft)"/>
-  </g>
-  <g class="orbit-ring-rev" opacity="0.2">
-    <ellipse cx="600" cy="175" rx="380" ry="90" fill="none" stroke="#E100FF" stroke-width="1" stroke-dasharray="6 20"/>
-    <circle cx="600" cy="85" r="3" fill="#E100FF" filter="url(#bloom-soft)"/>
-    <circle cx="600" cy="265" r="3" fill="#E100FF" filter="url(#bloom-soft)"/>
+  <!-- Orbital Geometric Rings -->
+  <g class="orbit-geom" opacity="0.2">
+    <ellipse cx="600" cy="170" rx="360" ry="115" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="8 16"/>
+    <circle cx="960" cy="170" r="4" fill="#38BDF8" filter="url(#subtle-bloom)"/>
+    <circle cx="240" cy="170" r="4" fill="#818CF8" filter="url(#subtle-bloom)"/>
   </g>
 
-  <!-- 3D Floating Isometric Polygons (LEFT CLUSTER) -->
-  <g class="cube-1" transform="translate(140, 160)">
-    <!-- Main 3D Isometric Cyan Cube -->
-    <polygon points="0,-40 35,-60 70,-40 35,-20" fill="url(#cube-top-cyan)" filter="url(#bloom-soft)"/>
-    <polygon points="0,-40 35,-20 35,20 0,0" fill="url(#cube-left-cyan)"/>
-    <polygon points="35,-20 70,-40 70,0 35,20" fill="url(#cube-right-cyan)"/>
-    <!-- Center Core Point -->
-    <circle cx="35" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#bloom-strong)"/>
-    <!-- Wireframe Outline -->
-    <polygon points="0,-40 35,-60 70,-40 70,0 35,20 0,0" fill="none" stroke="#00F2FE" stroke-width="1" opacity="0.6"/>
-  </g>
-  <g class="cube-mini" transform="translate(85, 230)">
-    <!-- Mini Purple Cube -->
-    <polygon points="0,-20 18,-30 36,-20 18,-10" fill="url(#cube-top-magenta)"/>
-    <polygon points="0,-20 18,-10 18,10 0,0" fill="url(#cube-left-magenta)"/>
-    <polygon points="18,-10 36,-20 36,0 18,10" fill="url(#cube-right-magenta)"/>
+  <!-- 3D Isometric Crystal Left -->
+  <g class="prism-left-box" transform="translate(130, 150)">
+    <polygon points="0,-42 38,-64 76,-42 38,-20" fill="url(#prism-top)" filter="url(#subtle-bloom)"/>
+    <polygon points="0,-42 38,-20 38,24 0,4" fill="url(#prism-left)"/>
+    <polygon points="38,-20 76,-42 76,4 38,24" fill="url(#prism-right)"/>
+    <circle cx="38" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#subtle-bloom)"/>
+    <polygon points="0,-42 38,-64 76,-42 76,4 38,24 0,4" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5"/>
   </g>
 
-  <!-- 3D Floating Isometric Polygons (RIGHT CLUSTER) -->
-  <g class="cube-2" transform="translate(980, 140)">
-    <!-- Main 3D Isometric Magenta Cube -->
-    <polygon points="0,-38 32,-56 64,-38 32,-20" fill="url(#cube-top-magenta)" filter="url(#bloom-soft)"/>
-    <polygon points="0,-38 32,-20 32,18 0,0" fill="url(#cube-left-magenta)"/>
-    <polygon points="32,-20 64,-38 64,0 32,18" fill="url(#cube-right-magenta)"/>
-    <!-- Center Core Point -->
-    <circle cx="32" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#bloom-strong)"/>
-    <!-- Wireframe Outline -->
-    <polygon points="0,-38 32,-56 64,-38 64,0 32,18 0,0" fill="none" stroke="#E100FF" stroke-width="1" opacity="0.6"/>
-  </g>
-  <g class="cube-mini" transform="translate(1060, 220)">
-    <!-- Mini Cyan Cube -->
-    <polygon points="0,-22 20,-32 40,-22 20,-12" fill="url(#cube-top-cyan)"/>
-    <polygon points="0,-22 20,-12 20,8 0,-2" fill="url(#cube-left-cyan)"/>
-    <polygon points="20,-12 40,-22 40,-2 20,8" fill="url(#cube-right-cyan)"/>
+  <!-- 3D Isometric Crystal Right -->
+  <g class="prism-right-box" transform="translate(990, 135)">
+    <polygon points="0,-40 36,-60 72,-40 36,-20" fill="url(#prism-top-purple)" filter="url(#subtle-bloom)"/>
+    <polygon points="0,-40 36,-20 36,22 0,2" fill="url(#prism-left-purple)"/>
+    <polygon points="36,-20 72,-40 72,2 36,22" fill="url(#prism-right-purple)"/>
+    <circle cx="36" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#subtle-bloom)"/>
+    <polygon points="0,-40 36,-60 72,-40 72,2 36,22 0,2" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.5"/>
   </g>
 
-  <!-- Outer HUD Frame & Laser Beams -->
-  <rect x="25" y="25" width="1150" height="330" rx="16" fill="none" stroke="url(#border-laser)" stroke-width="1.5" opacity="0.7"/>
+  <!-- Outer Luxe Glass Border & Corner Accents -->
+  <rect x="20" y="20" width="1160" height="320" rx="14" fill="none" stroke="url(#glass-border)" stroke-width="1.6"/>
+  
+  <path d="M 20,55 L 20,20 L 55,20" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+  <path d="M 1180,55 L 1180,20 L 1145,20" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+  <path d="M 20,305 L 20,340 L 55,340" fill="none" stroke="#34D399" stroke-width="3.5"/>
+  <path d="M 1180,305 L 1180,340 L 1145,340" fill="none" stroke="#C084FC" stroke-width="3.5"/>
 
-  <!-- High-Tech Corner Targeting Reticles -->
-  <path d="M 25,60 L 25,25 L 60,25" fill="none" stroke="#00F2FE" stroke-width="4" filter="url(#bloom-soft)"/>
-  <path d="M 1175,60 L 1175,25 L 1140,25" fill="none" stroke="#00F2FE" stroke-width="4" filter="url(#bloom-soft)"/>
-  <path d="M 25,320 L 25,355 L 60,355" fill="none" stroke="#E100FF" stroke-width="4" filter="url(#bloom-soft)"/>
-  <path d="M 1175,320 L 1175,355 L 1140,355" fill="none" stroke="#E100FF" stroke-width="4" filter="url(#bloom-soft)"/>
-
-  <!-- Top HUD Telemetry Bar -->
-  <g class="mono-label" font-size="11" fill="#00F2FE" opacity="0.9">
-    <text x="50" y="52">● SYSTEM PROTOCOL // 2026.QUANTUM</text>
-    <text x="960" y="52">SECURITY LEVEL: NOMINAL [100%]</text>
-    <circle cx="40" cy="48" r="3" fill="#00FF87" filter="url(#bloom-soft)"/>
-  </g>
-
-  <!-- Main Hero 3D Title -->
-  <!-- Ambient Backing Glow -->
-  <text x="600" y="155" text-anchor="middle" class="main-title" font-size="56" fill="url(#neon-glow-text)" filter="url(#bloom-strong)" opacity="0.7">
-    MOKSHAGNA TEJ
-  </text>
-  <!-- Sharp Foreground Typography -->
-  <text x="600" y="155" text-anchor="middle" class="main-title" font-size="56" fill="url(#neon-glow-text)">
-    MOKSHAGNA TEJ
-  </text>
-
-  <!-- High-Impact Holographic Pill Badge -->
-  <g class="badge-glow" transform="translate(600, 225)">
-    <rect x="-380" y="-22" width="760" height="44" rx="22" fill="#04060C" stroke="url(#border-laser)" stroke-width="2"/>
-    <text x="0" y="7" text-anchor="middle" class="mono-label" font-size="14" font-weight="bold" fill="#FFFFFF" letter-spacing="2">
-      FULL-STACK ARCHITECT <tspan fill="#00F2FE">✦</tspan> AI &amp; CLOUD INNOVATOR <tspan fill="#E100FF">✦</tspan> IMAGINE CUP '26
+  <!-- Top Status Badge -->
+  <g transform="translate(600, 48)">
+    <rect x="-190" y="-14" width="380" height="28" rx="14" fill="#0B132B" stroke="#38BDF8" stroke-width="1" opacity="0.9"/>
+    <circle cx="-165" cy="0" r="4" fill="#34D399" filter="url(#subtle-bloom)"/>
+    <text x="0" y="4" text-anchor="middle" class="sub-font" font-size="11" font-weight="bold" fill="#38BDF8" letter-spacing="1">
+      ● STATUS: BUILDING NEXT-GEN WEB &amp; AI
     </text>
   </g>
 
-  <!-- Bottom HUD Status Coordinates -->
-  <g class="mono-label" font-size="11" fill="#7F00FF" opacity="0.85">
-    <text x="50" y="335">BASE ORBIT: VEL TECH UNIVERSITY [VTU29491]</text>
-    <text x="960" y="335">ENGINE: MERN · CLOUD · JAVA/C++</text>
+  <!-- Main Hero Title -->
+  <text x="600" y="152" text-anchor="middle" class="hero-font" font-size="54" fill="url(#aurora-text)" filter="url(#aurora-glow)" opacity="0.5">
+    MOKSHAGNA TEJ
+  </text>
+  <text x="600" y="152" text-anchor="middle" class="hero-font" font-size="54" fill="url(#aurora-text)">
+    MOKSHAGNA TEJ
+  </text>
+
+  <!-- High-End Subtitle Glass Pill -->
+  <g transform="translate(600, 218)">
+    <rect x="-370" y="-20" width="740" height="40" rx="20" fill="#040714" stroke="url(#glass-border)" stroke-width="1.8" filter="url(#subtle-bloom)"/>
+    <text x="0" y="6" text-anchor="middle" class="sub-font" font-size="13" font-weight="bold" fill="#F8FAFC" letter-spacing="1.5">
+      FULL-STACK ARCHITECT <tspan fill="#38BDF8">✦</tspan> CLOUD &amp; AI INNOVATOR <tspan fill="#C084FC">✦</tspan> IMAGINE CUP '26
+    </text>
   </g>
 
-  <!-- Glowing Center Bottom Laser Spike -->
-  <line x1="300" y1="378" x2="900" y2="378" stroke="url(#border-laser)" stroke-width="3" filter="url(#bloom-strong)"/>
+  <!-- Bottom Details Bar -->
+  <g class="sub-font" font-size="11" fill="#94A3B8">
+    <text x="45" y="318">LOCATION: VEL TECH UNIVERSITY [VTU29491]</text>
+    <text x="890" y="318">STACK: MERN · AZURE · OPENAI · DSA</text>
+  </g>
+
+  <!-- Glowing Laser Line Bottom -->
+  <line x1="250" y1="358" x2="950" y2="358" stroke="url(#glass-border)" stroke-width="2.5" filter="url(#subtle-bloom)"/>
 </svg>
