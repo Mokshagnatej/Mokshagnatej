@@ -1,74 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
   <defs>
-    <!-- Cosmic Obsidian Background -->
-    <linearGradient id="cosmic-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="clean-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#030712"/>
-      <stop offset="50%" stop-color="#080D1A"/>
-      <stop offset="100%" stop-color="#0B091E"/>
+      <stop offset="50%" stop-color="#080E1E"/>
+      <stop offset="100%" stop-color="#0A0618"/>
     </linearGradient>
 
-    <!-- Aurora Text Gradient -->
-    <linearGradient id="aurora-text" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="clean-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8">
-        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#C084FC;#34D399;#38BDF8" dur="12s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#C084FC;#34D399;#38BDF8" dur="10s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="35%" stop-color="#818CF8">
-        <animate attributeName="stop-color" values="#818CF8;#C084FC;#38BDF8;#818CF8;#818CF8" dur="12s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#C084FC;#34D399;#38BDF8;#818CF8" dur="10s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="70%" stop-color="#C084FC">
-        <animate attributeName="stop-color" values="#C084FC;#34D399;#818CF8;#C084FC;#C084FC" dur="12s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#34D399">
-        <animate attributeName="stop-color" values="#34D399;#38BDF8;#C084FC;#34D399;#34D399" dur="12s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#C084FC">
+        <animate attributeName="stop-color" values="#C084FC;#34D399;#38BDF8;#818CF8;#C084FC" dur="10s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <!-- Linear Luxe Glass Border -->
-    <linearGradient id="glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
-      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#C084FC" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#34D399" stop-opacity="0.8"/>
+    <linearGradient id="clean-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.6"/>
     </linearGradient>
 
-    <!-- 3D Monolith Facet Gradients -->
-    <linearGradient id="prism-top" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- 3D Prism Gradients -->
+    <linearGradient id="prism-top-c" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
-    <linearGradient id="prism-left" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="prism-left-c" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1E1B4B"/>
       <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-    <linearGradient id="prism-right" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="prism-right-c" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#6366F1"/>
       <stop offset="100%" stop-color="#4338CA"/>
     </linearGradient>
 
-    <linearGradient id="prism-top-purple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C084FC"/>
-      <stop offset="100%" stop-color="#9333EA"/>
-    </linearGradient>
-    <linearGradient id="prism-left-purple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2E1065"/>
-      <stop offset="100%" stop-color="#581C87"/>
-    </linearGradient>
-    <linearGradient id="prism-right-purple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#7E22CE"/>
-    </linearGradient>
-
-    <!-- Aurora Diffusion Filters -->
-    <filter id="aurora-glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter id="subtle-bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="clean-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -76,118 +47,66 @@
     </filter>
 
     <style>
-      @keyframes floatSlow1 {
+      @keyframes floatPrism {
         0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-14px) rotate(6deg); }
+        50% { transform: translateY(-10px) rotate(6deg); }
       }
-      @keyframes floatSlow2 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-18px) rotate(-8deg); }
-      }
-      @keyframes auroraPulse {
-        0%, 100% { opacity: 0.15; transform: scale(1); }
-        50% { opacity: 0.3; transform: scale(1.1); }
-      }
-      @keyframes orbitRotate {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-      .prism-left-box { animation: floatSlow1 7s ease-in-out infinite; transform-origin: center; }
-      .prism-right-box { animation: floatSlow2 8.5s ease-in-out infinite; transform-origin: center; }
-      .aurora-orb-1 { animation: auroraPulse 6s ease-in-out infinite; transform-origin: 300px 180px; }
-      .aurora-orb-2 { animation: auroraPulse 7s ease-in-out infinite alternate; transform-origin: 900px 180px; }
-      .orbit-geom { animation: orbitRotate 24s linear infinite; transform-origin: 600px 170px; }
-      .hero-font { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-weight: 900; letter-spacing: 5px; }
-      .sub-font { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .float-prism { animation: floatPrism 6s ease-in-out infinite; transform-origin: center; }
+      .clean-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; font-weight: 900; letter-spacing: 4px; }
+      .clean-sub { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, Menlo, monospace; }
     </style>
   </defs>
 
-  <!-- Background Base Canvas -->
-  <rect width="1200" height="360" rx="18" fill="url(#cosmic-bg)"/>
+  <!-- Background Base -->
+  <rect width="1200" height="240" rx="16" fill="url(#clean-bg)" stroke="url(#clean-border)" stroke-width="1.5"/>
 
-  <!-- Soft Aurora Diffusions -->
-  <circle cx="280" cy="140" r="180" fill="#38BDF8" opacity="0.12" filter="url(#aurora-glow)" class="aurora-orb-1"/>
-  <circle cx="920" cy="180" r="200" fill="#818CF8" opacity="0.14" filter="url(#aurora-glow)" class="aurora-orb-2"/>
-  <circle cx="600" cy="170" r="240" fill="#C084FC" opacity="0.08" filter="url(#aurora-glow)"/>
-
-  <!-- Subtle Horizon Mesh Grid -->
-  <g stroke="#38BDF8" opacity="0.12">
-    <line x1="0" y1="240" x2="1200" y2="240" stroke-width="0.6"/>
-    <line x1="0" y1="275" x2="1200" y2="275" stroke-width="0.8"/>
-    <line x1="0" y1="310" x2="1200" y2="310" stroke-width="1.2"/>
-    <line x1="0" y1="342" x2="1200" y2="342" stroke-width="1.6"/>
-    
-    <line x1="600" y1="210" x2="100" y2="360" stroke-width="0.8"/>
-    <line x1="600" y1="210" x2="350" y2="360" stroke-width="1"/>
-    <line x1="600" y1="210" x2="600" y2="360" stroke-width="1.2"/>
-    <line x1="600" y1="210" x2="850" y2="360" stroke-width="1"/>
-    <line x1="600" y1="210" x2="1100" y2="360" stroke-width="0.8"/>
-  </g>
-
-  <!-- Orbital Geometric Rings -->
-  <g class="orbit-geom" opacity="0.2">
-    <ellipse cx="600" cy="170" rx="360" ry="115" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="8 16"/>
-    <circle cx="960" cy="170" r="4" fill="#38BDF8" filter="url(#subtle-bloom)"/>
-    <circle cx="240" cy="170" r="4" fill="#818CF8" filter="url(#subtle-bloom)"/>
-  </g>
+  <!-- Soft Ambient Glows -->
+  <circle cx="250" cy="120" r="140" fill="#38BDF8" opacity="0.1" filter="url(#clean-bloom)"/>
+  <circle cx="950" cy="120" r="140" fill="#818CF8" opacity="0.1" filter="url(#clean-bloom)"/>
 
   <!-- 3D Isometric Crystal Left -->
-  <g class="prism-left-box" transform="translate(130, 150)">
-    <polygon points="0,-42 38,-64 76,-42 38,-20" fill="url(#prism-top)" filter="url(#subtle-bloom)"/>
-    <polygon points="0,-42 38,-20 38,24 0,4" fill="url(#prism-left)"/>
-    <polygon points="38,-20 76,-42 76,4 38,24" fill="url(#prism-right)"/>
-    <circle cx="38" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#subtle-bloom)"/>
-    <polygon points="0,-42 38,-64 76,-42 76,4 38,24 0,4" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5"/>
+  <g class="float-prism" transform="translate(100, 110)">
+    <polygon points="0,-32 28,-48 56,-32 28,-16" fill="url(#prism-top-c)" filter="url(#clean-bloom)"/>
+    <polygon points="0,-32 28,-16 28,18 0,2" fill="url(#prism-left-c)"/>
+    <polygon points="28,-16 56,-32 56,2 28,18" fill="url(#prism-right-c)"/>
+    <circle cx="28" cy="-16" r="2.5" fill="#FFFFFF"/>
+    <polygon points="0,-32 28,-48 56,-32 56,2 28,18 0,2" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5"/>
   </g>
 
   <!-- 3D Isometric Crystal Right -->
-  <g class="prism-right-box" transform="translate(990, 135)">
-    <polygon points="0,-40 36,-60 72,-40 36,-20" fill="url(#prism-top-purple)" filter="url(#subtle-bloom)"/>
-    <polygon points="0,-40 36,-20 36,22 0,2" fill="url(#prism-left-purple)"/>
-    <polygon points="36,-20 72,-40 72,2 36,22" fill="url(#prism-right-purple)"/>
-    <circle cx="36" cy="-20" r="3.5" fill="#FFFFFF" filter="url(#subtle-bloom)"/>
-    <polygon points="0,-40 36,-60 72,-40 72,2 36,22 0,2" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.5"/>
+  <g class="float-prism" transform="translate(1040, 110)">
+    <polygon points="0,-32 28,-48 56,-32 28,-16" fill="url(#prism-top-c)" filter="url(#clean-bloom)"/>
+    <polygon points="0,-32 28,-16 28,18 0,2" fill="url(#prism-left-c)"/>
+    <polygon points="28,-16 56,-32 56,2 28,18" fill="url(#prism-right-c)"/>
+    <circle cx="28" cy="-16" r="2.5" fill="#FFFFFF"/>
+    <polygon points="0,-32 28,-48 56,-32 56,2 28,18 0,2" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.5"/>
   </g>
 
-  <!-- Outer Luxe Glass Border & Corner Accents -->
-  <rect x="20" y="20" width="1160" height="320" rx="14" fill="none" stroke="url(#glass-border)" stroke-width="1.6"/>
-  
-  <path d="M 20,55 L 20,20 L 55,20" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
-  <path d="M 1180,55 L 1180,20 L 1145,20" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
-  <path d="M 20,305 L 20,340 L 55,340" fill="none" stroke="#34D399" stroke-width="3.5"/>
-  <path d="M 1180,305 L 1180,340 L 1145,340" fill="none" stroke="#C084FC" stroke-width="3.5"/>
-
-  <!-- Top Status Badge -->
-  <g transform="translate(600, 48)">
-    <rect x="-190" y="-14" width="380" height="28" rx="14" fill="#0B132B" stroke="#38BDF8" stroke-width="1" opacity="0.9"/>
-    <circle cx="-165" cy="0" r="4" fill="#34D399" filter="url(#subtle-bloom)"/>
-    <text x="0" y="4" text-anchor="middle" class="sub-font" font-size="11" font-weight="bold" fill="#38BDF8" letter-spacing="1">
-      ● STATUS: BUILDING NEXT-GEN WEB &amp; AI
+  <!-- Top Real-Time Status Pill -->
+  <g transform="translate(600, 42)">
+    <rect x="-210" y="-12" width="420" height="24" rx="12" fill="#060C1B" stroke="#38BDF8" stroke-width="1"/>
+    <circle cx="-190" cy="0" r="3.5" fill="#34D399"/>
+    <text x="0" y="4" text-anchor="middle" class="clean-sub" font-size="10.5" font-weight="bold" fill="#38BDF8" letter-spacing="1">
+      ● FULL-STACK DEVELOPER &amp; CSE UNDERGRADUATE
     </text>
   </g>
 
   <!-- Main Hero Title -->
-  <text x="600" y="152" text-anchor="middle" class="hero-font" font-size="54" fill="url(#aurora-text)" filter="url(#aurora-glow)" opacity="0.5">
+  <text x="600" y="112" text-anchor="middle" class="clean-title" font-size="44" fill="url(#clean-text-grad)" filter="url(#clean-bloom)" opacity="0.5">
     MOKSHAGNA TEJ
   </text>
-  <text x="600" y="152" text-anchor="middle" class="hero-font" font-size="54" fill="url(#aurora-text)">
+  <text x="600" y="112" text-anchor="middle" class="clean-title" font-size="44" fill="url(#clean-text-grad)">
     MOKSHAGNA TEJ
   </text>
 
-  <!-- High-End Subtitle Glass Pill -->
-  <g transform="translate(600, 218)">
-    <rect x="-370" y="-20" width="740" height="40" rx="20" fill="#040714" stroke="url(#glass-border)" stroke-width="1.8" filter="url(#subtle-bloom)"/>
-    <text x="0" y="6" text-anchor="middle" class="sub-font" font-size="13" font-weight="bold" fill="#F8FAFC" letter-spacing="1.5">
-      FULL-STACK ARCHITECT <tspan fill="#38BDF8">✦</tspan> CLOUD &amp; AI INNOVATOR <tspan fill="#C084FC">✦</tspan> IMAGINE CUP '26
+  <!-- Subtitle Glass Pill -->
+  <g transform="translate(600, 165)">
+    <rect x="-350" y="-16" width="700" height="32" rx="16" fill="#040714" stroke="url(#clean-border)" stroke-width="1.2"/>
+    <text x="0" y="5" text-anchor="middle" class="clean-sub" font-size="12" font-weight="bold" fill="#F8FAFC" letter-spacing="1.2">
+      MERN STACK <tspan fill="#38BDF8">✦</tspan> CLOUD &amp; AI <tspan fill="#C084FC">✦</tspan> VEL TECH CSE '27 <tspan fill="#34D399">✦</tspan> IMAGINE CUP '26
     </text>
   </g>
 
-  <!-- Bottom Details Bar -->
-  <g class="sub-font" font-size="11" fill="#94A3B8">
-    <text x="45" y="318">LOCATION: VEL TECH UNIVERSITY [VTU29491]</text>
-    <text x="890" y="318">STACK: MERN · AZURE · OPENAI · DSA</text>
-  </g>
-
-  <!-- Glowing Laser Line Bottom -->
-  <line x1="250" y1="358" x2="950" y2="358" stroke="url(#glass-border)" stroke-width="2.5" filter="url(#subtle-bloom)"/>
+  <!-- Bottom Accent Line -->
+  <line x1="300" y1="210" x2="900" y2="210" stroke="url(#clean-border)" stroke-width="2" filter="url(#clean-bloom)"/>
 </svg>
