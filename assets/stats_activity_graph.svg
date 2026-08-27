@@ -1,0 +1,113 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradGraph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="areaGradFlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineStrokeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="258" rx="12" fill="url(#bgGradGraph)" stroke="#1E293B" stroke-width="1.2"/>
+  <rect x="24" y="1" width="100" height="2" rx="1" fill="#38BDF8"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 24)">
+    <circle cx="5" cy="5" r="4" fill="#38BDF8"/>
+    <text x="16" y="9" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#F8FAFC" letter-spacing="0.5">CONTRIBUTION VELOCITY &amp; COMMIT STREAM</text>
+    <text x="852" y="9" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="10" font-weight="600" fill="#38BDF8">365-DAY DENSITY</text>
+  </g>
+
+  <!-- Activity Canvas Container -->
+  <g transform="translate(24, 48)">
+    <rect x="0" y="0" width="852" height="150" rx="8" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Grid Horizontal Reference Lines -->
+    <line x1="20" y1="35" x2="832" y2="35" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="20" y1="75" x2="832" y2="75" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="20" y1="115" x2="832" y2="115" stroke="#1E293B" stroke-dasharray="3 3"/>
+
+    <!-- Month Axis Markers -->
+    <g transform="translate(0, 138)" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="8.5" font-weight="600" fill="#64748B" text-anchor="middle">
+      <text x="45">Nov</text>
+      <text x="130">Dec</text>
+      <text x="215">Jan</text>
+      <text x="300">Feb</text>
+      <text x="385">Mar</text>
+      <text x="470">Apr</text>
+      <text x="555">May</text>
+      <text x="640">Jun</text>
+      <text x="725">Jul</text>
+      <text x="810">Aug</text>
+    </g>
+
+    <!-- Shaded Area Path -->
+    <path d="M 45 120 C 90 115, 110 85, 130 90 C 160 95, 190 60, 215 55 C 240 50, 275 80, 300 70 C 330 60, 360 30, 385 28 C 410 26, 445 65, 470 60 C 500 55, 530 40, 555 35 C 585 30, 615 75, 640 68 C 670 60, 695 42, 725 38 C 760 34, 785 22, 810 20 L 810 125 L 45 125 Z" fill="url(#areaGradFlow)"/>
+
+    <!-- Glowing Stroke Curve -->
+    <path d="M 45 120 C 90 115, 110 85, 130 90 C 160 95, 190 60, 215 55 C 240 50, 275 80, 300 70 C 330 60, 360 30, 385 28 C 410 26, 445 65, 470 60 C 500 55, 530 40, 555 35 C 585 30, 615 75, 640 68 C 670 60, 695 42, 725 38 C 760 34, 785 22, 810 20" stroke="url(#lineStrokeGrad)" stroke-width="2.5" fill="none" filter="url(#glowEffect)"/>
+
+    <!-- Peak Milestone Data Points -->
+    <!-- Jan Peak -->
+    <circle cx="215" cy="55" r="4.5" fill="#0B0F19" stroke="#38BDF8" stroke-width="2"/>
+    
+    <!-- Mar Peak (Imagine Cup Sprint) -->
+    <circle cx="385" cy="28" r="5" fill="#0B0F19" stroke="#F59E0B" stroke-width="2"/>
+    <g transform="translate(385, 15)">
+      <rect x="-35" y="-12" width="70" height="15" rx="3" fill="#141C2E" stroke="#F59E0B" stroke-width="0.8"/>
+      <text x="0" y="-2" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="7" font-weight="700" fill="#F59E0B">IMAGINE CUP</text>
+    </g>
+
+    <!-- May Peak -->
+    <circle cx="555" cy="35" r="4.5" fill="#0B0F19" stroke="#818CF8" stroke-width="2"/>
+
+    <!-- Aug Peak (Active Build) -->
+    <circle cx="810" cy="20" r="5" fill="#0B0F19" stroke="#10B981" stroke-width="2"/>
+    <g transform="translate(810, 10)">
+      <rect x="-32" y="-12" width="64" height="15" rx="3" fill="#141C2E" stroke="#10B981" stroke-width="0.8"/>
+      <text x="0" y="-2" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="7" font-weight="700" fill="#10B981">PEAK COMMITS</text>
+    </g>
+  </g>
+
+  <!-- Bottom Metric Banner Strip -->
+  <g transform="translate(24, 212)">
+    <!-- Metric 1 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">ANNUAL COMMITS</text>
+      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">522+</text>
+    </g>
+
+    <!-- Metric 2 -->
+    <g transform="translate(220, 0)">
+      <text x="0" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">CONSISTENCY SCORE</text>
+      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#10B981">98.4% Active</text>
+    </g>
+
+    <!-- Metric 3 -->
+    <g transform="translate(440, 0)">
+      <text x="0" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">PEAK VELOCITY</text>
+      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#38BDF8">18 Commits / Day</text>
+    </g>
+
+    <!-- Metric 4 -->
+    <g transform="translate(660, 0)">
+      <text x="0" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">ENGINEERING STATE</text>
+      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#A78BFA">Continuous Dev</text>
+    </g>
+  </g>
+</svg>

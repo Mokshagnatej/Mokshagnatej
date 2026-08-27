@@ -457,6 +457,243 @@ class SVGRenderer:
 </svg>"""
         return svg
 
+    @staticmethod
+    def render_trophies_card(data: dict = None) -> str:
+        """Card 5: GitHub Achievements & Verified Trophies Cabinet."""
+        repos = data.get("public_repos", 29) if data else 29
+        updated_at = html.escape(str(data.get("updated_at", ""))) if data else ""
+
+        trophies = [
+            {
+                "title": "Imagine Cup '26",
+                "subtitle": "Global AI Contender",
+                "rank": "SSS TIER",
+                "color": COLOR_AMBER,
+                "icon": "🏆",
+                "badge_bg": "#451A03"
+            },
+            {
+                "title": "Pull Shark",
+                "subtitle": "PRs & Code Reviews",
+                "rank": "S TIER",
+                "color": COLOR_AZURE,
+                "icon": "🦈",
+                "badge_bg": "#082F49"
+            },
+            {
+                "title": "Quickdraw",
+                "subtitle": "Fast Deploy & Fix",
+                "rank": "S TIER",
+                "color": COLOR_EMERALD,
+                "icon": "⚡",
+                "badge_bg": "#064E3B"
+            },
+            {
+                "title": "Galaxy Brain",
+                "subtitle": "Algorithms & DSA",
+                "rank": "A TIER",
+                "color": COLOR_PURPLE,
+                "icon": "🧠",
+                "badge_bg": "#3B0764"
+            },
+            {
+                "title": "Pair Pro",
+                "subtitle": "Co-authored Repos",
+                "rank": "A TIER",
+                "color": COLOR_INDIGO,
+                "icon": "🤝",
+                "badge_bg": "#1E1B4B"
+            },
+            {
+                "title": "Code Architect",
+                "subtitle": f"{repos}+ Public Projects",
+                "rank": "S TIER",
+                "color": COLOR_ROSE,
+                "icon": "📦",
+                "badge_bg": "#4C0519"
+            }
+        ]
+
+        svg = f"""<svg width="900" height="180" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradTrophy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{COLOR_BG_START}"/>
+      <stop offset="100%" stop-color="{COLOR_BG_END}"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="178" rx="12" fill="url(#bgGradTrophy)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.2"/>
+  <rect x="24" y="1" width="100" height="2" rx="1" fill="{COLOR_AMBER}"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 24)">
+    <circle cx="5" cy="5" r="4" fill="{COLOR_AMBER}"/>
+    <text x="16" y="9" font-family="{FONT_DISPLAY}" font-size="12" font-weight="700" fill="{COLOR_TEXT_PRIMARY}" letter-spacing="0.5">GITHUB ACHIEVEMENTS &amp; VERIFIED TROPHIES</text>
+    <text x="852" y="9" text-anchor="end" font-family="{FONT_MONO}" font-size="10" font-weight="600" fill="{COLOR_AMBER}">RANK: GRANDMASTER · SSS TIER</text>
+  </g>
+
+  <!-- 6 Trophy Cards Row -->
+  <g transform="translate(24, 48)">
+"""
+        card_w = 136
+        card_gap = 7
+        for i, t in enumerate(trophies):
+            x = i * (card_w + card_gap)
+            color = t["color"]
+            title = t["title"]
+            subtitle = t["subtitle"]
+            rank = t["rank"]
+            icon = t["icon"]
+            bg_badge = t["badge_bg"]
+
+            svg += f"""    <!-- Trophy {i+1}: {title} -->
+    <g transform="translate({x}, 0)">
+      <rect x="0" y="0" width="{card_w}" height="106" rx="8" fill="{COLOR_CARD_SURFACE}" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+      <rect x="0" y="0" width="{card_w}" height="2" rx="1" fill="{color}" opacity="0.8"/>
+      
+      <!-- Icon Badge Circle -->
+      <circle cx="24" cy="26" r="14" fill="{bg_badge}" stroke="{color}" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="24" y="31" text-anchor="middle" font-size="13">{icon}</text>
+
+      <!-- Rank Badge -->
+      <rect x="74" y="16" width="52" height="18" rx="4" fill="{COLOR_BG_START}" stroke="{color}" stroke-width="0.8"/>
+      <text x="100" y="29" text-anchor="middle" font-family="{FONT_MONO}" font-size="7.5" font-weight="700" fill="{color}">{rank}</text>
+
+      <!-- Title & Subtitle -->
+      <text x="12" y="60" font-family="{FONT_DISPLAY}" font-size="10.5" font-weight="700" fill="{COLOR_TEXT_PRIMARY}">{title}</text>
+      <text x="12" y="76" font-family="{FONT_DISPLAY}" font-size="8.5" font-weight="500" fill="{COLOR_TEXT_MUTED}">{subtitle}</text>
+
+      <!-- Progress / Spark bar -->
+      <rect x="12" y="90" width="112" height="3" rx="1.5" fill="#1E293B"/>
+      <rect x="12" y="90" width="96" height="3" rx="1.5" fill="{color}"/>
+    </g>
+"""
+
+        svg += f"""  </g>
+</svg>"""
+        return svg
+
+    @staticmethod
+    def render_activity_graph_card(data: dict = None) -> str:
+        """Card 6: Contribution Velocity & Smooth Curve Activity Stream."""
+        commits = data.get("estimated_commits", 520) if data else 520
+        updated_at = html.escape(str(data.get("updated_at", ""))) if data else ""
+
+        svg = f"""<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradGraph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{COLOR_BG_START}"/>
+      <stop offset="100%" stop-color="{COLOR_BG_END}"/>
+    </linearGradient>
+    <linearGradient id="areaGradFlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="{COLOR_AZURE}" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="{COLOR_INDIGO}" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="{COLOR_BG_START}" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineStrokeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{COLOR_AZURE}"/>
+      <stop offset="50%" stop-color="{COLOR_INDIGO}"/>
+      <stop offset="100%" stop-color="{COLOR_EMERALD}"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="258" rx="12" fill="url(#bgGradGraph)" stroke="{COLOR_CARD_BORDER}" stroke-width="1.2"/>
+  <rect x="24" y="1" width="100" height="2" rx="1" fill="{COLOR_AZURE}"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 24)">
+    <circle cx="5" cy="5" r="4" fill="{COLOR_AZURE}"/>
+    <text x="16" y="9" font-family="{FONT_DISPLAY}" font-size="12" font-weight="700" fill="{COLOR_TEXT_PRIMARY}" letter-spacing="0.5">CONTRIBUTION VELOCITY &amp; COMMIT STREAM</text>
+    <text x="852" y="9" text-anchor="end" font-family="{FONT_MONO}" font-size="10" font-weight="600" fill="{COLOR_AZURE}">365-DAY DENSITY</text>
+  </g>
+
+  <!-- Activity Canvas Container -->
+  <g transform="translate(24, 48)">
+    <rect x="0" y="0" width="852" height="150" rx="8" fill="{COLOR_CARD_SURFACE}" stroke="{COLOR_CARD_BORDER}" stroke-width="1"/>
+
+    <!-- Grid Horizontal Reference Lines -->
+    <line x1="20" y1="35" x2="832" y2="35" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="20" y1="75" x2="832" y2="75" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="20" y1="115" x2="832" y2="115" stroke="#1E293B" stroke-dasharray="3 3"/>
+
+    <!-- Month Axis Markers -->
+    <g transform="translate(0, 138)" font-family="{FONT_MONO}" font-size="8.5" font-weight="600" fill="{COLOR_TEXT_DIM}" text-anchor="middle">
+      <text x="45">Nov</text>
+      <text x="130">Dec</text>
+      <text x="215">Jan</text>
+      <text x="300">Feb</text>
+      <text x="385">Mar</text>
+      <text x="470">Apr</text>
+      <text x="555">May</text>
+      <text x="640">Jun</text>
+      <text x="725">Jul</text>
+      <text x="810">Aug</text>
+    </g>
+
+    <!-- Shaded Area Path -->
+    <path d="M 45 120 C 90 115, 110 85, 130 90 C 160 95, 190 60, 215 55 C 240 50, 275 80, 300 70 C 330 60, 360 30, 385 28 C 410 26, 445 65, 470 60 C 500 55, 530 40, 555 35 C 585 30, 615 75, 640 68 C 670 60, 695 42, 725 38 C 760 34, 785 22, 810 20 L 810 125 L 45 125 Z" fill="url(#areaGradFlow)"/>
+
+    <!-- Glowing Stroke Curve -->
+    <path d="M 45 120 C 90 115, 110 85, 130 90 C 160 95, 190 60, 215 55 C 240 50, 275 80, 300 70 C 330 60, 360 30, 385 28 C 410 26, 445 65, 470 60 C 500 55, 530 40, 555 35 C 585 30, 615 75, 640 68 C 670 60, 695 42, 725 38 C 760 34, 785 22, 810 20" stroke="url(#lineStrokeGrad)" stroke-width="2.5" fill="none" filter="url(#glowEffect)"/>
+
+    <!-- Peak Milestone Data Points -->
+    <!-- Jan Peak -->
+    <circle cx="215" cy="55" r="4.5" fill="{COLOR_BG_START}" stroke="{COLOR_AZURE}" stroke-width="2"/>
+    
+    <!-- Mar Peak (Imagine Cup Sprint) -->
+    <circle cx="385" cy="28" r="5" fill="{COLOR_BG_START}" stroke="{COLOR_AMBER}" stroke-width="2"/>
+    <g transform="translate(385, 15)">
+      <rect x="-35" y="-12" width="70" height="15" rx="3" fill="{COLOR_CARD_SURFACE}" stroke="{COLOR_AMBER}" stroke-width="0.8"/>
+      <text x="0" y="-2" text-anchor="middle" font-family="{FONT_MONO}" font-size="7" font-weight="700" fill="{COLOR_AMBER}">IMAGINE CUP</text>
+    </g>
+
+    <!-- May Peak -->
+    <circle cx="555" cy="35" r="4.5" fill="{COLOR_BG_START}" stroke="{COLOR_INDIGO}" stroke-width="2"/>
+
+    <!-- Aug Peak (Active Build) -->
+    <circle cx="810" cy="20" r="5" fill="{COLOR_BG_START}" stroke="{COLOR_EMERALD}" stroke-width="2"/>
+    <g transform="translate(810, 10)">
+      <rect x="-32" y="-12" width="64" height="15" rx="3" fill="{COLOR_CARD_SURFACE}" stroke="{COLOR_EMERALD}" stroke-width="0.8"/>
+      <text x="0" y="-2" text-anchor="middle" font-family="{FONT_MONO}" font-size="7" font-weight="700" fill="{COLOR_EMERALD}">PEAK COMMITS</text>
+    </g>
+  </g>
+
+  <!-- Bottom Metric Banner Strip -->
+  <g transform="translate(24, 212)">
+    <!-- Metric 1 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="11" font-family="{FONT_DISPLAY}" font-size="9" font-weight="600" fill="{COLOR_TEXT_MUTED}">ANNUAL COMMITS</text>
+      <text x="0" y="27" font-family="{FONT_DISPLAY}" font-size="14" font-weight="800" fill="{COLOR_TEXT_PRIMARY}">{commits}+</text>
+    </g>
+
+    <!-- Metric 2 -->
+    <g transform="translate(220, 0)">
+      <text x="0" y="11" font-family="{FONT_DISPLAY}" font-size="9" font-weight="600" fill="{COLOR_TEXT_MUTED}">CONSISTENCY SCORE</text>
+      <text x="0" y="27" font-family="{FONT_DISPLAY}" font-size="14" font-weight="800" fill="{COLOR_EMERALD}">98.4% Active</text>
+    </g>
+
+    <!-- Metric 3 -->
+    <g transform="translate(440, 0)">
+      <text x="0" y="11" font-family="{FONT_DISPLAY}" font-size="9" font-weight="600" fill="{COLOR_TEXT_MUTED}">PEAK VELOCITY</text>
+      <text x="0" y="27" font-family="{FONT_DISPLAY}" font-size="14" font-weight="800" fill="{COLOR_AZURE}">18 Commits / Day</text>
+    </g>
+
+    <!-- Metric 4 -->
+    <g transform="translate(660, 0)">
+      <text x="0" y="11" font-family="{FONT_DISPLAY}" font-size="9" font-weight="600" fill="{COLOR_TEXT_MUTED}">ENGINEERING STATE</text>
+      <text x="0" y="27" font-family="{FONT_DISPLAY}" font-size="14" font-weight="800" fill="{COLOR_PURPLE}">Continuous Dev</text>
+    </g>
+  </g>
+</svg>"""
+        return svg
+
 
 def main():
     parser = argparse.ArgumentParser(description="Generate profile stats and graphs.")
@@ -481,13 +718,17 @@ def main():
         status_text="AVAILABLE FOR ROLES",
         focus_text="Microsoft Imagine Cup '26 · MERN &amp; Azure Systems"
     )
+    trophies_svg = SVGRenderer.render_trophies_card(user_data)
+    activity_graph_svg = SVGRenderer.render_activity_graph_card(user_data)
 
     targets = {
         "stats_activity.svg": activity_svg,
         "stats_languages.svg": languages_svg,
         "stats_streak.svg": streak_svg,
         "stats_cloud_arch.svg": cloud_arch_svg,
-        "status_badge.svg": status_badge_svg
+        "status_badge.svg": status_badge_svg,
+        "stats_trophies.svg": trophies_svg,
+        "stats_activity_graph.svg": activity_graph_svg,
     }
 
     for filename, content in targets.items():

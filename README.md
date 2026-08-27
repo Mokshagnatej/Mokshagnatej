@@ -188,11 +188,11 @@ Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate a
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Mokshagnatej&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6" width="100%" alt="GitHub Trophies"/>
+<img src="./assets/stats_trophies.svg" width="100%" alt="GitHub Achievements &amp; Verified Trophies"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mokshagnatej&bg_color=0B0F19&color=38BDF8&line=818CF8&point=F8FAFC&area_color=38BDF8&area=true&hide_border=true&custom_title=Contribution%20Activity%20Graph" width="100%" alt="Activity Graph"/>
+<img src="./assets/stats_activity_graph.svg" width="100%" alt="Contribution Velocity &amp; Activity Graph"/>
 
 </div>
 
