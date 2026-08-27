@@ -89,7 +89,7 @@
     <!-- Metric 1 -->
     <g transform="translate(0, 0)">
       <text x="0" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">ANNUAL COMMITS</text>
-      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">522+</text>
+      <text x="0" y="27" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">540+</text>
     </g>
 
     <!-- Metric 2 -->

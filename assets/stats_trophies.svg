@@ -138,7 +138,7 @@
 
       <!-- Title & Subtitle -->
       <text x="12" y="60" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC">Code Architect</text>
-      <text x="12" y="76" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">29+ Public Projects</text>
+      <text x="12" y="76" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">30+ Public Projects</text>
 
       <!-- Progress / Spark bar -->
       <rect x="12" y="90" width="112" height="3" rx="1.5" fill="#1E293B"/>
