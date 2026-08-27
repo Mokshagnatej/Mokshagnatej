@@ -36,8 +36,8 @@
         50% { transform: translateY(-7px) scale(1.05); }
       }
       .trophy-group { animation: floatTrophy 4.5s ease-in-out infinite; transform-origin: 100px 100px; }
-      .luxe-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 800; }
-      .luxe-mono { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, Menlo, monospace; }
+      .luxe-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 800; }
+      .luxe-mono { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; }
     </style>
   </defs>
 
@@ -78,7 +78,7 @@
     <text x="0" y="88" class="luxe-mono" font-size="13" fill="#38BDF8">
       &gt; Architecting an end-to-end intelligent AI system powered by Azure Cloud &amp; OpenAI API.
     </text>
-    <text x="0" y="108" class="luxe-mono" font-size="12" fill="#94A3B8">
+    <text x="0" y="108" class="luxe-mono" font-size="12" fill="#8BA4B8">
       &gt; Focus: Real-time telemetry, automated diagnostic inference, and zero-latency pipelines.
     </text>
   </g>

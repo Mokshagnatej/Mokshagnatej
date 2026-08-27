@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
   <defs>
     <linearGradient id="hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="100%" stop-color="#0B132B"/>
+      <stop offset="0%" stop-color="#020A0F"/>
+      <stop offset="100%" stop-color="#0B1520"/>
     </linearGradient>
 
     <linearGradient id="card-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -21,9 +21,9 @@
     </filter>
 
     <style>
-      .hub-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 800; font-size: 15px; fill: #F8FAFC; }
-      .hub-sub { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; font-size: 11px; fill: #94A3B8; }
-      .hub-tag { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 10px; font-weight: bold; }
+      .hub-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 800; font-size: 15px; fill: #F8FAFC; }
+      .hub-sub { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; font-size: 11px; fill: #8BA4B8; }
+      .hub-tag { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; font-weight: bold; }
     </style>
   </defs>
 

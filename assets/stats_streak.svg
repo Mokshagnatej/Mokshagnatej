@@ -1,51 +1,67 @@
-<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="495" height="220" viewBox="0 0 495 220" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGradStreak" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="100%" stop-color="#0B1220"/>
+      <stop offset="0%" stop-color="#020A0F"/>
+      <stop offset="100%" stop-color="#0B1520"/>
     </linearGradient>
     <filter id="glowEmeraldStreak" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#34D399" flood-opacity="0.4"/>
     </filter>
   </defs>
 
-  <rect x="1.5" y="1.5" width="492" height="207" rx="14" fill="url(#bgGradStreak)" stroke="#1E293B" stroke-width="1.5"/>
-  <rect x="20" y="2" width="120" height="2" rx="1" fill="#34D399" filter="url(#glowEmeraldStreak)"/>
+  <rect x="1" y="1" width="493" height="218" rx="14" fill="url(#bgGradStreak)" stroke="#1A2E3B" stroke-width="1.5"/>
+  <rect x="20" y="2" width="140" height="2.5" rx="1" fill="#34D399" filter="url(#glowEmeraldStreak)"/>
+
+  <path d="M 10,22 L 10,10 L 22,10" fill="none" stroke="#34D399" stroke-width="2.5"/>
+  <path d="M 485,22 L 485,10 L 473,10" fill="none" stroke="#FBBF24" stroke-width="2.5"/>
 
   <!-- Header -->
   <g transform="translate(24, 28)">
-    <circle cx="6" cy="6" r="4" fill="#34D399" filter="url(#glowEmeraldStreak)"/>
-    <text x="18" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" fill="#34D399" letter-spacing="1.2">ENGINEERING VELOCITY &amp; STREAKS</text>
-    <text x="445" y="10" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="10" font-weight="600" fill="#34D399">ACTIVE ⚡</text>
+    <circle cx="6" cy="6" r="4.5" fill="#34D399" filter="url(#glowEmeraldStreak)">
+      <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="10" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="13" font-weight="700" fill="#34D399" letter-spacing="1.2">ENGINEERING VELOCITY &amp; STREAKS</text>
+    <text x="445" y="10" text-anchor="end" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="10" font-weight="600" fill="#34D399">ACTIVE ⚡</text>
   </g>
 
-  <!-- 3 Big Metric Cards -->
-  <g transform="translate(24, 52)">
+  <!-- 3 Big 3D Metric Cards -->
+  <g transform="translate(24, 50)">
     <!-- Total Contributions -->
-    <rect x="0" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
-    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">TOTAL COMMITS</text>
-    <text x="14" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC">522+</text>
-    <text x="14" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#34D399">▲ High Consistency</text>
-    <rect x="14" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
-    <rect x="14" y="96" width="95" height="4" rx="2" fill="#34D399"/>
+    <rect x="0" y="0" width="140" height="124" rx="10" fill="#0B1520" stroke="#1A2E3B" stroke-width="1"/>
+    <rect x="2" y="0" width="136" height="2" rx="1" fill="#34D399" opacity="0.6"/>
+    <text x="14" y="24" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="600" fill="#8BA4B8" letter-spacing="0.5">TOTAL COMMITS</text>
+    <text x="14" y="58" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="30" font-weight="800" fill="#F8FAFC">522+</text>
+    <text x="14" y="80" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="500" fill="#34D399">▲ High Consistency</text>
+    <!-- 3D Progress bar -->
+    <rect x="14" y="96" width="112" height="6" rx="3" fill="#1A2E3B"/>
+    <rect x="14" y="96" width="95" height="6" rx="3" fill="#34D399"/>
+    <rect x="15" y="102" width="93" height="2" rx="1" fill="#34D399" opacity="0.2"/>
+    <!-- 3D isometric mini cube decoration -->
+    <polygon points="110,22 120,17 130,22 120,27" fill="#34D399" opacity="0.3"/>
 
     <!-- Current Streak -->
-    <rect x="153" y="0" width="140" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
-    <text x="167" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">CURRENT STREAK</text>
-    <text x="167" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#38BDF8">14 <tspan font-size="14" font-weight="600" fill="#94A3B8">DAYS</tspan></text>
-    <text x="167" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#38BDF8">🔥 Daily Active Dev</text>
-    <rect x="167" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
-    <rect x="167" y="96" width="85" height="4" rx="2" fill="#38BDF8"/>
+    <rect x="153" y="0" width="140" height="124" rx="10" fill="#0B1520" stroke="#1A2E3B" stroke-width="1"/>
+    <rect x="155" y="0" width="136" height="2" rx="1" fill="#38BDF8" opacity="0.6"/>
+    <text x="167" y="24" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="600" fill="#8BA4B8" letter-spacing="0.5">CURRENT STREAK</text>
+    <text x="167" y="58" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="30" font-weight="800" fill="#38BDF8">14 <tspan font-size="14" font-weight="600" fill="#8BA4B8">DAYS</tspan></text>
+    <text x="167" y="80" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="500" fill="#38BDF8">🔥 Daily Active Dev</text>
+    <rect x="167" y="96" width="112" height="6" rx="3" fill="#1A2E3B"/>
+    <rect x="167" y="96" width="85" height="6" rx="3" fill="#38BDF8"/>
+    <rect x="168" y="102" width="83" height="2" rx="1" fill="#38BDF8" opacity="0.2"/>
+    <polygon points="263,22 273,17 283,22 273,27" fill="#38BDF8" opacity="0.3"/>
 
     <!-- Longest Streak -->
-    <rect x="306" y="0" width="141" height="118" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
-    <text x="320" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8">LONGEST STREAK</text>
-    <text x="320" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#FBBF24">28 <tspan font-size="14" font-weight="600" fill="#94A3B8">DAYS</tspan></text>
-    <text x="320" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#FBBF24">★ Peak Output</text>
-    <rect x="320" y="96" width="112" height="4" rx="2" fill="#1E293B"/>
-    <rect x="320" y="96" width="105" height="4" rx="2" fill="#FBBF24"/>
+    <rect x="306" y="0" width="141" height="124" rx="10" fill="#0B1520" stroke="#1A2E3B" stroke-width="1"/>
+    <rect x="308" y="0" width="137" height="2" rx="1" fill="#FBBF24" opacity="0.6"/>
+    <text x="320" y="24" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="600" fill="#8BA4B8" letter-spacing="0.5">LONGEST STREAK</text>
+    <text x="320" y="58" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="30" font-weight="800" fill="#FBBF24">28 <tspan font-size="14" font-weight="600" fill="#8BA4B8">DAYS</tspan></text>
+    <text x="320" y="80" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="500" fill="#FBBF24">★ Peak Output</text>
+    <rect x="320" y="96" width="112" height="6" rx="3" fill="#1A2E3B"/>
+    <rect x="320" y="96" width="105" height="6" rx="3" fill="#FBBF24"/>
+    <rect x="321" y="102" width="103" height="2" rx="1" fill="#FBBF24" opacity="0.2"/>
+    <polygon points="416,22 426,17 436,22 426,27" fill="#FBBF24" opacity="0.3"/>
   </g>
 
   <!-- Footer Tag -->
-  <text x="24" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Profile Activity Frequency • Continuous Integration Monitored</text>
+  <text x="24" y="205" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="9" font-weight="500" fill="#5E7A8A">Profile Activity Frequency • Continuous Integration Monitored</text>
 </svg>

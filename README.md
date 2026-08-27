@@ -1,13 +1,23 @@
 <div align="center">
 
 <!-- ============================================================================== -->
-<!-- 🌌 00. CLEAN 3D HERO BANNER -->
+<!-- 🌌 00. 3D ISOMETRIC HERO BANNER — DEVELOPER WORKSTATION -->
 <!-- ============================================================================== -->
 
 <a href="https://github.com/Mokshagnatej">
-  <img src="./assets/cyber_header.svg" width="100%" alt="Mokshagna Tej 3D Hero"/>
+  <img src="./assets/hero_3d_station.svg" width="100%" alt="Mokshagna Tej — 3D Isometric Developer Workstation"/>
 </a>
 
+<br/>
+
+<!-- ⚡ Dynamic Typing Animation -->
+<a href="https://github.com/Mokshagnatej">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=38BDF8&background=03071200&center=true&vCenter=true&width=700&lines=Building+modern+full-stack+apps+with+the+MERN+Stack;Competing+at+Microsoft+Imagine+Cup+2026;Solving+complex+DSA+in+Java%2C+C%2C+and+C%2B%2B;Designing+clean+pixels+as+carefully+as+code;Engineering+AI+anomaly+detection+with+Azure+%26+OpenAI" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<!-- 🏷️ Quick-Action 3D Badges -->
 <p align="center">
   <a href="https://www.linkedin.com/in/mokshagna-tej-kalepalli-45220a359">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=030712" alt="LinkedIn"/>
@@ -19,22 +29,25 @@
   <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-34D399?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=030712" alt="Status"/>
 </p>
 
-<!-- ⚡ CLEAN DYNAMIC TYPING -->
-<a href="https://github.com/Mokshagnatej">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=38BDF8&background=03071200&center=true&vCenter=true&width=650&lines=Building+modern+full-stack+apps+with+MERN;Competing+at+Microsoft+Imagine+Cup+2026;Solving+complex+DSA+in+Java%2C+C%2C+and+C%2B%2B;Designing+clean+pixels+as+carefully+as+code" alt="Typing SVG" />
-</a>
-
 </div>
 
 <br/>
 
 <!-- ============================================================================== -->
-<!-- ✦ ABOUT ME -->
+<!-- 🧊 01. 3D BENTO STUDENT & ENGINEERING HUB -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
 
-## ✦ About Me
+## 🧊 Student & Engineering Hub
+
+<div align="center">
+<a href="https://github.com/Mokshagnatej">
+  <img src="./assets/bento_student_hub.svg" width="100%" alt="3D Bento Student & Engineering Hub"/>
+</a>
+</div>
+
+<br/>
 
 I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech University** (`VTU29491`), engineering at the intersection of robust systems architecture and sleek UI/UX design.
 
@@ -45,18 +58,8 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <br/>
 
-<div align="center">
-
-| 🎓 Academic Orbit | 🏫 Base Station | 🆔 Cyber ID | 🏆 Prime Directive |
-| :---: | :---: | :---: | :---: |
-| **3rd-Year CSE** | **Vel Tech University** | `VTU29491` | **Imagine Cup '26 Finalist Quest** |
-
-</div>
-
-<br/>
-
 <!-- ============================================================================== -->
-<!-- ⚡ TECH ARSENAL -->
+<!-- ⚡ 02. 3D CATEGORIZED TECH ARSENAL -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
@@ -65,7 +68,14 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <div align="center">
 
-<!-- 3D Skill Icons Strip -->
+<!-- 3D Categorized Tech Arsenal SVG -->
+<a href="https://github.com/Mokshagnatej">
+  <img src="./assets/tech_arsenal_3d.svg" width="100%" alt="3D Categorized Tech Arsenal"/>
+</a>
+
+<br/><br/>
+
+<!-- Skill Icons Strip (fallback for quick visual scan) -->
 <p>
   <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,mongodb,flask,python,java,cpp,c,js,ts,azure,docker,git,mysql,figma,notion&perline=9&theme=dark" alt="Tech Stack Icons" />
 </p>
@@ -75,7 +85,7 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🪐 FEATURED PROJECTS -->
+<!-- 🪐 03. 3D FEATURED PROJECTS SHOWCASE -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
@@ -84,14 +94,14 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <div align="center">
 
-<!-- Imagine Cup 2026 Banner -->
+<!-- 🏆 Imagine Cup 2026 — Flagship Hero Banner -->
 <a href="https://github.com/Mokshagnatej">
   <img src="./assets/card_imagine_cup.svg" width="100%" alt="Microsoft Imagine Cup 2026"/>
 </a>
 
 <br/><br/>
 
-<!-- Clean 2x2 Bento Project Cards -->
+<!-- 3D Bento Project Cards — 2x3 Grid -->
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
@@ -124,7 +134,7 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📊 GITHUB ANALYTICS -->
+<!-- 📊 04. 3D GITHUB ANALYTICS & ENGINEERING VELOCITY -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
@@ -133,12 +143,12 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 
 <div align="center">
 
-<!-- Live Dynamic Status State -->
+<!-- Live Dynamic Status Radar -->
 <img src="./assets/status_badge.svg" width="100%" alt="System Status" />
 
 <br/><br/>
 
-<!-- Automated 2x2 Bento Analytics & Architecture Grid -->
+<!-- 3D Isometric 2x2 Bento Analytics Grid -->
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
@@ -168,7 +178,28 @@ I'm **Mokshagna Tej**, a 3rd-year Computer Science undergraduate at **Vel Tech U
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 📡 LET'S CONNECT -->
+<!-- 🏆 05. GITHUB TROPHIES & ACTIVITY -->
+<!-- ============================================================================== -->
+
+<img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=Mokshagnatej&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6" width="100%" alt="GitHub Trophies"/>
+
+<br/><br/>
+
+<!-- GitHub Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mokshagnatej&bg_color=030712&color=38BDF8&line=818CF8&point=C084FC&area_color=38BDF8&area=true&hide_border=true&custom_title=Contribution%20Activity%20Graph" width="100%" alt="Activity Graph"/>
+
+</div>
+
+<br/>
+
+<!-- ============================================================================== -->
+<!-- 📡 06. CONNECT & FOOTER -->
 <!-- ============================================================================== -->
 
 <img src="./assets/cyber_divider.svg" width="100%" alt="Divider"/>
@@ -189,6 +220,10 @@ Code reveals what I build — **[LinkedIn](https://www.linkedin.com/in/mokshagna
   <a href="https://github.com/Mokshagnatej">
     <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=030712" alt="GitHub"/>
   </a>
+  &nbsp;
+  <a href="mailto:mokshagnatej@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=030712" alt="Email"/>
+  </a>
 </p>
 
 <br/>
@@ -197,7 +232,7 @@ Code reveals what I build — **[LinkedIn](https://www.linkedin.com/in/mokshagna
 
 <br/>
 
-<!-- Clean Animated Wave Footer -->
+<!-- Animated Wave Footer -->
 <img src="./assets/cyber_footer.svg" width="100%" alt="Footer"/>
 
 </div>

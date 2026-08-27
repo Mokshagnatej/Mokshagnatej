@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
   <defs>
     <linearGradient id="clean-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="50%" stop-color="#080E1E"/>
-      <stop offset="100%" stop-color="#0A0618"/>
+      <stop offset="0%" stop-color="#020A0F"/>
+      <stop offset="50%" stop-color="#061219"/>
+      <stop offset="100%" stop-color="#091A1E"/>
     </linearGradient>
 
     <linearGradient id="clean-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -52,8 +52,8 @@
         50% { transform: translateY(-10px) rotate(6deg); }
       }
       .float-prism { animation: floatPrism 6s ease-in-out infinite; transform-origin: center; }
-      .clean-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; font-weight: 900; letter-spacing: 4px; }
-      .clean-sub { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, Menlo, monospace; }
+      .clean-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 900; letter-spacing: 4px; }
+      .clean-sub { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; }
     </style>
   </defs>
 

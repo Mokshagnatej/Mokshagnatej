@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="100%" height="100%">
   <defs>
-    <!-- Dark Luxe Cosmic Gradient Background -->
+    <!-- Dark Luxe Cosmic Gradient Background (warm-dark, no purple-to-blue) -->
     <linearGradient id="station-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="40%" stop-color="#080E1E"/>
-      <stop offset="85%" stop-color="#0E0824"/>
-      <stop offset="100%" stop-color="#04060E"/>
+      <stop offset="0%" stop-color="#020A0F"/>
+      <stop offset="40%" stop-color="#061219"/>
+      <stop offset="85%" stop-color="#091A1E"/>
+      <stop offset="100%" stop-color="#030D12"/>
     </linearGradient>
 
     <!-- Aurora Glow Text -->
@@ -80,8 +80,8 @@
       .screen-right { animation: floatScreenRight 5.5s ease-in-out infinite; }
       .led-blink { animation: blinkLed 1.2s ease-in-out infinite alternate; }
       .steam-p { animation: steamFloat 2s ease-out infinite; }
-      .font-hero { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif; font-weight: 900; }
-      .font-mono { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, Menlo, monospace; }
+      .font-hero { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 900; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; }
     </style>
   </defs>
 
@@ -260,7 +260,7 @@
   </g>
 
   <!-- Bottom Coordinate Specs -->
-  <g class="font-mono" font-size="11" fill="#94A3B8">
+  <g class="font-mono" font-size="11" fill="#8BA4B8">
     <text x="45" y="405">ACADEMIC ORBIT: VEL TECH UNIVERSITY [VTU29491]</text>
     <text x="890" y="405">PRIMARY ARSENAL: REACT · NODE · JAVA · AZURE</text>
   </g>

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="100%" height="130">
   <defs>
     <linearGradient id="footer-luxe-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="100%" stop-color="#0C0A20"/>
+      <stop offset="0%" stop-color="#020A0F"/>
+      <stop offset="100%" stop-color="#0A0E18"/>
     </linearGradient>
 
     <linearGradient id="footer-wave-luxe" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -26,8 +26,8 @@
     </filter>
 
     <style>
-      .foot-head { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 700; letter-spacing: 2px; }
-      .foot-sub { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; }
+      .foot-head { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 700; letter-spacing: 2px; }
+      .foot-sub { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; }
     </style>
   </defs>
 

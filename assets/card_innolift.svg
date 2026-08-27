@@ -16,9 +16,9 @@
       </feMerge>
     </filter>
     <style>
-      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; font-weight: 800; font-size: 20px; fill: #F8FAFC; }
-      .card-desc { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, monospace; font-size: 11px; fill: #94A3B8; }
-      .card-chip { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 10px; font-weight: bold; }
+      .card-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 800; font-size: 20px; fill: #F8FAFC; }
+      .card-desc { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; font-size: 11px; fill: #8BA4B8; }
+      .card-chip { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; font-weight: bold; }
     </style>
   </defs>
 
@@ -65,6 +65,6 @@
   <!-- Launch Button -->
   <g transform="translate(385, 182)">
     <rect x="0" y="0" width="175" height="38" rx="8" fill="#34D399" filter="url(#bloom-inno)"/>
-    <text x="87" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="900" fill="#030712">VIEW REPOSITORY ➔</text>
+    <text x="87" y="24" text-anchor="middle" font-family="'Space Grotesk', 'Outfit', sans-serif" font-size="12" font-weight="900" fill="#030712">VIEW REPOSITORY ➔</text>
   </g>
 </svg>
