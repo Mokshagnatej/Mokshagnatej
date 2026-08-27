@@ -1,103 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="100%" height="100%">
   <defs>
     <linearGradient id="hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020A0F"/>
-      <stop offset="100%" stop-color="#0B1520"/>
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-
-    <linearGradient id="card-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="33%" stop-color="#818CF8"/>
-      <stop offset="66%" stop-color="#C084FC"/>
-      <stop offset="100%" stop-color="#34D399"/>
-    </linearGradient>
-
-    <filter id="hub-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
 
     <style>
-      .hub-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 800; font-size: 15px; fill: #F8FAFC; }
-      .hub-sub { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; font-size: 11px; fill: #8BA4B8; }
-      .hub-tag { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; font-weight: bold; }
+      .font-display { font-family: 'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace; }
+      .hub-title { font-weight: 700; font-size: 15px; fill: #F8FAFC; }
+      .hub-sub { font-size: 11px; fill: #94A3B8; }
+      .hub-tag { font-size: 10px; font-weight: 600; }
     </style>
   </defs>
 
-  <rect width="1200" height="240" rx="16" fill="url(#hub-bg)" stroke="url(#card-border-grad)" stroke-width="1.6"/>
+  <rect width="1200" height="220" rx="14" fill="url(#hub-bg)" stroke="#1E293B" stroke-width="1.2"/>
 
-  <!-- Quadrant 1: Academic Hub -->
-  <g transform="translate(30, 25)">
-    <rect width="265" height="190" rx="12" fill="#080E20" stroke="#38BDF8" stroke-width="1.2"/>
-    <circle cx="35" cy="40" r="18" fill="#0284C7" opacity="0.2"/>
-    <text x="35" y="46" text-anchor="middle" font-size="20">🎓</text>
-    <text x="65" y="38" class="hub-title">Vel Tech University</text>
-    <text x="65" y="55" class="hub-sub">3rd-Year CSE · B.Tech</text>
+  <!-- Quadrant 1: Academic Orbit / Vel Tech -->
+  <g transform="translate(24, 20)">
+    <rect width="270" height="180" rx="10" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <rect x="0" y="0" width="270" height="2" rx="1" fill="#38BDF8"/>
     
-    <line x1="20" y1="75" x2="245" y2="75" stroke="#1E293B" stroke-width="1"/>
+    <text x="18" y="32" class="font-display hub-title">Vel Tech University</text>
+    <text x="18" y="50" class="font-mono hub-sub">3rd-Year CSE · B.Tech (2023–27)</text>
     
-    <text x="20" y="100" class="hub-sub">ID: <tspan fill="#38BDF8" font-weight="bold">VTU29491</tspan></text>
-    <text x="20" y="122" class="hub-sub">Focus: <tspan fill="#F8FAFC">MERN · Cloud · DSA</tspan></text>
-    <text x="20" y="144" class="hub-sub">Status: <tspan fill="#34D399">Active Orbit</tspan></text>
+    <line x1="18" y1="65" x2="252" y2="65" stroke="#1E293B" stroke-width="1"/>
     
-    <rect x="20" y="158" width="105" height="20" rx="4" fill="#0369A1" opacity="0.3"/>
-    <text x="28" y="172" class="hub-tag" fill="#38BDF8">CSE 2023-2027</text>
+    <text x="18" y="88" class="font-mono hub-sub">Student ID: <tspan fill="#38BDF8" font-weight="600">VTU29491</tspan></text>
+    <text x="18" y="108" class="font-mono hub-sub">Core: <tspan fill="#F8FAFC">MERN · Cloud · DSA</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Status: <tspan fill="#10B981">● Active Undergraduate</tspan></text>
+    
+    <rect x="18" y="142" width="105" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="70" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#38BDF8">CSE 2023–27</text>
   </g>
 
   <!-- Quadrant 2: Production Internship -->
-  <g transform="translate(320, 25)">
-    <rect width="265" height="190" rx="12" fill="#080E20" stroke="#818CF8" stroke-width="1.2"/>
-    <circle cx="35" cy="40" r="18" fill="#4338CA" opacity="0.2"/>
-    <text x="35" y="46" text-anchor="middle" font-size="20">💼</text>
-    <text x="65" y="38" class="hub-title">Innolift Ventures</text>
-    <text x="65" y="55" class="hub-sub">Software Dev Intern</text>
+  <g transform="translate(314, 20)">
+    <rect width="270" height="180" rx="10" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <rect x="0" y="0" width="270" height="2" rx="1" fill="#818CF8"/>
     
-    <line x1="20" y1="75" x2="245" y2="75" stroke="#1E293B" stroke-width="1"/>
+    <text x="18" y="32" class="font-display hub-title">Innolift Ventures</text>
+    <text x="18" y="50" class="font-mono hub-sub">Software Development Intern</text>
     
-    <text x="20" y="100" class="hub-sub">Track: <tspan fill="#818CF8" font-weight="bold">Track-3 Engineering</tspan></text>
-    <text x="20" y="122" class="hub-sub">Scope: <tspan fill="#F8FAFC">Live Production Code</tspan></text>
-    <text x="20" y="144" class="hub-sub">Impact: <tspan fill="#34D399">System Pipelines</tspan></text>
+    <line x1="18" y1="65" x2="252" y2="65" stroke="#1E293B" stroke-width="1"/>
     
-    <rect x="20" y="158" width="130" height="20" rx="4" fill="#3730A3" opacity="0.3"/>
-    <text x="28" y="172" class="hub-tag" fill="#818CF8">PRODUCTION SHIPPED</text>
+    <text x="18" y="88" class="font-mono hub-sub">Track: <tspan fill="#818CF8" font-weight="600">Track-3 Engineering</tspan></text>
+    <text x="18" y="108" class="font-mono hub-sub">Deliverable: <tspan fill="#F8FAFC">Production Code &amp; ML</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Focus: <tspan fill="#10B981">● Backend Pipelines</tspan></text>
+    
+    <rect x="18" y="142" width="130" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="83" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#818CF8">SDE INTERNSHIP</text>
   </g>
 
   <!-- Quadrant 3: Creative & Editorial Direction -->
-  <g transform="translate(610, 25)">
-    <rect width="265" height="190" rx="12" fill="#080E20" stroke="#C084FC" stroke-width="1.2"/>
-    <circle cx="35" cy="40" r="18" fill="#7E22CE" opacity="0.2"/>
-    <text x="35" y="46" text-anchor="middle" font-size="20">🎨</text>
-    <text x="65" y="38" class="hub-title">VTU Chronicle 2026</text>
-    <text x="65" y="55" class="hub-sub">Editorial &amp; Layout Lead</text>
+  <g transform="translate(604, 20)">
+    <rect width="270" height="180" rx="10" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <rect x="0" y="0" width="270" height="2" rx="1" fill="#A78BFA"/>
     
-    <line x1="20" y1="75" x2="245" y2="75" stroke="#1E293B" stroke-width="1"/>
+    <text x="18" y="32" class="font-display hub-title">VTU Chronicle</text>
+    <text x="18" y="50" class="font-mono hub-sub">Editorial &amp; Layout Lead</text>
     
-    <text x="20" y="100" class="hub-sub">Domain: <tspan fill="#C084FC" font-weight="bold">Magazine Design</tspan></text>
-    <text x="20" y="122" class="hub-sub">Craft: <tspan fill="#F8FAFC">Typography &amp; Spreads</tspan></text>
-    <text x="20" y="144" class="hub-sub">Tools: <tspan fill="#34D399">Figma · Adobe XD</tspan></text>
+    <line x1="18" y1="65" x2="252" y2="65" stroke="#1E293B" stroke-width="1"/>
     
-    <rect x="20" y="158" width="115" height="20" rx="4" fill="#6B21A8" opacity="0.3"/>
-    <text x="28" y="172" class="hub-tag" fill="#C084FC">CREATIVE LEAD</text>
+    <text x="18" y="88" class="font-mono hub-sub">Domain: <tspan fill="#A78BFA" font-weight="600">Magazine &amp; UI Design</tspan></text>
+    <text x="18" y="108" class="font-mono hub-sub">Craft: <tspan fill="#F8FAFC">Visual Systems &amp; Layouts</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Tools: <tspan fill="#38BDF8">Figma · Adobe XD</tspan></text>
+    
+    <rect x="18" y="142" width="115" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="75" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#A78BFA">CREATIVE LEAD</text>
   </g>
 
   <!-- Quadrant 4: Global Hackathon Initiative -->
-  <g transform="translate(900, 25)">
-    <rect width="270" height="190" rx="12" fill="#080E20" stroke="#F59E0B" stroke-width="1.2"/>
-    <circle cx="35" cy="40" r="18" fill="#B45309" opacity="0.2"/>
-    <text x="35" y="46" text-anchor="middle" font-size="20">🏆</text>
-    <text x="65" y="38" class="hub-title">Imagine Cup 2026</text>
-    <text x="65" y="55" class="hub-sub">Microsoft Global AI Quest</text>
+  <g transform="translate(894, 20)">
+    <rect width="282" height="180" rx="10" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <rect x="0" y="0" width="282" height="2" rx="1" fill="#F59E0B"/>
     
-    <line x1="20" y1="75" x2="250" y2="75" stroke="#1E293B" stroke-width="1"/>
+    <text x="18" y="32" class="font-display hub-title">Imagine Cup 2026</text>
+    <text x="18" y="50" class="font-mono hub-sub">Microsoft Global AI Quest</text>
     
-    <text x="20" y="100" class="hub-sub">Target: <tspan fill="#FBBF24" font-weight="bold">Azure + OpenAI Core</tspan></text>
-    <text x="20" y="122" class="hub-sub">Mission: <tspan fill="#F8FAFC">AI Anomaly &amp; Impact</tspan></text>
-    <text x="20" y="144" class="hub-sub">Role: <tspan fill="#34D399">Team Architect</tspan></text>
+    <line x1="18" y1="65" x2="264" y2="65" stroke="#1E293B" stroke-width="1"/>
     
-    <rect x="20" y="158" width="125" height="20" rx="4" fill="#92400E" opacity="0.3"/>
-    <text x="28" y="172" class="hub-tag" fill="#FBBF24">GLOBAL CONTENDER</text>
+    <text x="18" y="88" class="font-mono hub-sub">Platform: <tspan fill="#F59E0B" font-weight="600">Azure Cloud + OpenAI</tspan></text>
+    <text x="18" y="108" class="font-mono hub-sub">Mission: <tspan fill="#F8FAFC">Real-Time AI Anomaly</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Role: <tspan fill="#10B981">● Systems Architect</tspan></text>
+    
+    <rect x="18" y="142" width="125" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+    <text x="80" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#F59E0B">GLOBAL CONTENDER</text>
   </g>
 </svg>

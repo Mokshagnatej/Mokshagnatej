@@ -1,34 +1,22 @@
-<svg width="495" height="44" viewBox="0 0 495 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="495" height="38" viewBox="0 0 495 38" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="badgeBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="50%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#030712"/>
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-    <filter id="pulseGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#34D399" flood-opacity="0.8"/>
-    </filter>
   </defs>
 
-  <rect x="1" y="1" width="493" height="42" rx="10" fill="url(#badgeBg)" stroke="#1A2E3B" stroke-width="1.2"/>
+  <rect x="1" y="1" width="493" height="36" rx="8" fill="url(#badgeBg)" stroke="#1E293B" stroke-width="1.2"/>
 
-  <!-- Corner accents -->
-  <path d="M 8,14 L 8,8 L 14,8" fill="none" stroke="#34D399" stroke-width="2"/>
-  <path d="M 487,14 L 487,8 L 481,8" fill="none" stroke="#38BDF8" stroke-width="2"/>
-
-  <!-- Pulsing Radar Dot -->
-  <g transform="translate(20, 22)">
-    <circle cx="0" cy="0" r="5" fill="#34D399" filter="url(#pulseGlow)">
-      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="8" fill="none" stroke="#34D399" stroke-width="1" opacity="0.4">
-      <animate attributeName="r" values="5;12;5" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+  <!-- Pulsing Dot -->
+  <g transform="translate(18, 19)">
+    <circle cx="0" cy="0" r="4" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
     </circle>
   </g>
 
   <!-- Status Text -->
-  <text x="36" y="26" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="11" font-weight="700" fill="#34D399" letter-spacing="1">SYSTEM OPERATIONAL</text>
-  <text x="165" y="26" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="11" font-weight="400" fill="#5E7A8A">|</text>
-  <text x="180" y="26" font-family="'Space Grotesk', 'Outfit', 'Manrope', sans-serif" font-size="11" font-weight="600" fill="#38BDF8">FOCUS: <tspan fill="#F8FAFC" font-weight="500">Imagine Cup '26 &amp; MERN &amp; Azure Systems</tspan></text>
+  <text x="32" y="23" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#10B981" letter-spacing="0.5">AVAILABLE FOR ROLES</text>
+  <text x="180" y="23" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#64748B">|</text>
+  <text x="194" y="23" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#38BDF8">FOCUS: <tspan fill="#F8FAFC" font-weight="500">Microsoft Imagine Cup '26 · MERN &amp; Azure Systems</tspan></text>
 </svg>

@@ -1,70 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 220" width="100%" height="100%">
   <defs>
     <linearGradient id="bg-inno" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030714"/>
-      <stop offset="100%" stop-color="#0B1328"/>
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="glow-inno" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#34D399"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-    <filter id="bloom-inno" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <style>
-      .card-title { font-family: 'Space Grotesk', 'Outfit', 'Manrope', sans-serif; font-weight: 800; font-size: 20px; fill: #F8FAFC; }
-      .card-desc { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace; font-size: 11px; fill: #8BA4B8; }
-      .card-chip { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 10px; font-weight: bold; }
+      .font-display { font-family: 'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace; }
+      .card-title { font-weight: 700; font-size: 18px; fill: #F8FAFC; }
+      .card-desc { font-size: 11px; fill: #94A3B8; }
+      .card-chip { font-size: 10px; font-weight: 600; }
     </style>
   </defs>
 
-  <rect width="580" height="240" rx="16" fill="url(#bg-inno)" stroke="url(#glow-inno)" stroke-width="1.6"/>
+  <rect width="580" height="220" rx="12" fill="url(#bg-inno)" stroke="#1E293B" stroke-width="1.2"/>
+  <rect x="0" y="0" width="580" height="2" rx="1" fill="#A78BFA"/>
   
-  <!-- Corner Tech Accents -->
-  <path d="M 14,32 L 14,14 L 32,14" fill="none" stroke="#34D399" stroke-width="3"/>
-  <path d="M 566,32 L 566,14 L 548,14" fill="none" stroke="#38BDF8" stroke-width="3"/>
-
   <!-- Status Badge -->
-  <g transform="translate(400, 20)">
-    <rect x="0" y="0" width="160" height="24" rx="6" fill="#030712" stroke="#34D399" stroke-width="1"/>
-    <circle cx="12" cy="12" r="3.5" fill="#34D399" filter="url(#bloom-inno)"/>
-    <text x="24" y="16" class="card-chip" fill="#34D399">● SDE INTERNSHIP</text>
+  <g transform="translate(425, 20)">
+    <rect x="0" y="0" width="130" height="22" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="10" cy="11" r="3" fill="#A78BFA"/>
+    <text x="20" y="15" class="font-mono card-chip" fill="#A78BFA">SDE INTERNSHIP</text>
   </g>
 
-  <!-- 3D Neural / Analytics Nodes Icon Left -->
-  <g transform="translate(32, 45)">
-    <rect x="0" y="5" width="48" height="42" rx="8" fill="#0F172A" stroke="#34D399" stroke-width="1.5"/>
-    <path d="M 8,35 L 20,20 L 32,26 L 40,12" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="20" cy="20" r="3" fill="#34D399" filter="url(#bloom-inno)"/>
-    <circle cx="40" cy="12" r="3" fill="#38BDF8" filter="url(#bloom-inno)"/>
-  </g>
-
-  <text x="98" y="60" class="card-title">Innolift Ventures SDE &amp; ML</text>
-  <text x="32" y="105" class="card-desc">
-    <tspan x="32" dy="0">&gt; Software engineering &amp; machine learning deliverables.</tspan>
-    <tspan x="32" dy="16">&gt; Track-3 algorithmic pipelines &amp; exploratory data modeling.</tspan>
-    <tspan x="32" dy="16">&gt; Python · Data Engineering · ML Predictive Analytics</tspan>
+  <!-- Title & Description -->
+  <text x="24" y="42" class="font-display card-title">Innolift Ventures SDE Track</text>
+  <text x="24" y="78" class="font-mono card-desc">
+    <tspan x="24" dy="0">• Software engineering &amp; machine learning deliverables.</tspan>
+    <tspan x="24" dy="18">• Track-3 algorithmic pipelines &amp; exploratory data modeling.</tspan>
+    <tspan x="24" dy="18">• Python · Data Engineering · ML Predictive Analytics</tspan>
   </text>
 
   <!-- Tech Tags -->
-  <g transform="translate(32, 162)">
-    <rect x="0" y="0" width="72" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="36" y="16" text-anchor="middle" class="card-chip" fill="#38BDF8">PYTHON</text>
+  <g transform="translate(24, 156)">
+    <rect x="0" y="0" width="70" height="24" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <text x="35" y="16" text-anchor="middle" class="font-mono card-chip" fill="#38BDF8">PYTHON</text>
 
-    <rect x="82" y="0" width="105" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="134" y="16" text-anchor="middle" class="card-chip" fill="#34D399">ML PIPELINES</text>
+    <rect x="78" y="0" width="95" height="24" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <text x="125" y="16" text-anchor="middle" class="font-mono card-chip" fill="#10B981">ML PIPELINES</text>
 
-    <rect x="197" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="254" y="16" text-anchor="middle" class="card-chip" fill="#C084FC">DATA SCIENCE</text>
+    <rect x="181" y="0" width="95" height="24" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <text x="228" y="16" text-anchor="middle" class="font-mono card-chip" fill="#A78BFA">DATA MODEL</text>
   </g>
 
-  <!-- Launch Button -->
-  <g transform="translate(385, 182)">
-    <rect x="0" y="0" width="175" height="38" rx="8" fill="#34D399" filter="url(#bloom-inno)"/>
-    <text x="87" y="24" text-anchor="middle" font-family="'Space Grotesk', 'Outfit', sans-serif" font-size="12" font-weight="900" fill="#030712">VIEW REPOSITORY ➔</text>
+  <!-- View Repo Link -->
+  <g transform="translate(425, 156)">
+    <rect x="0" y="0" width="130" height="24" rx="4" fill="#A78BFA"/>
+    <text x="65" y="16" text-anchor="middle" class="font-display" font-size="10.5" font-weight="700" fill="#0B0F19">VIEW REPO ➔</text>
   </g>
 </svg>
