@@ -474,7 +474,7 @@ class SVGRenderer:
             },
             {
                 "title": "Pull Shark",
-                "subtitle": "PRs & Code Reviews",
+                "subtitle": "PRs &amp; Code Reviews",
                 "rank": "S TIER",
                 "color": COLOR_AZURE,
                 "icon": "🦈",
@@ -482,7 +482,7 @@ class SVGRenderer:
             },
             {
                 "title": "Quickdraw",
-                "subtitle": "Fast Deploy & Fix",
+                "subtitle": "Fast Deploy &amp; Fix",
                 "rank": "S TIER",
                 "color": COLOR_EMERALD,
                 "icon": "⚡",
@@ -490,7 +490,7 @@ class SVGRenderer:
             },
             {
                 "title": "Galaxy Brain",
-                "subtitle": "Algorithms & DSA",
+                "subtitle": "Algorithms &amp; DSA",
                 "rank": "A TIER",
                 "color": COLOR_PURPLE,
                 "icon": "🧠",
@@ -696,6 +696,8 @@ class SVGRenderer:
 
 
 def main():
+    import xml.etree.ElementTree as ET
+
     parser = argparse.ArgumentParser(description="Generate profile stats and graphs.")
     parser.add_argument("--username", default="Mokshagnatej", help="GitHub username")
     parser.add_argument("--output-dir", default="assets", help="Directory to save SVGs")
@@ -731,6 +733,14 @@ def main():
         "stats_activity_graph.svg": activity_graph_svg,
     }
 
+    # Strict XML Validation
+    for filename, content in targets.items():
+        try:
+            ET.fromstring(content)
+        except Exception as e:
+            print(f"❌ [XML Error] Failed parsing {filename}: {e}", file=sys.stderr)
+            sys.exit(1)
+
     for filename, content in targets.items():
         filepath = os.path.join(args.output_dir, filename)
         if args.dry_run:
@@ -738,9 +748,9 @@ def main():
         else:
             with open(filepath, "w", encoding="utf-8") as f:
                 f.write(content)
-            print(f"✅ Generated: {filepath}")
+            print(f"✅ Generated: {filepath} (Valid XML verified)")
 
-    print("🚀 [Stats Engine v3.0] All Obsidian Luxe cards generated successfully!")
+    print("🚀 [Stats Engine v3.0] All Obsidian Luxe cards generated and XML-verified successfully!")
 
 
 if __name__ == "__main__":
