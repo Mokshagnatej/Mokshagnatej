@@ -12,7 +12,7 @@
 
 <!-- Dynamic Typing Animation -->
 <a href="https://github.com/Mokshagnatej">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1200&color=38BDF8&background=0B0F1900&center=true&vCenter=true&width=650&lines=Building+modern+full-stack+apps+with+MERN+%26+Next.js;Architecting+AI+telemetry+with+Azure+%26+OpenAI;Competing+at+Microsoft+Imagine+Cup+2026;Solving+DSA+in+Java%2C+C%2B%2B%2C+and+Python;Designing+clean+pixels+and+accessible+interfaces" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=500&amp;size=16&amp;pause=1200&amp;color=38BDF8&amp;background=0B0F1900&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Building+modern+full-stack+apps+with+MERN+%26+Next.js;Architecting+AI+telemetry+with+Azure+%26+OpenAI;Architecting+scalable+cloud+systems+on+Azure;Solving+DSA+in+Java%2C+C%2B%2B%2C+and+Python;Designing+clean+pixels+and+accessible+interfaces" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -51,7 +51,7 @@ Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate a
 
 - 🎓 **Undergraduate:** 3rd-Year B.Tech CSE at **Vel Tech University** (2023–2027).
 - 🚀 **Full-Stack & Cloud:** Developing end-to-end applications with **MERN (MongoDB, Express, React, Node.js)**, **Next.js**, and **Microsoft Azure**.
-- 🏆 **Imagine Cup '26:** Contender architecting an automated AI anomaly & root-cause detection system using **Azure Cloud** and **OpenAI API**.
+- ☁️ **Cloud & AI Systems:** Architecting automated AI anomaly & root-cause detection systems using **Azure Cloud** and **OpenAI API**.
 - 💼 **Experience:** Ex-Software Development Intern at **Innolift Ventures (Track-3)** and Editorial Layout Lead for **VTU Chronicle**.
 - 🧩 **DSA Problem Solving:** Actively solving algorithmic challenges and data structures in **Java**, **C++**, and **Python**.
 
@@ -95,9 +95,9 @@ Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate a
 
 <div align="center">
 
-<!-- Microsoft Imagine Cup 2026 Flagship Banner -->
+<!-- AI Cloud Telemetry Flagship Banner -->
 <a href="https://github.com/Mokshagnatej">
-  <img src="./assets/card_imagine_cup.svg" width="100%" alt="Microsoft Imagine Cup 2026"/>
+  <img src="./assets/card_flagship.svg" width="100%" alt="Flagship Architecture — AI Cloud Telemetry"/>
 </a>
 
 <br/><br/>

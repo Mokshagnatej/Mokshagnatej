@@ -66,11 +66,11 @@
     <!-- Jan Peak -->
     <circle cx="215" cy="55" r="4.5" fill="#0B0F19" stroke="#38BDF8" stroke-width="2"/>
     
-    <!-- Mar Peak (Imagine Cup Sprint) -->
+    <!-- Mar Peak (Core Sprint) -->
     <circle cx="385" cy="28" r="5" fill="#0B0F19" stroke="#F59E0B" stroke-width="2"/>
     <g transform="translate(385, 15)">
       <rect x="-35" y="-12" width="70" height="15" rx="3" fill="#141C2E" stroke="#F59E0B" stroke-width="0.8"/>
-      <text x="0" y="-2" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="7" font-weight="700" fill="#F59E0B">IMAGINE CUP</text>
+      <text x="0" y="-2" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="7" font-weight="700" fill="#F59E0B">CORE SPRINT</text>
     </g>
 
     <!-- May Peak -->

@@ -386,7 +386,7 @@ class SVGRenderer:
   <g transform="translate(24, 24)">
     <circle cx="5" cy="5" r="4" fill="{COLOR_PURPLE}"/>
     <text x="16" y="9" font-family="{FONT_DISPLAY}" font-size="12" font-weight="700" fill="{COLOR_TEXT_PRIMARY}" letter-spacing="0.5">ENGINEERING ARCHITECTURE</text>
-    <text x="447" y="9" text-anchor="end" font-family="{FONT_MONO}" font-size="10" font-weight="600" fill="{COLOR_AZURE}">IMAGINE CUP '26</text>
+    <text x="447" y="9" text-anchor="end" font-family="{FONT_MONO}" font-size="10" font-weight="600" fill="{COLOR_AZURE}">AZURE &amp; CLOUD</text>
   </g>
 
   <!-- 2 Architecture Panels -->
@@ -423,12 +423,12 @@ class SVGRenderer:
   </g>
 
   <!-- Footer -->
-  <text x="24" y="198" font-family="{FONT_DISPLAY}" font-size="9" font-weight="500" fill="{COLOR_TEXT_DIM}">Target: Microsoft Imagine Cup 2026 · Scalable Cloud Architectures</text>
+  <text x="24" y="198" font-family="{FONT_DISPLAY}" font-size="9" font-weight="500" fill="{COLOR_TEXT_DIM}">Specialization: Scalable Cloud Architectures · Distributed AI Systems</text>
 </svg>"""
         return svg
 
     @staticmethod
-    def render_status_badge(status_text: str = "AVAILABLE FOR ROLES", focus_text: str = "Microsoft Imagine Cup '26 · MERN &amp; Azure Systems") -> str:
+    def render_status_badge(status_text: str = "AVAILABLE FOR ROLES", focus_text: str = "Full-Stack Development · MERN &amp; Azure Cloud Systems") -> str:
         """Generates clean minimalist status pill badge."""
         safe_status = html.escape(status_text)
         safe_focus = html.escape(focus_text) if "&amp;" not in focus_text else focus_text
@@ -465,8 +465,8 @@ class SVGRenderer:
 
         trophies = [
             {
-                "title": "Imagine Cup '26",
-                "subtitle": "Global AI Contender",
+                "title": "Cloud Architect",
+                "subtitle": "Azure &amp; AI Systems",
                 "rank": "SSS TIER",
                 "color": COLOR_AMBER,
                 "icon": "🏆",
@@ -647,11 +647,11 @@ class SVGRenderer:
     <!-- Jan Peak -->
     <circle cx="215" cy="55" r="4.5" fill="{COLOR_BG_START}" stroke="{COLOR_AZURE}" stroke-width="2"/>
     
-    <!-- Mar Peak (Imagine Cup Sprint) -->
+    <!-- Mar Peak (Core Sprint) -->
     <circle cx="385" cy="28" r="5" fill="{COLOR_BG_START}" stroke="{COLOR_AMBER}" stroke-width="2"/>
     <g transform="translate(385, 15)">
       <rect x="-35" y="-12" width="70" height="15" rx="3" fill="{COLOR_CARD_SURFACE}" stroke="{COLOR_AMBER}" stroke-width="0.8"/>
-      <text x="0" y="-2" text-anchor="middle" font-family="{FONT_MONO}" font-size="7" font-weight="700" fill="{COLOR_AMBER}">IMAGINE CUP</text>
+      <text x="0" y="-2" text-anchor="middle" font-family="{FONT_MONO}" font-size="7" font-weight="700" fill="{COLOR_AMBER}">CORE SPRINT</text>
     </g>
 
     <!-- May Peak -->
@@ -718,7 +718,7 @@ def main():
     cloud_arch_svg = SVGRenderer.render_cloud_arch_card()
     status_badge_svg = SVGRenderer.render_status_badge(
         status_text="AVAILABLE FOR ROLES",
-        focus_text="Microsoft Imagine Cup '26 · MERN &amp; Azure Systems"
+        focus_text="Full-Stack Development · MERN &amp; Azure Cloud Systems"
     )
     trophies_svg = SVGRenderer.render_trophies_card(user_data)
     activity_graph_svg = SVGRenderer.render_activity_graph_card(user_data)
