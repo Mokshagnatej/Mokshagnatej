@@ -20,15 +20,15 @@
   <g transform="translate(425, 20)">
     <rect x="0" y="0" width="130" height="22" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
     <circle cx="10" cy="11" r="3" fill="#A78BFA"/>
-    <text x="20" y="15" class="font-mono card-chip" fill="#A78BFA">SDE INTERNSHIP</text>
+    <text x="20" y="15" class="font-mono card-chip" fill="#A78BFA">DA & ML INTERN</text>
   </g>
 
   <!-- Title & Description -->
-  <text x="24" y="42" class="font-display card-title">Innolift Ventures SDE Track</text>
+  <text x="24" y="42" class="font-display card-title">Innolift Ventures ML Track</text>
   <text x="24" y="78" class="font-mono card-desc">
-    <tspan x="24" dy="0">• Software engineering &amp; machine learning deliverables.</tspan>
-    <tspan x="24" dy="18">• Track-3 algorithmic pipelines &amp; exploratory data modeling.</tspan>
-    <tspan x="24" dy="18">• Python · Data Engineering · ML Predictive Analytics</tspan>
+    <tspan x="24" dy="0">• Server anomaly detection — 98.6% accuracy (Random Forest).</tspan>
+    <tspan x="24" dy="18">• Benchmarked 4 ML models — up to 98.9% test accuracy.</tspan>
+    <tspan x="24" dy="18">• Python · Jupyter/Colab · Data Leakage Diagnosis</tspan>
   </text>
 
   <!-- Tech Tags -->

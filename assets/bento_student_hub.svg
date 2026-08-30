@@ -21,8 +21,8 @@
     <rect width="270" height="180" rx="10" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
     <rect x="0" y="0" width="270" height="2" rx="1" fill="#38BDF8"/>
     
-    <text x="18" y="32" class="font-display hub-title">Vel Tech University</text>
-    <text x="18" y="50" class="font-mono hub-sub">3rd-Year CSE · B.Tech (2023–27)</text>
+    <text x="18" y="32" class="font-display hub-title">Veltech University</text>
+    <text x="18" y="50" class="font-mono hub-sub">3rd-Year CSE · B.Tech (2024–28)</text>
     
     <line x1="18" y1="65" x2="252" y2="65" stroke="#1E293B" stroke-width="1"/>
     
@@ -31,7 +31,7 @@
     <text x="18" y="128" class="font-mono hub-sub">Status: <tspan fill="#10B981">● Active Undergraduate</tspan></text>
     
     <rect x="18" y="142" width="105" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
-    <text x="70" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#38BDF8">CSE 2023–27</text>
+    <text x="70" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#38BDF8">CSE 2024–28</text>
   </g>
 
   <!-- Quadrant 2: Production Internship -->
@@ -40,16 +40,16 @@
     <rect x="0" y="0" width="270" height="2" rx="1" fill="#818CF8"/>
     
     <text x="18" y="32" class="font-display hub-title">Innolift Ventures</text>
-    <text x="18" y="50" class="font-mono hub-sub">Software Development Intern</text>
+    <text x="18" y="50" class="font-mono hub-sub">Data Analysis &amp; ML Intern</text>
     
     <line x1="18" y1="65" x2="252" y2="65" stroke="#1E293B" stroke-width="1"/>
     
-    <text x="18" y="88" class="font-mono hub-sub">Track: <tspan fill="#818CF8" font-weight="600">Track-3 Engineering</tspan></text>
-    <text x="18" y="108" class="font-mono hub-sub">Deliverable: <tspan fill="#F8FAFC">Production Code &amp; ML</tspan></text>
-    <text x="18" y="128" class="font-mono hub-sub">Focus: <tspan fill="#10B981">● Backend Pipelines</tspan></text>
+    <text x="18" y="88" class="font-mono hub-sub">Focus: <tspan fill="#818CF8" font-weight="600">ML &amp; Data Analysis</tspan></text>
+    <text x="18" y="108" class="font-mono hub-sub">Result: <tspan fill="#F8FAFC">Anomaly Detection · 98.6%</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Stack: <tspan fill="#10B981">● ML Pipelines</tspan></text>
     
     <rect x="18" y="142" width="130" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
-    <text x="83" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#818CF8">SDE INTERNSHIP</text>
+    <text x="83" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#818CF8">DA &amp; ML INTERN</text>
   </g>
 
   <!-- Quadrant 3: Creative & Editorial Direction -->
@@ -64,7 +64,7 @@
     
     <text x="18" y="88" class="font-mono hub-sub">Domain: <tspan fill="#A78BFA" font-weight="600">Magazine &amp; UI Design</tspan></text>
     <text x="18" y="108" class="font-mono hub-sub">Craft: <tspan fill="#F8FAFC">Visual Systems &amp; Layouts</tspan></text>
-    <text x="18" y="128" class="font-mono hub-sub">Tools: <tspan fill="#38BDF8">Figma · Adobe XD</tspan></text>
+    <text x="18" y="128" class="font-mono hub-sub">Tools: <tspan fill="#38BDF8">Figma · Canva · CapCut</tspan></text>
     
     <rect x="18" y="142" width="115" height="22" rx="4" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
     <text x="75" y="157" text-anchor="middle" class="font-mono hub-tag" fill="#A78BFA">CREATIVE LEAD</text>

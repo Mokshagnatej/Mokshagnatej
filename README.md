@@ -12,7 +12,7 @@
 
 <!-- Dynamic Typing Animation -->
 <a href="https://github.com/Mokshagnatej">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1200&color=38BDF8&background=0B0F1900&center=true&vCenter=true&width=650&lines=Building+modern+full-stack+apps+with+MERN+%26+Next.js;Architecting+AI+telemetry+with+Azure+%26+OpenAI;Solving+DSA+in+Java%2C+C%2B%2B%2C+and+Python;Designing+clean+pixels+and+accessible+interfaces" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1200&color=38BDF8&background=0B0F1900&center=true&vCenter=true&width=650&lines=Building+modern+full-stack+apps+with+MERN+%26+Next.js;Building+ML+anomaly+detection+with+98.6%25+accuracy;Solving+DSA+on+LeetCode+%26+HackerRank+in+Java;Designing+clean+pixels+and+accessible+interfaces" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -47,13 +47,13 @@
 
 <br/>
 
-Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate at **Vel Tech University** (`VTU29491`), focused on building scalable full-stack applications, intelligent cloud telemetry pipelines, and polished user experiences.
+Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate at **Veltech University** (`VTU29491`), focused on building scalable full-stack applications, ML-powered anomaly detection systems, and polished user experiences.
 
-- 🎓 **Undergraduate:** 3rd-Year B.Tech CSE at **Vel Tech University** (2023–2027).
+- 🎓 **Undergraduate:** 3rd-Year B.Tech CSE at **Veltech Dr.RR Dr.SR University** (2024–2028).
 - 🚀 **Full-Stack & Cloud:** Developing end-to-end applications with **MERN (MongoDB, Express, React, Node.js)**, **Next.js**, and **Microsoft Azure**.
-- 🏆 **AI & Cloud Systems:** Architecting an automated AI anomaly & root-cause detection system using **Azure Cloud** and **OpenAI API**.
-- 💼 **Experience:** Ex-Software Development Intern at **Innolift Ventures (Track-3)** and Editorial Layout Lead for **VTU Chronicle**.
-- 🧩 **DSA Problem Solving:** Actively solving algorithmic challenges and data structures in **Java**, **C++**, and **Python**.
+- 🏆 **AI & Cloud Systems:** Built a server anomaly detection system achieving **98.6% accuracy** using ML models (Random Forest, Gradient Boosting) on **Azure Cloud**.
+- 💼 **Experience:** Data Analysis & ML Intern at **Innolift Ventures** — benchmarked 4 ML models, diagnosed data leakage issues. Editorial Layout Lead for **VTU Chronicle**.
+- 🧩 **DSA Problem Solving:** Actively solving on **LeetCode** & **HackerRank** in **Java**, **C++**, and **Python**.
 
 <br/>
 
@@ -82,6 +82,7 @@ Hi! I'm **Mokshagna Tej Kalepalli**, a 3rd-year Computer Science undergraduate a
 | **Backend & APIs** | Node.js, Express.js, Flask, RESTful APIs, Microservices |
 | **Cloud & DevOps** | Microsoft Azure, Docker, Git, GitHub Actions, Linux, CI/CD |
 | **Databases** | MongoDB, MySQL, Cloud Storage |
+| **Design & Media** | Figma, Canva, CapCut, Final Cut Pro |
 
 <br/>
 
