@@ -18,7 +18,7 @@
 
   <!-- 6 Trophy Cards Row -->
   <g transform="translate(24, 48)">
-    <!-- Trophy 1: Cloud Architect -->
+    <!-- Trophy 1: AI Systems -->
     <g transform="translate(0, 0)">
       <rect x="0" y="0" width="136" height="106" rx="8" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
       <rect x="0" y="0" width="136" height="2" rx="1" fill="#F59E0B" opacity="0.8"/>
@@ -32,8 +32,8 @@
       <text x="100" y="29" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="7.5" font-weight="700" fill="#F59E0B">SSS TIER</text>
 
       <!-- Title & Subtitle -->
-      <text x="12" y="60" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC">Cloud Architect</text>
-      <text x="12" y="76" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">Azure &amp; AI Systems</text>
+      <text x="12" y="60" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC">AI Systems</text>
+      <text x="12" y="76" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">Cloud &amp; Anomaly Detection</text>
 
       <!-- Progress / Spark bar -->
       <rect x="12" y="90" width="112" height="3" rx="1.5" fill="#1E293B"/>

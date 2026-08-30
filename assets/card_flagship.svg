@@ -14,7 +14,7 @@
   <rect width="1200" height="180" rx="14" fill="url(#bg-flagship)" stroke="#1E293B" stroke-width="1.2"/>
   <rect x="0" y="0" width="1200" height="2" rx="1" fill="#38BDF8"/>
 
-  <!-- Left Trophy Badge / Icon -->
+  <!-- Left Icon -->
   <g transform="translate(36, 40)">
     <rect width="60" height="60" rx="12" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
     <text x="30" y="38" text-anchor="middle" font-size="26">⚡</text>
@@ -23,12 +23,12 @@
   <!-- Title & Description (Center) -->
   <g transform="translate(120, 42)">
     <!-- Pill Tag -->
-    <rect x="0" y="0" width="220" height="22" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
-    <text x="110" y="15" text-anchor="middle" class="font-mono" font-size="10.5" font-weight="700" fill="#38BDF8">FLAGSHIP ARCHITECTURE · 2026</text>
+    <rect x="0" y="0" width="180" height="22" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
+    <text x="90" y="15" text-anchor="middle" class="font-mono" font-size="10.5" font-weight="700" fill="#38BDF8">FLAGSHIP PROJECT</text>
 
     <!-- Main Title -->
     <text x="0" y="48" class="font-display" font-size="24" font-weight="800" fill="#F8FAFC">
-      AI Cloud Telemetry &amp; Anomaly Engine
+      Cloudwatch Server Anomaly
     </text>
 
     <!-- Subtitle / Architecture -->
