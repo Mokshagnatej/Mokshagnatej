@@ -22,12 +22,12 @@
       <clipPath id="langBarClip">
         <rect x="0" y="0" width="447" height="10" rx="5"/>
       </clipPath>
-      <rect x="0.0" y="0" width="231.5" height="10" fill="#DA5B0B"/>
-      <rect x="231.5" y="0" width="114.4" height="10" fill="#F7DF1E"/>
-      <rect x="346.0" y="0" width="99.2" height="10" fill="#3178C6"/>
-      <rect x="445.2" y="0" width="3.0" height="10" fill="#ED8B00"/>
-      <rect x="448.2" y="0" width="3.0" height="10" fill="#38BDF8"/>
-      <rect x="451.2" y="0" width="3.0" height="10" fill="#F34B7D"/>
+      <rect x="0.0" y="0" width="231.1" height="10" fill="#DA5B0B"/>
+      <rect x="231.1" y="0" width="114.4" height="10" fill="#F7DF1E"/>
+      <rect x="345.5" y="0" width="99.2" height="10" fill="#3178C6"/>
+      <rect x="444.8" y="0" width="3.0" height="10" fill="#ED8B00"/>
+      <rect x="447.8" y="0" width="3.0" height="10" fill="#38BDF8"/>
+      <rect x="450.8" y="0" width="3.0" height="10" fill="#F34B7D"/>
     </g>
   </g>
 
@@ -37,7 +37,7 @@
     <g transform="translate(0, 0)">
       <circle cx="5" cy="8" r="4" fill="#DA5B0B"/>
       <text x="16" y="11" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#F8FAFC">Jupyter Notebook</text>
-      <text x="195" y="11" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#94A3B8">51.8%</text>
+      <text x="195" y="11" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#94A3B8">51.7%</text>
       <rect x="16" y="18" width="180" height="4" rx="2" fill="#1E293B"/>
       <rect x="16" y="18" width="93" height="4" rx="2" fill="#DA5B0B"/>
     </g>
@@ -84,5 +84,5 @@
   </g>
 
   <!-- Footer -->
-  <text x="24" y="198" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Source: GitHub Public Code Analysis · Aug 29, 2026 · 16:13 UTC</text>
+  <text x="24" y="198" font-family="'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748B">Source: GitHub Public Code Analysis · Aug 30, 2026 · 04:13 UTC</text>
 </svg>
