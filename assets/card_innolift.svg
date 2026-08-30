@@ -20,7 +20,7 @@
   <g transform="translate(425, 20)">
     <rect x="0" y="0" width="130" height="22" rx="4" fill="#141C2E" stroke="#1E293B" stroke-width="1"/>
     <circle cx="10" cy="11" r="3" fill="#A78BFA"/>
-    <text x="20" y="15" class="font-mono card-chip" fill="#A78BFA">DA & ML INTERN</text>
+    <text x="20" y="15" class="font-mono card-chip" fill="#A78BFA">DA &amp; ML INTERN</text>
   </g>
 
   <!-- Title & Description -->
